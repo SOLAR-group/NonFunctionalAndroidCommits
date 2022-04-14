@@ -1,0 +1,17 @@
+Categories:
+  - Games
+License: GPL-3.0-only
+SourceCode: https://code.google.com/p/dodge-android/source
+
+AutoName: Dodge
+Description: Guide the ball through the throng of other balls using the accelerometer.
+
+Builds:
+  - versionName: 1.4.3
+    versionCode: 8
+    commit: '11'
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.4.3
+CurrentVersionCode: 8

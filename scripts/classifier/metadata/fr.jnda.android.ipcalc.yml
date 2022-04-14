@@ -1,0 +1,38 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://gitlab.com/jnda/IPCalc
+IssueTracker: https://gitlab.com/jnda/IPCalc/issues
+Changelog: https://gitlab.com/jnda/IPCalc/blob/HEAD/CHANGELOG
+
+AutoName: IPCalc
+
+RepoType: git
+Repo: https://gitlab.com/jnda/IPCalc.git
+
+Builds:
+  - versionName: '1.4'
+    versionCode: 1555188301
+    commit: '1.4'
+    subdir: Ipcalc/
+    gradle:
+      - yes
+
+  - versionName: '2.0'
+    versionCode: 1561300851
+    commit: '2.0'
+    subdir: Ipcalc/
+    gradle:
+      - yes
+
+  - versionName: '2.1'
+    versionCode: 1577458331
+    commit: '2.1'
+    subdir: Ipcalc/
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '2.1'
+CurrentVersionCode: 1577458331

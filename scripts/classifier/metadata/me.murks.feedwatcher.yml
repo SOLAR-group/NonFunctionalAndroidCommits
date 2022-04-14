@@ -1,0 +1,120 @@
+Categories:
+  - Internet
+  - Reading
+License: GPL-3.0-or-later
+AuthorName: Zouroboros
+AuthorEmail: zouroboros@gmail.com
+SourceCode: https://github.com/zouroboros/feed-watcher
+IssueTracker: https://github.com/zouroboros/feed-watcher/issues
+
+AutoName: FeedWatcher
+
+RepoType: git
+Repo: https://github.com/zouroboros/feed-watcher
+
+Builds:
+  - versionName: 0.0.1-alpha
+    versionCode: 1
+    commit: 0.0.1-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.2-alpha
+    versionCode: 2
+    commit: 0.0.2-alpha
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.3-alpha
+    versionCode: 3
+    commit: 0.0.3-alpha
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.4-alpha
+    versionCode: 4
+    commit: 0.0.4-alpha
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.5-alpha
+    versionCode: 5
+    commit: 0.0.5-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.6-alpha
+    versionCode: 6
+    commit: 0.0.6-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.7-alpha
+    versionCode: 7
+    commit: 0.0.7-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.8-alpha
+    versionCode: 8
+    commit: 0.0.8-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.9-alpha
+    versionCode: 9
+    commit: 0.0.9-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.10-alpha
+    versionCode: 10
+    commit: 0.0.10-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.11-alpha
+    versionCode: 11
+    commit: 0.0.11-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.12-alpha
+    versionCode: 12
+    commit: 0.0.12-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.13-alpha
+    versionCode: 13
+    commit: 0.0.13-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.14-alpha
+    versionCode: 14
+    commit: 0.0.14-alpha
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.14-alpha
+CurrentVersionCode: 14

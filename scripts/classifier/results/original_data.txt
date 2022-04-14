@@ -1,0 +1,2878 @@
+Testing started at 12:40 ...
+/usr/bin/python3.8 /home/oliver/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/202.7660.27/plugins/python/helpers/pycharm/_jb_pytest_runner.py --target tests/rcpm/data/sources/test_filereader.py::test_main -- --capture=no
+Launching pytest with arguments --capture=no tests/rcpm/data/sources/test_filereader.py::test_main in /home/oliver/Documents/Dissertation/UCL/keywords
+
+============================= test session starts ==============================
+platform linux -- Python 3.8.5, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /usr/bin/python3.8
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/oliver/Documents/Dissertation/UCL/keywords/.hypothesis/examples')
+django: settings: rcpm.settings (from ini)
+rootdir: /home/oliver/Documents/Dissertation/UCL/keywords, configfile: tox.ini
+plugins: hypothesis-6.0.1, anyio-2.2.0, dash-1.19.0, cov-2.10.1, ordering-0.6, django-4.1.0
+collecting ... collected 1 item
+
+tests/rcpm/data/sources/test_filereader.py::test_main [nltk_data] Downloading package punkt to /home/oliver/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /home/oliver/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to /home/oliver/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     /home/oliver/nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package words to /home/oliver/nltk_data...
+[nltk_data]   Package words is already up-to-date!
+[nltk_data] Downloading package maxent_ne_chunker to
+[nltk_data]     /home/oliver/nltk_data...
+Initializing
+memory duplicate: bdec472e3ac6e2b1ab7e46c99a13abaec1241500
+[nltk_data]   Package maxent_ne_chunker is already up-to-date!
+[nltk_data] Downloading package vader_lexicon to
+[nltk_data]     /home/oliver/nltk_data...
+[nltk_data]   Package vader_lexicon is already up-to-date!
+performance duplicate: f9880359f6a35f4911dd4245246b5995972742dc
+performance duplicate: 234bdd16fb89db4f692b9c20e8eac009dc7822ec
+performance duplicate: 9e34fee58c1bd2ba9040a5457f73b9e7cc36a256
+Preparing Commit Sets
+Initialization finished
+
+----- Checking Commit subset validity -----
+Loaded all 28080 Commits
+Loaded 954 Filtered Bandwith Commits
+Loaded 26 Bandwith Commits
+Loaded 298 Filtered Framerate Commits
+Loaded 15 Framerate Commits
+  does not check out
+  Failed: 11ac01f0e8524a30aa4e2e270122ecaeb21b14b5
+Loaded 746 Filtered Memory Commits
+Loaded 72 Memory Commits
+  does not check out
+  Failed: 98940b96bdd59b176f6c0324b879d78d11b4f7d1
+Loaded 1134 Filtered Performance Commits
+Loaded 120 Performance Commits
+  does not check out
+  Failed: 160a33e8c844a7aa7534fe798a3472a015315480
+  Failed: 98940b96bdd59b176f6c0324b879d78d11b4f7d1
+  Failed: a1ff9aab215b810dbcf3770762048f635939642f
+  Failed: 2fc8060a5dc76f6705476b26798e914814d6da1c
+----- Checking Overlaps validity -----
+            Performance Memory Bandwith Jankiness
+Performance 120         5      5        0
+Memory      5           72     2        1
+Bandwidth   5           2      26       0
+Jankiness   0           1      0        15
+----- Checking Keyword validity -----
+Relevant to Irrelevant to Unknown: 222 / 2360 / 25498
+The following commits do not correspond to any keyword:
+48e438d5109d80fee269c69071bfe3c5e4f387d1
+3411b5345044dbaf1eb355d6ba4e2a851773269c
+77383676ac0e634dbb6ef9572dd4db3d7930be1e
+767db8a598a259e7d4dc389a054206c8c57f20de
+b04ffb8fbc829cbb0ebc2380461e2f6d48827eb1
+6877883521cddfe411d080968da62380fbb342f5
+c239d1767b09ea37a4594ef1dcfacd1cf3a3a842
+ae98a0f5d6b5dea328d3b0c745a5612622aea924
+61f3752b5f1a39b64f73cb61655e15070bbf607c
+f9880359f6a35f4911dd4245246b5995972742dc
+a026143a840b9ac57534357a2074a50175be388a
+c75362c5ea489247cc00b473a0ef91dbb1cc1569
+06253a94cfb94f667130c3d1ab6a68792fd47850
+
+Average matched keywords: 1.7972972972972974
+Matches per keyword count:
+  0 - 3
+  1 - 118
+  2 - 56
+  3 - 27
+  4 - 9
+  5 - 6
+  6 - 1
+  7 - 1
+  9 - 1
+network    p: 9   n: 75  u: 0    r: 0.1
+bandwidth  p: 1   n: 5   u: 0    r: 0.2
+size       p: 42  n: 380 u: 0    r: 0.1
+download   p: 35  n: 569 u: 0    r: 0.0
+upload     p: 2   n: 69  u: 0    r: 0.0
+socket     p: 5   n: 21  u: 0    r: 0.2
+jank       p: 0   n: 0   u: 0    r: 100
+frame      p: 2   n: 50  u: 0    r: 0.0
+respons    p: 7   n: 84  u: 0    r: 0.0
+lag        p: 9   n: 73  u: 0    r: 0.1
+memory     p: 40  n: 32  u: 0    r: 1.2
+leak       p: 33  n: 31  u: 0    r: 1.0
+cache      p: 24  n: 168 u: 0    r: 0.1
+buffer     p: 11  n: 31  u: 0    r: 0.3
+space      p: 5   n: 148 u: 0    r: 0.0
+effic      p: 14  n: 7   u: 0    r: 2.0
+speed      p: 25  n: 49  u: 0    r: 0.5
+time       p: 47  n: 658 u: 0    r: 0.0
+perform    p: 32  n: 76  u: 0    r: 0.4
+slow       p: 13  n: 34  u: 0    r: 0.3
+fast       p: 24  n: 107 u: 0    r: 0.2
+optimi     p: 11  n: 48  u: 0    r: 0.2
+storage    p: 8   n: 83  u: 0    r: 0.0
+----- Tokens in commit ratios -----
+save                     p: 15 n: 14  u: 74  rn: 1.0 ru: 0.2
+reduce                   p: 12 n: 8   u: 17  rn: 1.5 ru: 0.7
+low                      p: 10 n: 10  u: 20  rn: 1.0 ru: 0.5
+static                   p: 9  n: 14  u: 52  rn: 0.6 ru: 0.1
+misc                     p: 9  n: 11  u: 18  rn: 0.8 ru: 0.5
+uil                      p: 8  n: 6   u: 26  rn: 1.3 ru: 0.3
+disk                     p: 6  n: 14  u: 9   rn: 0.4 ru: 0.6
+lists                    p: 6  n: 7   u: 51  rn: 0.8 ru: 0.1
+join                     p: 6  n: 10  u: 16  rn: 0.6 ru: 0.3
+streams                  p: 6  n: 7   u: 24  rn: 0.8 ru: 0.2
+indexes                  p: 5  n: 14  u: 7   rn: 0.3 ru: 0.7
+temp                     p: 5  n: 7   u: 7   rn: 0.7 ru: 0.7
+scrolling                p: 5  n: 4   u: 27  rn: 1.2 ru: 0.1
+saves                    p: 5  n: 3   u: 6   rn: 1.6 ru: 0.8
+rewrite                  p: 5  n: 2   u: 16  rn: 2.5 ru: 0.3
+session                  p: 4  n: 6   u: 44  rn: 0.6 ru: 0.0
+turns                    p: 4  n: 7   u: 21  rn: 0.5 ru: 0.1
+loader                   p: 4  n: 10  u: 5   rn: 0.4 ru: 0.8
+levels                   p: 4  n: 3   u: 9   rn: 1.3 ru: 0.4
+reduced                  p: 4  n: 6   u: 7   rn: 0.6 ru: 0.5
+onto                     p: 4  n: 7   u: 9   rn: 0.5 ru: 0.4
+array                    p: 4  n: 4   u: 16  rn: 1.0 ru: 0.2
+nexus                    p: 3  n: 3   u: 4   rn: 1.0 ru: 0.7
+generation               p: 3  n: 2   u: 13  rn: 1.5 ru: 0.2
+saving                   p: 3  n: 2   u: 21  rn: 1.5 ru: 0.1
+resource                 p: 3  n: 3   u: 41  rn: 1.0 ru: 0.0
+packet                   p: 3  n: 4   u: 4   rn: 0.7 ru: 0.7
+byte                     p: 3  n: 3   u: 20  rn: 1.0 ru: 0.1
+transaction              p: 3  n: 2   u: 11  rn: 1.5 ru: 0.2
+apparently               p: 3  n: 5   u: 20  rn: 0.6 ru: 0.1
+origin                   p: 3  n: 0   u: 4   rn: 100 ru: 0.7
+drawable                 p: 3  n: 5   u: 23  rn: 0.6 ru: 0.1
+packets                  p: 3  n: 2   u: 8   rn: 1.5 ru: 0.3
+bitrate                  p: 3  n: 0   u: 2   rn: 100 ru: 1.5
+segment                  p: 3  n: 3   u: 3   rn: 1.0 ru: 1.0
+somehow                  p: 3  n: 5   u: 13  rn: 0.6 ru: 0.2
+cpu                      p: 3  n: 2   u: 5   rn: 1.5 ru: 0.6
+rotation                 p: 3  n: 4   u: 37  rn: 0.7 ru: 0.0
+paused                   p: 3  n: 3   u: 12  rn: 1.0 ru: 0.2
+behave                   p: 3  n: 2   u: 2   rn: 1.5 ru: 1.5
+states                   p: 3  n: 3   u: 19  rn: 1.0 ru: 0.1
+solves                   p: 3  n: 2   u: 3   rn: 1.5 ru: 1.0
+chunk                    p: 3  n: 1   u: 6   rn: 3.0 ru: 0.5
+exit                     p: 3  n: 4   u: 20  rn: 0.7 ru: 0.1
+huge                     p: 3  n: 8   u: 5   rn: 0.3 ru: 0.6
+entries                  p: 3  n: 5   u: 33  rn: 0.6 ru: 0.0
+compare                  p: 2  n: 3   u: 5   rn: 0.6 ru: 0.4
+renaming                 p: 2  n: 2   u: 14  rn: 1.0 ru: 0.1
+identified               p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+converts                 p: 2  n: 3   u: 1   rn: 0.6 ru: 2.0
+straight                 p: 2  n: 1   u: 6   rn: 2.0 ru: 0.3
+calculating              p: 2  n: 5   u: 2   rn: 0.4 ru: 1.0
+compatible               p: 2  n: 3   u: 23  rn: 0.6 ru: 0.0
+reloading                p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+packageinfo              p: 2  n: 2   u: 4   rn: 1.0 ru: 0.5
+typing                   p: 2  n: 2   u: 13  rn: 1.0 ru: 0.1
+blocked                  p: 2  n: 3   u: 8   rn: 0.6 ru: 0.2
+subsequently             p: 2  n: 0   u: 3   rn: 100 ru: 0.6
+eliminated               p: 2  n: 0   u: 3   rn: 100 ru: 0.6
+batch                    p: 2  n: 1   u: 2   rn: 2.0 ru: 1.0
+requiring                p: 2  n: 4   u: 2   rn: 0.5 ru: 1.0
+transactions             p: 2  n: 1   u: 6   rn: 2.0 ru: 0.3
+inner                    p: 2  n: 3   u: 10  rn: 0.6 ru: 0.2
+garbage                  p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+rogue                    p: 2  n: 0   u: 1   rn: 100 ru: 2.0
+append                   p: 2  n: 3   u: 10  rn: 0.6 ru: 0.2
+restart                  p: 2  n: 1   u: 15  rn: 2.0 ru: 0.1
+searchresultsfragment    p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+hashmap                  p: 2  n: 0   u: 2   rn: 100 ru: 1.0
+stringbuilder            p: 2  n: 1   u: 1   rn: 2.0 ru: 2.0
+graphing                 p: 2  n: 0   u: 19  rn: 100 ru: 0.1
+loads                    p: 2  n: 3   u: 4   rn: 0.6 ru: 0.5
+increased                p: 2  n: 3   u: 2   rn: 0.6 ru: 1.0
+codec                    p: 2  n: 0   u: 2   rn: 100 ru: 1.0
+vorbis                   p: 2  n: 0   u: 3   rn: 100 ru: 0.6
+thumbnails               p: 2  n: 0   u: 4   rn: 100 ru: 0.5
+generating               p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+music                    p: 2  n: 3   u: 38  rn: 0.6 ru: 0.0
+seemed                   p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+instantly                p: 2  n: 3   u: 1   rn: 0.6 ru: 2.0
+debounced                p: 2  n: 0   u: 1   rn: 100 ru: 2.0
+bigger                   p: 2  n: 3   u: 4   rn: 0.6 ru: 0.5
+advantages               p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+phones                   p: 2  n: 2   u: 14  rn: 1.0 ru: 0.1
+contents                 p: 2  n: 3   u: 7   rn: 0.6 ru: 0.2
+factory                  p: 2  n: 0   u: 8   rn: 100 ru: 0.2
+partial                  p: 2  n: 2   u: 9   rn: 1.0 ru: 0.2
+observer                 p: 2  n: 2   u: 3   rn: 1.0 ru: 0.6
+noticed                  p: 2  n: 3   u: 13  rn: 0.6 ru: 0.1
+arraylist                p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+coverage                 p: 2  n: 2   u: 20  rn: 1.0 ru: 0.1
+incompatible             p: 2  n: 3   u: 28  rn: 0.6 ru: 0.0
+min                      p: 2  n: 3   u: 26  rn: 0.6 ru: 0.0
+contentproviders         p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+increment                p: 2  n: 1   u: 5   rn: 2.0 ru: 0.4
+recovering               p: 2  n: 2   u: 1   rn: 1.0 ru: 2.0
+webmreader               p: 2  n: 0   u: 2   rn: 100 ru: 1.0
+reporting                p: 2  n: 2   u: 28  rn: 1.0 ru: 0.0
+instant                  p: 2  n: 1   u: 3   rn: 2.0 ru: 0.6
+persisting               p: 2  n: 3   u: 3   rn: 0.6 ru: 0.6
+recreated                p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+latency                  p: 2  n: 0   u: 5   rn: 100 ru: 0.4
+mobile                   p: 2  n: 1   u: 8   rn: 2.0 ru: 0.2
+searchengine             p: 2  n: 1   u: 6   rn: 2.0 ru: 0.3
+silly                    p: 2  n: 3   u: 5   rn: 0.6 ru: 0.4
+localreposervice         p: 2  n: 2   u: 6   rn: 1.0 ru: 0.3
+fling                    p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+emoji                    p: 2  n: 1   u: 7   rn: 2.0 ru: 0.2
+dash                     p: 2  n: 3   u: 6   rn: 0.6 ru: 0.3
+metered                  p: 2  n: 1   u: 1   rn: 2.0 ru: 2.0
+overwrite                p: 2  n: 3   u: 5   rn: 0.6 ru: 0.4
+infrastructure           p: 2  n: 2   u: 3   rn: 1.0 ru: 0.6
+effectively              p: 2  n: 4   u: 1   rn: 0.5 ru: 2.0
+dont                     p: 2  n: 3   u: 23  rn: 0.6 ru: 0.0
+printing                 p: 2  n: 2   u: 2   rn: 1.0 ru: 1.0
+dispose                  p: 2  n: 2   u: 5   rn: 1.0 ru: 0.4
+bound                    p: 2  n: 2   u: 2   rn: 1.0 ru: 1.0
+initialisation           p: 2  n: 2   u: 2   rn: 1.0 ru: 1.0
+allocate                 p: 2  n: 1   u: 1   rn: 2.0 ru: 2.0
+printers                 p: 2  n: 3   u: 9   rn: 0.6 ru: 0.2
+disconnected             p: 2  n: 3   u: 5   rn: 0.6 ru: 0.4
+cats                     p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+diagnosing               p: 1  n: 4   u: 1   rn: 0.2 ru: 1.0
+nav                      p: 1  n: 1   u: 14  rn: 1.0 ru: 0.0
+drawer                   p: 1  n: 0   u: 22  rn: 100 ru: 0.0
+drastically              p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+blocklist                p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+hoped                    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+arguably                 p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+pairs                    p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+somewhat                 p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+integrated               p: 1  n: 4   u: 1   rn: 0.2 ru: 1.0
+swaptype                 p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+implicitly               p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+committing               p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+fairly                   p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+galaxy                   p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+applications             p: 1  n: 1   u: 14  rn: 1.0 ru: 0.0
+urihelper                p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+duktape                  p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+serializable             p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+advpnservice             p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+theory                   p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+restarts                 p: 1  n: 1   u: 8   rn: 1.0 ru: 0.1
+unset                    p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+executing                p: 1  n: 5   u: 1   rn: 0.2 ru: 1.0
+completes                p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+detected                 p: 1  n: 1   u: 8   rn: 1.0 ru: 0.1
+mangafragment            p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+contextmenu              p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+prototype                p: 1  n: 1   u: 10  rn: 1.0 ru: 0.1
+looping                  p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+expression               p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+intelligent              p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+vercode                  p: 1  n: 0   u: 8   rn: 100 ru: 0.1
+oom                      p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+identical                p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+param                    p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+reducing                 p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+formatter                p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+milliseconds             p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+desktop                  p: 1  n: 1   u: 17  rn: 1.0 ru: 0.0
+args                     p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+sensitive                p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+indirection              p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+natural                  p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+respectively             p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+observable               p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+constraint               p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+histories                p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+ack                      p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+acks                     p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+pp                       p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+untouched                p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+freezes                  p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+killing                  p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+redelivered              p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+readded                  p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+afford                   p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+accumulated              p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+inactivity               p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+disconnecting            p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+insecure                 p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+transient                p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+opt                      p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+exif                     p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+stripping                p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+stripped                 p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+numbers                  p: 1  n: 1   u: 19  rn: 1.0 ru: 0.0
+entity                   p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+bulk                     p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+plain                    p: 1  n: 1   u: 12  rn: 1.0 ru: 0.0
+approx                   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+software                 p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+followed                 p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+recreating               p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+canupdateappsfragment    p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+baseclass                p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+cursorloader             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+queues                   p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+attach                   p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+unnecessarily            p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+sprite                   p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+panel                    p: 1  n: 1   u: 16  rn: 1.0 ru: 0.0
+recover                  p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+agent                    p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+digits                   p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+hex                      p: 1  n: 1   u: 14  rn: 1.0 ru: 0.0
+bin                      p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+atm                      p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+dec                      p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+stuffs                   p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+unchanged                p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+invalidated              p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+calculates               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+expert                   p: 1  n: 1   u: 18  rn: 1.0 ru: 0.0
+understanding            p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+instrumentation          p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+suffer                   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+rendering                p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+decides                  p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+yay                      p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+throttling               p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+black                    p: 1  n: 1   u: 14  rn: 1.0 ru: 0.0
+repeated                 p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+parses                   p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+integers                 p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+suggestedapk             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+differently              p: 1  n: 1   u: 8   rn: 1.0 ru: 0.1
+imageview                p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+kerplapp                 p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+snappy                   p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+qrcode                   p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+referencing              p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+screengrabtest           p: 1  n: 1   u: 10  rn: 1.0 ru: 0.1
+locator                  p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+algorithm                p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+covered                  p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+supposedly               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+scratch                  p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+losing                   p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+pager                    p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+si                       p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+slider                   p: 1  n: 1   u: 11  rn: 1.0 ru: 0.0
+dirty                    p: 1  n: 10  u: 1   rn: 0.1 ru: 1.0
+roll                     p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+pointed                  p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+sig                      p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+essentially              p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+mangas                   p: 1  n: 0   u: 10  rn: 100 ru: 0.1
+solved                   p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+wrote                    p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+numerous                 p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+hans                     p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+spotted                  p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+tool                     p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+science                  p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+limits                   p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+dropdown                 p: 1  n: 1   u: 11  rn: 1.0 ru: 0.0
+searchenginemanager      p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+drain                    p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+transmission             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+subject                  p: 1  n: 1   u: 9   rn: 1.0 ru: 0.1
+mixup                    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+shrink                   p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+reactor                  p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+landscape                p: 1  n: 1   u: 27  rn: 1.0 ru: 0.0
+models                   p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+coloring                 p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+swapped                  p: 1  n: 1   u: 10  rn: 1.0 ru: 0.1
+rarely                   p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+userinfo                 p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+saw                      p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+suggestion               p: 1  n: 0   u: 28  rn: 100 ru: 0.0
+wakelock                 p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+pool                     p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+readonly                 p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+multithreading           p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+spams                    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+titles                   p: 1  n: 1   u: 13  rn: 1.0 ru: 0.0
+getapplicationcontext    p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+getcontext               p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+misspelled               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+ignoring                 p: 1  n: 0   u: 8   rn: 100 ru: 0.1
+troubles                 p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+miscellaneous            p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+strip                    p: 1  n: 0   u: 8   rn: 100 ru: 0.1
+serialize                p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+proof                    p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+warn                     p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+reporter                 p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+muxer                    p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+effective                p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+rooted                   p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+eliminates               p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+ms                       p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+alert                    p: 1  n: 1   u: 18  rn: 1.0 ru: 0.0
+circular                 p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+interfaces               p: 1  n: 1   u: 9   rn: 1.0 ru: 0.1
+brand                    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+layers                   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+captions                 p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+gigaget                  p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+launching                p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+io                       p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+urlmatcher               p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+gc                       p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+blockedhosts             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+videoplayer              p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+backgroundplayer         p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+cleanly                  p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+searchenginepreference   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+sub                      p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+suggestedversion         p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+outer                    p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+intermediate             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+decrease                 p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+telegram                 p: 1  n: 1   u: 7   rn: 1.0 ru: 0.1
+sides                    p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+activates                p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+gapps                    p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+resetting                p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+audiomanager             p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+subtitles                p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+filedescriptor           p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+accept                   p: 1  n: 1   u: 29  rn: 1.0 ru: 0.0
+functionalities          p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+intact                   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+unavailable              p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+avatar                   p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+serialversionuid         p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+debouncing               p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+continues                p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+disposed                 p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+shuffle                  p: 1  n: 1   u: 8   rn: 1.0 ru: 0.1
+demand                   p: 1  n: 1   u: 5   rn: 1.0 ru: 0.2
+roughly                  p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+smoother                 p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+improving                p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+locks                    p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+flush                    p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+utilities                p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+arraymap                 p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+percent                  p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+installations            p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+gatt                     p: 1  n: 0   u: 12  rn: 100 ru: 0.0
+outgoing                 p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+youtubeextractor         p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+videopreviewinfo         p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+abstractvideoinfo        p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+disposable               p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+stick                    p: 1  n: 0   u: 8   rn: 100 ru: 0.1
+cross                    p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+findbugs                 p: 1  n: 1   u: 42  rn: 1.0 ru: 0.0
+precision                p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+offers                   p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+satisfy                  p: 1  n: 0   u: 9   rn: 100 ru: 0.1
+interest                 p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+searched                 p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+indefinitely             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+maintains                p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+grow                     p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+flushed                  p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+ordered                  p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+getandroidversionname    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+themed                   p: 1  n: 0   u: 8   rn: 100 ru: 0.1
+fonts                    p: 1  n: 0   u: 11  rn: 100 ru: 0.0
+destination              p: 1  n: 3   u: 1   rn: 0.3 ru: 1.0
+appends                  p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+urlautocompletefilter    p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+spread                   p: 1  n: 0   u: 4   rn: 100 ru: 0.2
+detekt                   p: 1  n: 1   u: 24  rn: 1.0 ru: 0.0
+restructure              p: 1  n: 1   u: 10  rn: 1.0 ru: 0.1
+ippoperation             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+beign                    p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+initloader               p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+wipe                     p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+descriptor               p: 1  n: 0   u: 3   rn: 100 ru: 0.3
+independent              p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+struct                   p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+tweaking                 p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+knew                     p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+universalimageloader     p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+airplane                 p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+emits                    p: 1  n: 1   u: 1   rn: 1.0 ru: 1.0
+layer                    p: 1  n: 1   u: 8   rn: 1.0 ru: 0.1
+flickering               p: 1  n: 1   u: 6   rn: 1.0 ru: 0.1
+altogether               p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+series                   p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+eclairchecker            p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+filling                  p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+heuristics               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+song                     p: 1  n: 1   u: 13  rn: 1.0 ru: 0.0
+allocation               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+completing               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+meet                     p: 1  n: 0   u: 2   rn: 100 ru: 0.5
+increases                p: 1  n: 2   u: 1   rn: 0.5 ru: 1.0
+obvious                  p: 1  n: 0   u: 7   rn: 100 ru: 0.1
+restructured             p: 1  n: 1   u: 2   rn: 1.0 ru: 0.5
+alphabetical             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+greatly                  p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+switches                 p: 1  n: 1   u: 20  rn: 1.0 ru: 0.0
+duplication              p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+figured                  p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+usual                    p: 1  n: 1   u: 4   rn: 1.0 ru: 0.2
+precalculate             p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+vector                   p: 1  n: 0   u: 22  rn: 100 ru: 0.0
+videoinfoitem            p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+restoring                p: 1  n: 0   u: 6   rn: 100 ru: 0.1
+newline                  p: 1  n: 1   u: 3   rn: 1.0 ru: 0.3
+repopulate               p: 1  n: 0   u: 1   rn: 100 ru: 1.0
+cycles                   p: 1  n: 0   u: 5   rn: 100 ru: 0.2
+Featurized: 10:44:09
+Featurized: 10:44:25
+Featurized: 10:44:36
+Featurized: 10:44:44
+Featurized: 10:44:54
+Featurized: 10:45:01
+RUNNING CONFIG fd_lem_bow.txt
+Start: MLPClassifier 10:45:02
+Trained: 10:46:05
+Predicted: 10:46:05
+[[469  10]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.96       479
+    relevant       0.55      0.32      0.40        38
+
+    accuracy                           0.93       517
+   macro avg       0.75      0.65      0.68       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9303675048355899
+Start: KNeighborsClassifier 10:46:05
+Trained: 10:46:07
+Predicted: 10:46:25
+[[478   1]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      1.00      0.97       479
+    relevant       0.86      0.16      0.27        38
+
+    accuracy                           0.94       517
+   macro avg       0.90      0.58      0.62       517
+weighted avg       0.93      0.94      0.92       517
+
+0.9361702127659575
+Start: SVC 10:46:25
+Trained: 10:46:53
+Predicted: 10:47:00
+[[479   0]
+ [ 37   1]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       1.00      0.03      0.05        38
+
+    accuracy                           0.93       517
+   macro avg       0.96      0.51      0.51       517
+weighted avg       0.93      0.93      0.90       517
+
+0.9284332688588007
+Start: NuSVC 10:47:00
+NuSVC has failed
+Start: LinearSVC 10:47:00
+Trained: 10:47:00
+Predicted: 10:47:00
+[[457  22]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.95      0.95       479
+    relevant       0.41      0.39      0.40        38
+
+    accuracy                           0.91       517
+   macro avg       0.68      0.67      0.68       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9129593810444874
+Start: GaussianProcessClassifier 10:47:00
+Trained: 10:47:37
+Predicted: 10:47:46
+[[479   0]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       1.00      0.05      0.10        38
+
+    accuracy                           0.93       517
+   macro avg       0.97      0.53      0.53       517
+weighted avg       0.94      0.93      0.90       517
+
+0.9303675048355899
+Start: RBF 10:47:46
+RBF has failed
+Start: DecisionTreeClassifier 10:47:46
+Trained: 10:47:52
+Predicted: 10:47:52
+[[454  25]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.95      0.95       479
+    relevant       0.38      0.39      0.38        38
+
+    accuracy                           0.91       517
+   macro avg       0.66      0.67      0.67       517
+weighted avg       0.91      0.91      0.91       517
+
+0.90715667311412
+Start: ExtraTreeClassifier 10:47:52
+Trained: 10:47:52
+Predicted: 10:47:52
+[[448  31]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.94      0.94       479
+    relevant       0.21      0.21      0.21        38
+
+    accuracy                           0.88       517
+   macro avg       0.57      0.57      0.57       517
+weighted avg       0.88      0.88      0.88       517
+
+0.8820116054158608
+Start: RandomForestClassifier 10:47:52
+Trained: 10:48:03
+Predicted: 10:48:03
+[[478   1]
+ [ 33   5]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      1.00      0.97       479
+    relevant       0.83      0.13      0.23        38
+
+    accuracy                           0.93       517
+   macro avg       0.88      0.56      0.60       517
+weighted avg       0.93      0.93      0.91       517
+
+0.9342359767891683
+Start: AdaBoostClassifier 10:48:03
+Trained: 10:48:22
+Predicted: 10:48:23
+[[473   6]
+ [ 24  14]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.99      0.97       479
+    relevant       0.70      0.37      0.48        38
+
+    accuracy                           0.94       517
+   macro avg       0.83      0.68      0.73       517
+weighted avg       0.93      0.94      0.93       517
+
+0.941972920696325
+Start: ExtraTreeClassifier 10:48:23
+Trained: 10:48:23
+Predicted: 10:48:23
+[[440  39]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.92      0.93       479
+    relevant       0.17      0.21      0.19        38
+
+    accuracy                           0.87       517
+   macro avg       0.55      0.56      0.56       517
+weighted avg       0.88      0.87      0.87       517
+
+0.8665377176015474
+Start: BaggingClassifier 10:48:23
+Trained: 10:48:31
+Predicted: 10:48:32
+[[466  13]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.97      0.96       479
+    relevant       0.50      0.34      0.41        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.66      0.68       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9264990328820116
+Start: GradientBoostingClassifier 10:48:32
+Trained: 10:49:28
+Predicted: 10:49:29
+[[474   5]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.99      0.97       479
+    relevant       0.69      0.29      0.41        38
+
+    accuracy                           0.94       517
+   macro avg       0.82      0.64      0.69       517
+weighted avg       0.93      0.94      0.93       517
+
+0.9381044487427466
+Start: VotingClassifier 10:49:29
+VotingClassifier has failed
+Start: GaussianNB 10:49:29
+Trained: 10:49:29
+Predicted: 10:49:29
+[[405  74]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.85      0.89       479
+    relevant       0.11      0.24      0.15        38
+
+    accuracy                           0.80       517
+   macro avg       0.52      0.54      0.52       517
+weighted avg       0.87      0.80      0.83       517
+
+0.8007736943907157
+Start: MultinomialNB 10:49:29
+Trained: 10:49:29
+Predicted: 10:49:29
+[[477   2]
+ [ 34   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.67      0.11      0.18        38
+
+    accuracy                           0.93       517
+   macro avg       0.80      0.55      0.57       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9303675048355899
+Start: CategoricalNB 10:49:29
+Trained: 10:49:30
+CategoricalNB has failed
+Start: BernoulliNB 10:49:30
+Trained: 10:49:31
+Predicted: 10:49:31
+[[472   7]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.22      0.05      0.09        38
+
+    accuracy                           0.92       517
+   macro avg       0.58      0.52      0.52       517
+weighted avg       0.88      0.92      0.89       517
+
+0.9168278529980658
+Start: ComplementNB 10:49:31
+Trained: 10:49:31
+Predicted: 10:49:31
+[[463  16]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       479
+    relevant       0.27      0.16      0.20        38
+
+    accuracy                           0.91       517
+   macro avg       0.60      0.56      0.58       517
+weighted avg       0.89      0.91      0.90       517
+
+0.90715667311412
+Start: QuadraticDiscriminantAnalysis 10:49:31
+Trained: 10:49:38
+Predicted: 10:49:39
+[[ 54 425]
+ [  0  38]]
+              precision    recall  f1-score   support
+
+  irrelevant       1.00      0.11      0.20       479
+    relevant       0.08      1.00      0.15        38
+
+    accuracy                           0.18       517
+   macro avg       0.54      0.56      0.18       517
+weighted avg       0.93      0.18      0.20       517
+
+0.17794970986460348
+Start: LinearDiscriminantAnalysis 10:49:39
+Trained: 10:49:49
+Predicted: 10:49:49
+[[427  52]
+ [ 24  14]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.89      0.92       479
+    relevant       0.21      0.37      0.27        38
+
+    accuracy                           0.85       517
+   macro avg       0.58      0.63      0.59       517
+weighted avg       0.89      0.85      0.87       517
+
+0.8529980657640233
+Start: SGDClassifier 10:49:49
+Trained: 10:49:50
+Predicted: 10:49:50
+[[465  14]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.97      0.96       479
+    relevant       0.44      0.29      0.35        38
+
+    accuracy                           0.92       517
+   macro avg       0.69      0.63      0.65       517
+weighted avg       0.91      0.92      0.91       517
+
+0.9206963249516441
+Start: RidgeClassifier 10:49:50
+Trained: 10:49:51
+Predicted: 10:49:51
+[[452  27]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.94      0.95       479
+    relevant       0.36      0.39      0.38        38
+
+    accuracy                           0.90       517
+   macro avg       0.65      0.67      0.66       517
+weighted avg       0.91      0.90      0.91       517
+
+0.9032882011605415
+Start: PassiveAggressiveClassifier 10:49:51
+Trained: 10:49:52
+Predicted: 10:49:52
+[[457  22]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.95      0.95       479
+    relevant       0.41      0.39      0.40        38
+
+    accuracy                           0.91       517
+   macro avg       0.68      0.67      0.68       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9129593810444874
+RUNNING CONFIG f_lem_bowimp.txt
+Start: MLPClassifier 10:49:52
+Trained: 10:50:00
+Predicted: 10:50:00
+[[472   7]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.53      0.21      0.30        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.60      0.63       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9284332688588007
+Start: KNeighborsClassifier 10:50:00
+Trained: 10:50:01
+Predicted: 10:50:03
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: SVC 10:50:03
+Trained: 10:50:06
+Predicted: 10:50:07
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: NuSVC 10:50:07
+NuSVC has failed
+Start: LinearSVC 10:50:07
+Trained: 10:50:07
+Predicted: 10:50:07
+[[467  12]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.96       479
+    relevant       0.43      0.24      0.31        38
+
+    accuracy                           0.92       517
+   macro avg       0.69      0.61      0.63       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9206963249516441
+Start: GaussianProcessClassifier 10:50:07
+Trained: 10:50:14
+Predicted: 10:50:15
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: RBF 10:50:15
+RBF has failed
+Start: DecisionTreeClassifier 10:50:15
+Trained: 10:50:16
+Predicted: 10:50:16
+[[458  21]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.96      0.95       479
+    relevant       0.42      0.39      0.41        38
+
+    accuracy                           0.91       517
+   macro avg       0.68      0.68      0.68       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9148936170212766
+Start: ExtraTreeClassifier 10:50:16
+Trained: 10:50:16
+Predicted: 10:50:16
+[[461  18]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.33      0.24      0.28        38
+
+    accuracy                           0.91       517
+   macro avg       0.64      0.60      0.61       517
+weighted avg       0.90      0.91      0.90       517
+
+0.9090909090909091
+Start: RandomForestClassifier 10:50:16
+Trained: 10:50:18
+Predicted: 10:50:18
+[[476   3]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.67      0.16      0.26        38
+
+    accuracy                           0.93       517
+   macro avg       0.80      0.58      0.61       517
+weighted avg       0.92      0.93      0.91       517
+
+0.9323017408123792
+Start: AdaBoostClassifier 10:50:18
+Trained: 10:50:20
+Predicted: 10:50:20
+[[473   6]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.99      0.97       479
+    relevant       0.65      0.29      0.40        38
+
+    accuracy                           0.94       517
+   macro avg       0.80      0.64      0.68       517
+weighted avg       0.92      0.94      0.92       517
+
+0.9361702127659575
+Start: ExtraTreeClassifier 10:50:20
+Trained: 10:50:20
+Predicted: 10:50:20
+[[450  29]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.94      0.94       479
+    relevant       0.29      0.32      0.30        38
+
+    accuracy                           0.89       517
+   macro avg       0.62      0.63      0.62       517
+weighted avg       0.90      0.89      0.90       517
+
+0.8936170212765957
+Start: BaggingClassifier 10:50:20
+Trained: 10:50:22
+Predicted: 10:50:23
+[[468  11]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.96       479
+    relevant       0.50      0.29      0.37        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.63      0.66       517
+weighted avg       0.91      0.93      0.92       517
+
+0.9264990328820116
+Start: GradientBoostingClassifier 10:50:23
+Trained: 10:50:32
+Predicted: 10:50:32
+[[473   6]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.99      0.97       479
+    relevant       0.67      0.32      0.43        38
+
+    accuracy                           0.94       517
+   macro avg       0.81      0.65      0.70       517
+weighted avg       0.93      0.94      0.93       517
+
+0.9381044487427466
+Start: VotingClassifier 10:50:32
+VotingClassifier has failed
+Start: GaussianNB 10:50:32
+Trained: 10:50:33
+Predicted: 10:50:33
+[[466  13]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.97      0.95       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.90       517
+   macro avg       0.46      0.49      0.47       517
+weighted avg       0.86      0.90      0.88       517
+
+0.9013539651837524
+Start: MultinomialNB 10:50:33
+Trained: 10:50:33
+Predicted: 10:50:33
+[[478   1]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      1.00      0.97       479
+    relevant       0.92      0.32      0.47        38
+
+    accuracy                           0.95       517
+   macro avg       0.94      0.66      0.72       517
+weighted avg       0.95      0.95      0.94       517
+
+0.9477756286266924
+Start: CategoricalNB 10:50:33
+Trained: 10:50:33
+CategoricalNB has failed
+Start: BernoulliNB 10:50:33
+Trained: 10:50:33
+Predicted: 10:50:33
+[[428  51]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.89      0.92       479
+    relevant       0.20      0.34      0.25        38
+
+    accuracy                           0.85       517
+   macro avg       0.57      0.62      0.59       517
+weighted avg       0.89      0.85      0.87       517
+
+0.8529980657640233
+Start: ComplementNB 10:50:33
+Trained: 10:50:34
+Predicted: 10:50:34
+[[458  21]
+ [ 16  22]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.97      0.96      0.96       479
+    relevant       0.51      0.58      0.54        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.77      0.75       517
+weighted avg       0.93      0.93      0.93       517
+
+0.9284332688588007
+Start: QuadraticDiscriminantAnalysis 10:50:34
+Trained: 10:50:35
+Predicted: 10:50:35
+[[433  46]
+ [ 12  26]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.97      0.90      0.94       479
+    relevant       0.36      0.68      0.47        38
+
+    accuracy                           0.89       517
+   macro avg       0.67      0.79      0.70       517
+weighted avg       0.93      0.89      0.90       517
+
+0.8878143133462283
+Start: LinearDiscriminantAnalysis 10:50:35
+Trained: 10:50:37
+Predicted: 10:50:37
+[[426  53]
+ [ 21  17]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.89      0.92       479
+    relevant       0.24      0.45      0.31        38
+
+    accuracy                           0.86       517
+   macro avg       0.60      0.67      0.62       517
+weighted avg       0.90      0.86      0.88       517
+
+0.8568665377176016
+Start: SGDClassifier 10:50:37
+Trained: 10:50:37
+Predicted: 10:50:37
+[[467  12]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.96       479
+    relevant       0.40      0.21      0.28        38
+
+    accuracy                           0.92       517
+   macro avg       0.67      0.59      0.62       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9187620889748549
+Start: RidgeClassifier 10:50:37
+Trained: 10:50:38
+Predicted: 10:50:38
+[[468  11]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.96       479
+    relevant       0.50      0.29      0.37        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.63      0.66       517
+weighted avg       0.91      0.93      0.92       517
+
+0.9264990328820116
+Start: PassiveAggressiveClassifier 10:50:38
+Trained: 10:50:38
+Predicted: 10:50:38
+[[464  15]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       479
+    relevant       0.38      0.24      0.29        38
+
+    accuracy                           0.91       517
+   macro avg       0.66      0.60      0.62       517
+weighted avg       0.90      0.91      0.91       517
+
+0.9148936170212766
+RUNNING CONFIG f_lem_tfidf.txt
+Start: MLPClassifier 10:50:38
+Trained: 10:51:21
+Predicted: 10:51:21
+[[469  10]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.98      0.96       479
+    relevant       0.47      0.24      0.32        38
+
+    accuracy                           0.92       517
+   macro avg       0.71      0.61      0.64       517
+weighted avg       0.91      0.92      0.91       517
+
+0.9245647969052224
+Start: KNeighborsClassifier 10:51:21
+Trained: 10:51:23
+Predicted: 10:51:42
+[[476   3]
+ [ 35   3]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.50      0.08      0.14        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.54      0.55       517
+weighted avg       0.90      0.93      0.90       517
+
+0.9264990328820116
+Start: SVC 10:51:42
+Trained: 10:52:22
+Predicted: 10:52:31
+[[479   0]
+ [ 35   3]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       1.00      0.08      0.15        38
+
+    accuracy                           0.93       517
+   macro avg       0.97      0.54      0.56       517
+weighted avg       0.94      0.93      0.90       517
+
+0.9323017408123792
+Start: NuSVC 10:52:31
+NuSVC has failed
+Start: LinearSVC 10:52:31
+Trained: 10:52:31
+Predicted: 10:52:31
+[[474   5]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.97       479
+    relevant       0.67      0.26      0.38        38
+
+    accuracy                           0.94       517
+   macro avg       0.81      0.63      0.67       517
+weighted avg       0.92      0.94      0.92       517
+
+0.9361702127659575
+Start: GaussianProcessClassifier 10:52:31
+Trained: 10:53:06
+Predicted: 10:53:14
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: RBF 10:53:14
+RBF has failed
+Start: DecisionTreeClassifier 10:53:14
+Trained: 10:53:25
+Predicted: 10:53:25
+[[460  19]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.96      0.95       479
+    relevant       0.41      0.34      0.37        38
+
+    accuracy                           0.91       517
+   macro avg       0.68      0.65      0.66       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9148936170212766
+Start: ExtraTreeClassifier 10:53:25
+Trained: 10:53:26
+Predicted: 10:53:26
+[[445  34]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.93      0.93       479
+    relevant       0.15      0.16      0.15        38
+
+    accuracy                           0.87       517
+   macro avg       0.54      0.54      0.54       517
+weighted avg       0.88      0.87      0.87       517
+
+0.8723404255319149
+Start: RandomForestClassifier 10:53:26
+Trained: 10:53:43
+Predicted: 10:53:43
+[[479   0]
+ [ 37   1]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       1.00      0.03      0.05        38
+
+    accuracy                           0.93       517
+   macro avg       0.96      0.51      0.51       517
+weighted avg       0.93      0.93      0.90       517
+
+0.9284332688588007
+Start: AdaBoostClassifier 10:53:43
+Trained: 10:54:15
+Predicted: 10:54:16
+[[469  10]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.96       479
+    relevant       0.55      0.32      0.40        38
+
+    accuracy                           0.93       517
+   macro avg       0.75      0.65      0.68       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9303675048355899
+Start: ExtraTreeClassifier 10:54:16
+Trained: 10:54:16
+Predicted: 10:54:16
+[[458  21]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.34      0.29      0.31        38
+
+    accuracy                           0.91       517
+   macro avg       0.64      0.62      0.63       517
+weighted avg       0.90      0.91      0.90       517
+
+0.90715667311412
+Start: BaggingClassifier 10:54:16
+Trained: 10:54:26
+Predicted: 10:54:26
+[[473   6]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.60      0.24      0.34        38
+
+    accuracy                           0.93       517
+   macro avg       0.77      0.61      0.65       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9323017408123792
+Start: GradientBoostingClassifier 10:54:26
+Trained: 10:56:09
+Predicted: 10:56:09
+[[475   4]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.97       479
+    relevant       0.71      0.26      0.38        38
+
+    accuracy                           0.94       517
+   macro avg       0.83      0.63      0.68       517
+weighted avg       0.93      0.94      0.92       517
+
+0.9381044487427466
+Start: VotingClassifier 10:56:10
+VotingClassifier has failed
+Start: GaussianNB 10:56:10
+Trained: 10:56:10
+Predicted: 10:56:10
+[[406  73]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.85      0.89       479
+    relevant       0.11      0.24      0.15        38
+
+    accuracy                           0.80       517
+   macro avg       0.52      0.54      0.52       517
+weighted avg       0.87      0.80      0.83       517
+
+0.8027079303675049
+Start: MultinomialNB 10:56:10
+Trained: 10:56:10
+Predicted: 10:56:10
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: CategoricalNB 10:56:10
+Trained: 10:56:11
+CategoricalNB has failed
+Start: BernoulliNB 10:56:11
+Trained: 10:56:11
+Predicted: 10:56:11
+[[472   7]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.22      0.05      0.09        38
+
+    accuracy                           0.92       517
+   macro avg       0.58      0.52      0.52       517
+weighted avg       0.88      0.92      0.89       517
+
+0.9168278529980658
+Start: ComplementNB 10:56:11
+Trained: 10:56:11
+Predicted: 10:56:11
+[[476   3]
+ [ 37   1]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.25      0.03      0.05        38
+
+    accuracy                           0.92       517
+   macro avg       0.59      0.51      0.50       517
+weighted avg       0.88      0.92      0.89       517
+
+0.9226305609284333
+Start: QuadraticDiscriminantAnalysis 10:56:11
+Trained: 10:56:23
+Predicted: 10:56:24
+[[ 58 421]
+ [  0  38]]
+              precision    recall  f1-score   support
+
+  irrelevant       1.00      0.12      0.22       479
+    relevant       0.08      1.00      0.15        38
+
+    accuracy                           0.19       517
+   macro avg       0.54      0.56      0.18       517
+weighted avg       0.93      0.19      0.21       517
+
+0.18568665377176016
+Start: LinearDiscriminantAnalysis 10:56:24
+Trained: 10:56:34
+Predicted: 10:56:34
+[[447  32]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.93       479
+    relevant       0.18      0.18      0.18        38
+
+    accuracy                           0.88       517
+   macro avg       0.56      0.56      0.56       517
+weighted avg       0.88      0.88      0.88       517
+
+0.8781431334622823
+Start: SGDClassifier 10:56:34
+Trained: 10:56:36
+Predicted: 10:56:36
+[[472   7]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.53      0.21      0.30        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.60      0.63       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9284332688588007
+Start: RidgeClassifier 10:56:36
+Trained: 10:56:37
+Predicted: 10:56:37
+[[475   4]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.97       479
+    relevant       0.69      0.24      0.35        38
+
+    accuracy                           0.94       517
+   macro avg       0.82      0.61      0.66       517
+weighted avg       0.92      0.94      0.92       517
+
+0.9361702127659575
+Start: PassiveAggressiveClassifier 10:56:37
+Trained: 10:56:39
+Predicted: 10:56:39
+[[471   8]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.98      0.96       479
+    relevant       0.50      0.21      0.30        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.60      0.63       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9264990328820116
+RUNNING CONFIG f_stem_bow.txt
+Start: MLPClassifier 10:56:39
+Trained: 10:57:44
+Predicted: 10:57:44
+[[464  15]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.96       479
+    relevant       0.40      0.26      0.32        38
+
+    accuracy                           0.92       517
+   macro avg       0.67      0.62      0.64       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9168278529980658
+Start: KNeighborsClassifier 10:57:44
+Trained: 10:57:45
+Predicted: 10:58:00
+[[476   3]
+ [ 34   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.57      0.11      0.18        38
+
+    accuracy                           0.93       517
+   macro avg       0.75      0.55      0.57       517
+weighted avg       0.91      0.93      0.90       517
+
+0.9284332688588007
+Start: SVC 10:58:00
+Trained: 10:58:20
+Predicted: 10:58:25
+[[479   0]
+ [ 37   1]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       1.00      0.03      0.05        38
+
+    accuracy                           0.93       517
+   macro avg       0.96      0.51      0.51       517
+weighted avg       0.93      0.93      0.90       517
+
+0.9284332688588007
+Start: NuSVC 10:58:25
+NuSVC has failed
+Start: LinearSVC 10:58:25
+Trained: 10:58:25
+Predicted: 10:58:25
+[[460  19]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.96      0.95       479
+    relevant       0.41      0.34      0.37        38
+
+    accuracy                           0.91       517
+   macro avg       0.68      0.65      0.66       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9148936170212766
+Start: GaussianProcessClassifier 10:58:25
+Trained: 10:58:53
+Predicted: 10:59:00
+[[479   0]
+ [ 34   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.97       479
+    relevant       1.00      0.11      0.19        38
+
+    accuracy                           0.93       517
+   macro avg       0.97      0.55      0.58       517
+weighted avg       0.94      0.93      0.91       517
+
+0.9342359767891683
+Start: RBF 10:59:00
+RBF has failed
+Start: DecisionTreeClassifier 10:59:00
+Trained: 10:59:04
+Predicted: 10:59:04
+[[454  25]
+ [ 22  16]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.95      0.95       479
+    relevant       0.39      0.42      0.41        38
+
+    accuracy                           0.91       517
+   macro avg       0.67      0.68      0.68       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9090909090909091
+Start: ExtraTreeClassifier 10:59:04
+Trained: 10:59:05
+Predicted: 10:59:05
+[[436  43]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.91      0.92       479
+    relevant       0.16      0.21      0.18        38
+
+    accuracy                           0.86       517
+   macro avg       0.55      0.56      0.55       517
+weighted avg       0.88      0.86      0.87       517
+
+0.8588007736943907
+Start: RandomForestClassifier 10:59:05
+Trained: 10:59:13
+Predicted: 10:59:13
+[[477   2]
+ [ 34   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.67      0.11      0.18        38
+
+    accuracy                           0.93       517
+   macro avg       0.80      0.55      0.57       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9303675048355899
+Start: AdaBoostClassifier 10:59:13
+Trained: 10:59:28
+Predicted: 10:59:28
+[[468  11]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.96       479
+    relevant       0.54      0.34      0.42        38
+
+    accuracy                           0.93       517
+   macro avg       0.75      0.66      0.69       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9303675048355899
+Start: ExtraTreeClassifier 10:59:28
+Trained: 10:59:28
+Predicted: 10:59:28
+[[432  47]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.90      0.92       479
+    relevant       0.22      0.34      0.27        38
+
+    accuracy                           0.86       517
+   macro avg       0.58      0.62      0.59       517
+weighted avg       0.89      0.86      0.87       517
+
+0.8607350096711799
+Start: BaggingClassifier 10:59:28
+Trained: 10:59:33
+Predicted: 10:59:33
+[[467  12]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.97      0.96       479
+    relevant       0.48      0.29      0.36        38
+
+    accuracy                           0.92       517
+   macro avg       0.71      0.63      0.66       517
+weighted avg       0.91      0.92      0.92       517
+
+0.9245647969052224
+Start: GradientBoostingClassifier 10:59:33
+Trained: 11:00:17
+Predicted: 11:00:17
+[[473   6]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.57      0.21      0.31        38
+
+    accuracy                           0.93       517
+   macro avg       0.76      0.60      0.64       517
+weighted avg       0.91      0.93      0.92       517
+
+0.9303675048355899
+Start: VotingClassifier 11:00:17
+VotingClassifier has failed
+Start: GaussianNB 11:00:17
+Trained: 11:00:17
+Predicted: 11:00:17
+[[383  96]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.80      0.86       479
+    relevant       0.07      0.18      0.10        38
+
+    accuracy                           0.75       517
+   macro avg       0.50      0.49      0.48       517
+weighted avg       0.86      0.75      0.80       517
+
+0.7543520309477756
+Start: MultinomialNB 11:00:17
+Trained: 11:00:17
+Predicted: 11:00:17
+[[475   4]
+ [ 34   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.50      0.11      0.17        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.55      0.57       517
+weighted avg       0.90      0.93      0.90       517
+
+0.9264990328820116
+Start: CategoricalNB 11:00:17
+Trained: 11:00:18
+CategoricalNB has failed
+Start: BernoulliNB 11:00:18
+Trained: 11:00:19
+Predicted: 11:00:19
+[[471   8]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.98      0.96       479
+    relevant       0.20      0.05      0.08        38
+
+    accuracy                           0.91       517
+   macro avg       0.56      0.52      0.52       517
+weighted avg       0.88      0.91      0.89       517
+
+0.9148936170212766
+Start: ComplementNB 11:00:19
+Trained: 11:00:19
+Predicted: 11:00:19
+[[464  15]
+ [ 33   5]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.97      0.95       479
+    relevant       0.25      0.13      0.17        38
+
+    accuracy                           0.91       517
+   macro avg       0.59      0.55      0.56       517
+weighted avg       0.88      0.91      0.89       517
+
+0.90715667311412
+Start: QuadraticDiscriminantAnalysis 11:00:19
+Trained: 11:00:27
+Predicted: 11:00:27
+[[ 75 404]
+ [  0  38]]
+              precision    recall  f1-score   support
+
+  irrelevant       1.00      0.16      0.27       479
+    relevant       0.09      1.00      0.16        38
+
+    accuracy                           0.22       517
+   macro avg       0.54      0.58      0.21       517
+weighted avg       0.93      0.22      0.26       517
+
+0.218568665377176
+Start: LinearDiscriminantAnalysis 11:00:27
+Trained: 11:00:36
+Predicted: 11:00:36
+[[311 168]
+ [ 14  24]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.96      0.65      0.77       479
+    relevant       0.12      0.63      0.21        38
+
+    accuracy                           0.65       517
+   macro avg       0.54      0.64      0.49       517
+weighted avg       0.90      0.65      0.73       517
+
+0.6479690522243714
+Start: SGDClassifier 11:00:36
+Trained: 11:00:37
+Predicted: 11:00:37
+[[458  21]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.32      0.26      0.29        38
+
+    accuracy                           0.91       517
+   macro avg       0.63      0.61      0.62       517
+weighted avg       0.90      0.91      0.90       517
+
+0.9052224371373307
+Start: RidgeClassifier 11:00:37
+Trained: 11:00:38
+Predicted: 11:00:38
+[[449  30]
+ [ 24  14]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.94      0.94       479
+    relevant       0.32      0.37      0.34        38
+
+    accuracy                           0.90       517
+   macro avg       0.63      0.65      0.64       517
+weighted avg       0.90      0.90      0.90       517
+
+0.8955512572533849
+Start: PassiveAggressiveClassifier 11:00:38
+Trained: 11:00:39
+Predicted: 11:00:39
+[[458  21]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.96      0.95       479
+    relevant       0.38      0.34      0.36        38
+
+    accuracy                           0.91       517
+   macro avg       0.67      0.65      0.66       517
+weighted avg       0.91      0.91      0.91       517
+
+0.9110251450676983
+RUNNING CONFIG f_stem_bowimp.txt
+Start: MLPClassifier 11:00:39
+Trained: 11:00:48
+Predicted: 11:00:49
+[[469  10]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.98      0.96       479
+    relevant       0.41      0.18      0.25        38
+
+    accuracy                           0.92       517
+   macro avg       0.67      0.58      0.61       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9206963249516441
+Start: KNeighborsClassifier 11:00:49
+Trained: 11:00:49
+Predicted: 11:00:51
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: SVC 11:00:51
+Trained: 11:00:54
+Predicted: 11:00:55
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: NuSVC 11:00:55
+NuSVC has failed
+Start: LinearSVC 11:00:55
+Trained: 11:00:55
+Predicted: 11:00:55
+[[458  21]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.34      0.29      0.31        38
+
+    accuracy                           0.91       517
+   macro avg       0.64      0.62      0.63       517
+weighted avg       0.90      0.91      0.90       517
+
+0.90715667311412
+Start: GaussianProcessClassifier 11:00:55
+Trained: 11:01:01
+Predicted: 11:01:02
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: RBF 11:01:02
+RBF has failed
+Start: DecisionTreeClassifier 11:01:02
+Trained: 11:01:03
+Predicted: 11:01:03
+[[454  25]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.95      0.95       479
+    relevant       0.34      0.34      0.34        38
+
+    accuracy                           0.90       517
+   macro avg       0.64      0.64      0.64       517
+weighted avg       0.90      0.90      0.90       517
+
+0.9032882011605415
+Start: ExtraTreeClassifier 11:01:03
+Trained: 11:01:03
+Predicted: 11:01:03
+[[448  31]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.94      0.93       479
+    relevant       0.16      0.16      0.16        38
+
+    accuracy                           0.88       517
+   macro avg       0.55      0.55      0.55       517
+weighted avg       0.88      0.88      0.88       517
+
+0.8781431334622823
+Start: RandomForestClassifier 11:01:03
+Trained: 11:01:04
+Predicted: 11:01:04
+[[475   4]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.60      0.16      0.25        38
+
+    accuracy                           0.93       517
+   macro avg       0.77      0.57      0.61       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9303675048355899
+Start: AdaBoostClassifier 11:01:04
+Trained: 11:01:06
+Predicted: 11:01:06
+[[465  14]
+ [ 30   8]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       479
+    relevant       0.36      0.21      0.27        38
+
+    accuracy                           0.91       517
+   macro avg       0.65      0.59      0.61       517
+weighted avg       0.90      0.91      0.90       517
+
+0.9148936170212766
+Start: ExtraTreeClassifier 11:01:06
+Trained: 11:01:06
+Predicted: 11:01:06
+[[454  25]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.95      0.94       479
+    relevant       0.22      0.18      0.20        38
+
+    accuracy                           0.89       517
+   macro avg       0.58      0.57      0.57       517
+weighted avg       0.88      0.89      0.89       517
+
+0.8916827852998066
+Start: BaggingClassifier 11:01:06
+Trained: 11:01:08
+Predicted: 11:01:08
+[[465  14]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.96       479
+    relevant       0.42      0.26      0.32        38
+
+    accuracy                           0.92       517
+   macro avg       0.68      0.62      0.64       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9187620889748549
+Start: GradientBoostingClassifier 11:01:08
+Trained: 11:01:13
+Predicted: 11:01:13
+[[472   7]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.46      0.16      0.24        38
+
+    accuracy                           0.92       517
+   macro avg       0.70      0.57      0.60       517
+weighted avg       0.90      0.92      0.91       517
+
+0.9245647969052224
+Start: VotingClassifier 11:01:13
+VotingClassifier has failed
+Start: GaussianNB 11:01:13
+Trained: 11:01:13
+Predicted: 11:01:13
+[[461  18]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.96      0.94       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.89       517
+   macro avg       0.46      0.48      0.47       517
+weighted avg       0.86      0.89      0.87       517
+
+0.8916827852998066
+Start: MultinomialNB 11:01:13
+Trained: 11:01:14
+Predicted: 11:01:14
+[[471   8]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.98      0.97       479
+    relevant       0.60      0.32      0.41        38
+
+    accuracy                           0.93       517
+   macro avg       0.77      0.65      0.69       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9342359767891683
+Start: CategoricalNB 11:01:14
+Trained: 11:01:14
+CategoricalNB has failed
+Start: BernoulliNB 11:01:14
+Trained: 11:01:14
+Predicted: 11:01:14
+[[425  54]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.89      0.91       479
+    relevant       0.18      0.32      0.23        38
+
+    accuracy                           0.85       517
+   macro avg       0.56      0.60      0.57       517
+weighted avg       0.89      0.85      0.86       517
+
+0.8452611218568665
+Start: ComplementNB 11:01:14
+Trained: 11:01:14
+Predicted: 11:01:14
+[[440  39]
+ [ 15  23]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.97      0.92      0.94       479
+    relevant       0.37      0.61      0.46        38
+
+    accuracy                           0.90       517
+   macro avg       0.67      0.76      0.70       517
+weighted avg       0.92      0.90      0.91       517
+
+0.8955512572533849
+Start: QuadraticDiscriminantAnalysis 11:01:14
+Trained: 11:01:15
+Predicted: 11:01:15
+[[454  25]
+ [ 17  21]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.96      0.95      0.96       479
+    relevant       0.46      0.55      0.50        38
+
+    accuracy                           0.92       517
+   macro avg       0.71      0.75      0.73       517
+weighted avg       0.93      0.92      0.92       517
+
+0.9187620889748549
+Start: LinearDiscriminantAnalysis 11:01:15
+Trained: 11:01:17
+Predicted: 11:01:17
+[[444  35]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.93       479
+    relevant       0.20      0.24      0.22        38
+
+    accuracy                           0.88       517
+   macro avg       0.57      0.58      0.58       517
+weighted avg       0.88      0.88      0.88       517
+
+0.8762088974854932
+Start: SGDClassifier 11:01:17
+Trained: 11:01:17
+Predicted: 11:01:17
+[[458  21]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.32      0.26      0.29        38
+
+    accuracy                           0.91       517
+   macro avg       0.63      0.61      0.62       517
+weighted avg       0.90      0.91      0.90       517
+
+0.9052224371373307
+Start: RidgeClassifier 11:01:17
+Trained: 11:01:17
+Predicted: 11:01:18
+[[464  15]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       479
+    relevant       0.38      0.24      0.29        38
+
+    accuracy                           0.91       517
+   macro avg       0.66      0.60      0.62       517
+weighted avg       0.90      0.91      0.91       517
+
+0.9148936170212766
+Start: PassiveAggressiveClassifier 11:01:18
+Trained: 11:01:18
+Predicted: 11:01:18
+[[450  29]
+ [ 25  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.94      0.94       479
+    relevant       0.31      0.34      0.33        38
+
+    accuracy                           0.90       517
+   macro avg       0.63      0.64      0.63       517
+weighted avg       0.90      0.90      0.90       517
+
+0.8955512572533849
+RUNNING CONFIG f_stem_tfidf.txt
+Start: MLPClassifier 11:01:18
+Trained: 11:01:59
+Predicted: 11:01:59
+[[462  17]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.29      0.18      0.23        38
+
+    accuracy                           0.91       517
+   macro avg       0.61      0.57      0.59       517
+weighted avg       0.89      0.91      0.90       517
+
+0.90715667311412
+Start: KNeighborsClassifier 11:01:59
+Trained: 11:02:00
+Predicted: 11:02:15
+[[476   3]
+ [ 33   5]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.62      0.13      0.22        38
+
+    accuracy                           0.93       517
+   macro avg       0.78      0.56      0.59       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9303675048355899
+Start: SVC 11:02:15
+Trained: 11:02:46
+Predicted: 11:02:53
+[[478   1]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.67      0.05      0.10        38
+
+    accuracy                           0.93       517
+   macro avg       0.80      0.53      0.53       517
+weighted avg       0.91      0.93      0.90       517
+
+0.9284332688588007
+Start: NuSVC 11:02:53
+NuSVC has failed
+Start: LinearSVC 11:02:53
+Trained: 11:02:53
+Predicted: 11:02:53
+[[473   6]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.54      0.18      0.27        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.59      0.62       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9284332688588007
+Start: GaussianProcessClassifier 11:02:53
+Trained: 11:03:22
+Predicted: 11:03:29
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: RBF 11:03:29
+RBF has failed
+Start: DecisionTreeClassifier 11:03:29
+Trained: 11:03:33
+Predicted: 11:03:33
+[[459  20]
+ [ 27  11]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       479
+    relevant       0.35      0.29      0.32        38
+
+    accuracy                           0.91       517
+   macro avg       0.65      0.62      0.64       517
+weighted avg       0.90      0.91      0.90       517
+
+0.9090909090909091
+Start: ExtraTreeClassifier 11:03:34
+Trained: 11:03:34
+Predicted: 11:03:34
+[[457  22]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.95      0.95       479
+    relevant       0.29      0.24      0.26        38
+
+    accuracy                           0.90       517
+   macro avg       0.62      0.60      0.60       517
+weighted avg       0.89      0.90      0.90       517
+
+0.9013539651837524
+Start: RandomForestClassifier 11:03:34
+Trained: 11:03:43
+Predicted: 11:03:43
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: AdaBoostClassifier 11:03:43
+Trained: 11:03:57
+Predicted: 11:03:58
+[[471   8]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.98      0.96       479
+    relevant       0.53      0.24      0.33        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.61      0.64       517
+weighted avg       0.91      0.93      0.92       517
+
+0.9284332688588007
+Start: ExtraTreeClassifier 11:03:58
+Trained: 11:03:58
+Predicted: 11:03:58
+[[454  25]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.95      0.94       479
+    relevant       0.22      0.18      0.20        38
+
+    accuracy                           0.89       517
+   macro avg       0.58      0.57      0.57       517
+weighted avg       0.88      0.89      0.89       517
+
+0.8916827852998066
+Start: BaggingClassifier 11:03:58
+Trained: 11:04:04
+Predicted: 11:04:04
+[[470   9]
+ [ 28  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.98      0.96       479
+    relevant       0.53      0.26      0.35        38
+
+    accuracy                           0.93       517
+   macro avg       0.74      0.62      0.66       517
+weighted avg       0.91      0.93      0.92       517
+
+0.9284332688588007
+Start: GradientBoostingClassifier 11:04:04
+Trained: 11:04:48
+Predicted: 11:04:48
+[[473   6]
+ [ 29   9]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.60      0.24      0.34        38
+
+    accuracy                           0.93       517
+   macro avg       0.77      0.61      0.65       517
+weighted avg       0.92      0.93      0.92       517
+
+0.9323017408123792
+Start: VotingClassifier 11:04:48
+VotingClassifier has failed
+Start: GaussianNB 11:04:48
+Trained: 11:04:49
+Predicted: 11:04:49
+[[383  96]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.80      0.86       479
+    relevant       0.06      0.16      0.09        38
+
+    accuracy                           0.75       517
+   macro avg       0.49      0.48      0.47       517
+weighted avg       0.86      0.75      0.80       517
+
+0.7524177949709865
+Start: MultinomialNB 11:04:49
+Trained: 11:04:49
+Predicted: 11:04:49
+[[479   0]
+ [ 38   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      1.00      0.96       479
+    relevant       0.00      0.00      0.00        38
+
+    accuracy                           0.93       517
+   macro avg       0.46      0.50      0.48       517
+weighted avg       0.86      0.93      0.89       517
+
+0.9264990328820116
+Start: CategoricalNB 11:04:49
+Trained: 11:04:50
+CategoricalNB has failed
+Start: BernoulliNB 11:04:50
+Trained: 11:04:50
+Predicted: 11:04:50
+[[471   8]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.98      0.96       479
+    relevant       0.20      0.05      0.08        38
+
+    accuracy                           0.91       517
+   macro avg       0.56      0.52      0.52       517
+weighted avg       0.88      0.91      0.89       517
+
+0.9148936170212766
+Start: ComplementNB 11:04:50
+Trained: 11:04:50
+Predicted: 11:04:50
+[[475   4]
+ [ 36   2]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.99      0.96       479
+    relevant       0.33      0.05      0.09        38
+
+    accuracy                           0.92       517
+   macro avg       0.63      0.52      0.53       517
+weighted avg       0.89      0.92      0.90       517
+
+0.9226305609284333
+Start: QuadraticDiscriminantAnalysis 11:04:50
+Trained: 11:04:56
+Predicted: 11:04:56
+[[ 98 381]
+ [  0  38]]
+              precision    recall  f1-score   support
+
+  irrelevant       1.00      0.20      0.34       479
+    relevant       0.09      1.00      0.17        38
+
+    accuracy                           0.26       517
+   macro avg       0.55      0.60      0.25       517
+weighted avg       0.93      0.26      0.33       517
+
+0.26305609284332687
+Start: LinearDiscriminantAnalysis 11:04:56
+Trained: 11:05:05
+Predicted: 11:05:05
+[[354 125]
+ [ 23  15]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.74      0.83       479
+    relevant       0.11      0.39      0.17        38
+
+    accuracy                           0.71       517
+   macro avg       0.52      0.57      0.50       517
+weighted avg       0.88      0.71      0.78       517
+
+0.7137330754352031
+Start: SGDClassifier 11:05:05
+Trained: 11:05:05
+Predicted: 11:05:05
+[[472   7]
+ [ 31   7]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.99      0.96       479
+    relevant       0.50      0.18      0.27        38
+
+    accuracy                           0.93       517
+   macro avg       0.72      0.58      0.62       517
+weighted avg       0.91      0.93      0.91       517
+
+0.9264990328820116
+Start: RidgeClassifier 11:05:05
+Trained: 11:05:06
+Predicted: 11:05:06
+[[478   1]
+ [ 32   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      1.00      0.97       479
+    relevant       0.86      0.16      0.27        38
+
+    accuracy                           0.94       517
+   macro avg       0.90      0.58      0.62       517
+weighted avg       0.93      0.94      0.92       517
+
+0.9361702127659575
+Start: PassiveAggressiveClassifier 11:05:06
+Trained: 11:05:07
+Predicted: 11:05:07
+[[465  14]
+ [ 26  12]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.95      0.97      0.96       479
+    relevant       0.46      0.32      0.37        38
+
+    accuracy                           0.92       517
+   macro avg       0.70      0.64      0.67       517
+weighted avg       0.91      0.92      0.92       517
+
+0.9226305609284333
+Bag of Words Lemmatization
+FAILED
+tests/rcpm/data/sources/test_filereader.py:31 (test_main)
+def test_main() -> None:
+
+
+>       run()
+
+tests/rcpm/data/sources/test_filereader.py:35:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def run() -> None:
+        # init
+        sc = ReproductionAndTraining()
+
+        # this checks the commit information
+        sc.check()
+
+        f_lem_bow = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_words,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_lem_bowimp = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_important_words_lem,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_lem_tfidf = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.tf_idf,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+
+        f_stem_bow = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.bag_of_words,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_stem_bowimp = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.bag_of_important_words_stem,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_stem_tfidf = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.tf_idf,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+
+        # Test different classifiers
+        sc.classifier(f_lem_bow,
+                      out_txt="fd_lem_bow.txt"), sc
+
+        sc.classifier(f_lem_bowimp,
+                      out_txt="f_lem_bowimp.txt"), sc
+
+        sc.classifier(f_lem_tfidf,
+                      out_txt="f_lem_tfidf.txt"), sc
+
+        sc.classifier(f_stem_bow,
+                      out_txt="f_stem_bow.txt"), sc
+
+        sc.classifier(f_stem_bowimp,
+                      out_txt="f_stem_bowimp.txt"), sc
+
+        sc.classifier(f_stem_tfidf,
+                      out_txt="f_stem_tfidf.txt"), sc
+
+
+
+        # the following lets you test different classifiers (takes a long time!)
+        # print("TF/IDF Token")
+        # sc.classifier(pre_fn=sc.tokenize, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("TF/IDF Stemming")
+        # sc.classifier(pre_fn=sc.stem_text, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("TF/IDF Lemmatization")
+        # sc.classifier(pre_fn=sc.lemmatize_text, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        #
+        # print("Bag of Words Token")
+        # sc.classifier(pre_fn=sc.tokenize, feature_fn=sc.bag_of_words, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("Bag of Words Stemming")
+        # sc.classifier(pre_fn=sc.stem_text, feature_fn=sc.bag_of_words, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+
+        # This is the reproduction - see notes for what
+
+        # Best known Classifier
+        print("Bag of Words Lemmatization")
+        # # Original version with all relevant commits
+>       return sc.classifier(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_words,
+                             relevant_group=sc.relevant_commits,
+                             labels=["relevant" for i in range(len(sc.relevant_commits))],
+                             out_txt="filtered_commits.txt"), sc
+E       TypeError: classifier() got an unexpected keyword argument 'pre_fn'
+
+src/reproduce/reproduce.py:106: TypeError
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+
+=================================== FAILURES ===================================
+__________________________________ test_main ___________________________________
+
+    def test_main() -> None:
+
+
+>       run()
+
+tests/rcpm/data/sources/test_filereader.py:35:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def run() -> None:
+        # init
+        sc = ReproductionAndTraining()
+
+        # this checks the commit information
+        sc.check()
+
+        f_lem_bow = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_words,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_lem_bowimp = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_important_words_lem,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_lem_tfidf = sc.featurize(pre_fn=sc.lemmatize_text, feature_fn=sc.tf_idf,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+
+        f_stem_bow = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.bag_of_words,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_stem_bowimp = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.bag_of_important_words_stem,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+        f_stem_tfidf = sc.featurize(pre_fn=sc.stem_text, feature_fn=sc.tf_idf,
+                     relevant_group=sc.relevant_commits,
+                     labels=["relevant" for i in range(len(sc.relevant_commits))])
+
+        # Test different classifiers
+        sc.classifier(f_lem_bow,
+                      out_txt="fd_lem_bow.txt"), sc
+
+        sc.classifier(f_lem_bowimp,
+                      out_txt="f_lem_bowimp.txt"), sc
+
+        sc.classifier(f_lem_tfidf,
+                      out_txt="f_lem_tfidf.txt"), sc
+
+        sc.classifier(f_stem_bow,
+                      out_txt="f_stem_bow.txt"), sc
+
+        sc.classifier(f_stem_bowimp,
+                      out_txt="f_stem_bowimp.txt"), sc
+
+        sc.classifier(f_stem_tfidf,
+                      out_txt="f_stem_tfidf.txt"), sc
+
+
+
+        # the following lets you test different classifiers (takes a long time!)
+        # print("TF/IDF Token")
+        # sc.classifier(pre_fn=sc.tokenize, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("TF/IDF Stemming")
+        # sc.classifier(pre_fn=sc.stem_text, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("TF/IDF Lemmatization")
+        # sc.classifier(pre_fn=sc.lemmatize_text, feature_fn=sc.tf_idf, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        #
+        # print("Bag of Words Token")
+        # sc.classifier(pre_fn=sc.tokenize, feature_fn=sc.bag_of_words, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+        # print("Bag of Words Stemming")
+        # sc.classifier(pre_fn=sc.stem_text, feature_fn=sc.bag_of_words, relevant_group=sc.relevant_commits,
+        #               labels=["relevant" for i in range(len(sc.relevant_commits))],
+        #               out_txt="filtered_commits.txt")
+
+        # This is the reproduction - see notes for what
+
+        # Best known Classifier
+        print("Bag of Words Lemmatization")
+        # # Original version with all relevant commits
+>       return sc.classifier(pre_fn=sc.lemmatize_text, feature_fn=sc.bag_of_words,
+                             relevant_group=sc.relevant_commits,
+                             labels=["relevant" for i in range(len(sc.relevant_commits))],
+                             out_txt="filtered_commits.txt"), sc
+E       TypeError: classifier() got an unexpected keyword argument 'pre_fn'
+
+src/reproduce/reproduce.py:106: TypeError
+=============================== warnings summary ===============================
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:34
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:34: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    method='lar', copy_X=True, eps=np.finfo(np.float).eps,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:164
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:164: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    method='lar', copy_X=True, eps=np.finfo(np.float).eps,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:281
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:281: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    eps=np.finfo(np.float).eps, copy_Gram=True, verbose=0,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:865
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:865: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    eps=np.finfo(np.float).eps, copy_X=True, fit_path=True,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1121
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1121: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    eps=np.finfo(np.float).eps, copy_X=True, fit_path=True,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1149
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1149: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    eps=np.finfo(np.float).eps, positive=False):
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1379
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1379: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    max_n_alphas=1000, n_jobs=None, eps=np.finfo(np.float).eps,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1621
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1621: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    max_n_alphas=1000, n_jobs=None, eps=np.finfo(np.float).eps,
+
+../../../../.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1755
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_least_angle.py:1755: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    eps=np.finfo(np.float).eps, copy_X=True, positive=False):
+
+../../../../.local/lib/python3.8/site-packages/sklearn/decomposition/_lda.py:28
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/decomposition/_lda.py:28: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    EPS = np.finfo(np.float).eps
+
+../../../../.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:33
+../../../../.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:33
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:33: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    from ._gradient_boosting import predict_stages
+
+../../../../.local/lib/python3.8/site-packages/sklearn/feature_extraction/image.py:172
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/feature_extraction/image.py:172: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    dtype=np.int):
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/utils/validation.py:67: FutureWarning: Pass voting=('rf', RandomForestClassifier()), weights=('gnb', GaussianNB()) as keyword args. From version 0.25 passing these as positional arguments will result in an error
+    warnings.warn("Pass {} as keyword args. From version 0.25 "
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/preprocessing/_label.py:775: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    y = np.array(y > threshold, dtype=np.int)
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/neighbors/_base.py:1148: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    self._y = np.empty(y.shape, dtype=np.int)
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/svm/_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+    warnings.warn("Liblinear failed to converge, increase "
+
+tests/rcpm/data/sources/test_filereader.py: 30 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/linear_model/_base.py:309: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    indices = (scores > 0).astype(np.int)
+
+tests/rcpm/data/sources/test_filereader.py: 978 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/tree/_classes.py:190: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    y_encoded = np.zeros(y.shape, dtype=np.int)
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py:569: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    y_store_unique_indices = np.zeros(y.shape, dtype=np.int)
+
+tests/rcpm/data/sources/test_filereader.py: 18 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_base.py:183: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    dtype=np.int)
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_bagging.py:314: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    elif isinstance(self.max_features, np.float):
+
+tests/rcpm/data/sources/test_filereader.py: 60 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_bagging.py:40: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    indices = sample_without_replacement(n_population, n_samples,
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:319: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    dtype=np.object)
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:524: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    sample_mask = np.ones((n_samples, ), dtype=np.bool)
+
+tests/rcpm/data/sources/test_filereader.py: 600 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/ensemble/_gb.py:174: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    assert sample_mask.dtype == np.bool
+
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+tests/rcpm/data/sources/test_filereader.py::test_main
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/discriminant_analysis.py:715: UserWarning: Variables are collinear
+    warnings.warn("Variables are collinear")
+
+tests/rcpm/data/sources/test_filereader.py: 11 warnings
+  /home/oliver/.local/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+    _warn_prf(average, modifier, msg_start, len(result))
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED tests/rcpm/data/sources/test_filereader.py::test_main - TypeError: cla...
+================ 1 failed, 1760 warnings in 1447.96s (0:24:07) =================
+
+Process finished with exit code 1
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed
+
+Assertion failed

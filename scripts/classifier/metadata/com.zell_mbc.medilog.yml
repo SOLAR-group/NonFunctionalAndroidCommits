@@ -1,0 +1,115 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: Thomas Zell
+AuthorEmail: medilog@zell-mbc.com
+AuthorWebSite: https://zell-mbc.com/
+WebSite: https://zell-mbc.com/en/privacy/medilog
+SourceCode: https://gitlab.com/toz12/medilog
+IssueTracker: https://gitlab.com/toz12/medilog/-/issues
+Translation: https://weblate.bubu1.eu/projects/medilog/core/
+Changelog: https://gitlab.com/toz12/medilog/-/blob/master/ChangeLog.md
+Donate: https://www.paypal.com/paypalme/thomaszellmbc
+Bitcoin: 1EUrRpjDAGgpS8J46tmsVWKbgNqAv7rWC7
+
+AutoName: MediLog
+
+RepoType: git
+Repo: https://gitlab.com/toz12/medilog
+
+Builds:
+  - versionName: 1.7.3
+    versionCode: 5300
+    commit: v1.7.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.4
+    versionCode: 5303
+    commit: v1.7.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.4
+    versionCode: 5306
+    commit: v1.7.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.5
+    versionCode: 5307
+    commit: v1.7.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.5
+    versionCode: 5308
+    commit: v1.7.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.6
+    versionCode: 5309
+    commit: v1.7.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.0
+    versionCode: 5310
+    commit: v1.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.1.1
+    versionCode: 5313
+    commit: v1.8.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.1.2
+    versionCode: 5314
+    commit: v1.8.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0.3
+    versionCode: 5319
+    commit: v1.9.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1.0
+    versionCode: 5320
+    commit: v1.9.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.2
+    versionCode: 5321
+    commit: v1.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.2.1
+    versionCode: 5322
+    commit: v1.9.2.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.9.2.1
+CurrentVersionCode: 5322

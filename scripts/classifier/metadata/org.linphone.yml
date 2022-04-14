@@ -1,0 +1,626 @@
+Categories:
+  - Phone & SMS
+License: GPL-2.0-or-later
+AuthorName: Belledonne Communications
+WebSite: https://www.linphone.org/
+SourceCode: https://gitlab.linphone.org/BC/public/linphone-android
+IssueTracker: https://github.com/BelledonneCommunications/linphone-android/issues
+Changelog: https://gitlab.linphone.org/BC/public/linphone-android/blob/HEAD/CHANGELOG.md
+
+AutoName: Linphone
+Description: |-
+    Linphone is offering free audio/video calls and text messaging.
+    With Linphone, you can be reachable at any time, even if the app is closed, with a WiFi or 3G/4G internet connection.
+
+    Linphone key features:
+    * high definition audio and video calls
+    * audio conference calls with various participants
+    * pictures and file sharing
+    * secure communication (encryption options)
+    * compliant with a large number of SIP-compatible VoIP service providers allowing to reach everyone that has a "classic" phone line.
+
+    Linphone is available on the main mobile and desktop operating systems and offers various specific features for advanced users (codecs, transport standard, encryption options, DTMF...).
+    For more information, see Linphone project website: www.linphone.org
+
+    Antifeature:
+    * NonFreeAdd - on Android 5.0 a binary build of libopenh264 might be downloaded.
+
+RepoType: git
+Repo: git://git.linphone.org/linphone-android.git
+
+Builds:
+  - versionName: 2.3.2-fdroid
+    versionCode: 2302
+    commit: 0f4de68
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="2.3.2-fdroid" android:versionCode/'
+        AndroidManifest.xml
+    target: android-19
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 2.4.0-fdroid
+    versionCode: 2400
+    commit: 2.4.0
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="2.4.0-fdroid" android:versionCode/'
+        AndroidManifest.xml
+    target: android-22
+    scanignore:
+      - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 2.4.1-fdroid
+    versionCode: 2411
+    commit: 2.4.1
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="$$VERSION$$" android:versionCode/'
+        AndroidManifest.xml
+    target: android-22
+    scanignore:
+      - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 2.5.0-fdroid
+    versionCode: 2500
+    commit: 2.5.0
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="$$VERSION$$" android:versionCode/'
+        AndroidManifest.xml
+    target: android-22
+    scanignore:
+      - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 2.5.1-fdroid
+    versionCode: 2510
+    commit: 2.5.1
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="$$VERSION$$" android:versionCode/'
+        AndroidManifest.xml
+    target: android-22
+    scanignore:
+      - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 3.1.0-fdroid
+    versionCode: 3100
+    commit: 3.1.0
+    submodules: true
+    prebuild:
+      - find submodules/externals/antlr3/runtime/ -mindepth 1 -maxdepth 1 -not -name
+        "C" -exec rm -r {} \;
+      - rm -rf gradle liblinphone_tester tests
+      - rm -rf submodules/externals/antlr3/antlr-3.4-complete.jar
+      - rm -rf submodules/externals/antlr3/antlr-ant
+      - rm -rf submodules/externals/libupnp/ixml/doc
+      - rm -rf submodules/externals/libupnp/upnp/doc
+      - rm -rf submodules/externals/libxml2/result
+      - rm -rf submodules/externals/libxml2/test
+      - rm -rf submodules/externals/libxml2/win32
+      - rm -rf submodules/externals/openh264/res
+      - rm -rf submodules/externals/polarssl/programs
+      - rm -rf submodules/externals/polarssl/tests
+      - rm -rf submodules/externals/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/*
+      - rm -rf submodules/externals/webrtc/voice_engine/test
+      - rm -rf submodules/linphone/pixmaps
+      - rm -rf submodules/linphone/share
+      - rm -rf submodules/linphone/tester
+      - rm -rf submodules/mssilk/ios_bin
+      - rm libs/gcm.jar src/org/linphone/gcm/GCMService.java src/org/linphone/gcm/GCMReceiver.java
+      - sed -i -e 's/<application/<application android:debuggable="false"/' AndroidManifest.xml
+      - sed -i -e 's/android:versionCode/android:versionName="$$VERSION$$" android:versionCode/'
+        AndroidManifest.xml
+    target: android-22
+    scanignore:
+      - submodules/mswebrtc/webrtc/data/rtp_rtcp/*.bin
+    scandelete:
+      - submodules/mswebrtc/webrtc/data/voice_engine/stereo_rtp_files/rtpplay.exe
+      - submodules/externals/openh264/autotest/performanceTest/ios/*
+      - submodules/externals/mbedtls/tests/
+    build: make generate-libs BUILD_GPLV3_ZRTP=1
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 3.3.0
+    versionCode: 3303
+    commit: 3.3.0
+    submodules: true
+    sudo: apt-get install -y cmake/testing libjsoncpp1/testing libstdc++6/testing
+    patch:
+      - 3.3.0-gradle.patch
+    gradle:
+      - yes
+    output: bin/outputs/apk/org.linphone-release-unsigned.apk
+    rm:
+      - libs
+      - liblinphone_tester
+      - submodules/externals/antlr3
+      - src/android/org/linphone/gcm
+      - src/android/org/linphone/firebase/Firebase*.java
+    scandelete:
+      - submodules
+    build:
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./prepare.py
+      - make -j`nproc` build
+      - make copy-libs
+      - make `pwd`/res/raw/rootca.pem
+    ndk: r15c
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 3.3.1
+    versionCode: 3311
+    commit: 3.3.1
+    submodules: true
+    sudo: apt-get install -y cmake/testing libjsoncpp1/testing libstdc++6/testing
+    patch:
+      - 3.3.0-gradle.patch
+    gradle:
+      - yes
+    output: bin/outputs/apk/org.linphone-release-unsigned.apk
+    rm:
+      - libs
+      - liblinphone_tester
+      - submodules/externals/antlr3
+      - src/android/org/linphone/gcm
+      - src/android/org/linphone/firebase/Firebase*.java
+    prebuild: sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        res/values/non_localizable_custom.xml
+    scandelete:
+      - submodules
+    build:
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./prepare.py
+      - make -j`nproc` build
+      - make copy-libs
+      - make `pwd`/res/raw/rootca.pem
+    ndk: r15c
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 3.3.2
+    versionCode: 3320
+    commit: 3.3.2
+    submodules: true
+    sudo: apt-get install -y cmake/testing libjsoncpp1/testing libstdc++6/testing
+    patch:
+      - 3.3.0-gradle.patch
+    gradle:
+      - yes
+    output: bin/outputs/apk/org.linphone-release-unsigned.apk
+    rm:
+      - libs
+      - liblinphone_tester
+      - submodules/externals/antlr3
+      - src/android/org/linphone/gcm
+      - src/android/org/linphone/firebase/Firebase*.java
+    prebuild: sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        res/values/non_localizable_custom.xml
+    scandelete:
+      - submodules
+    build:
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./prepare.py
+      - make -j`nproc` build
+      - make copy-libs
+      - make `pwd`/res/raw/rootca.pem
+    ndk: r15c
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 4.0.1
+    versionCode: 4002
+    commit: 4.0.1
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y cmake -t testing
+      - apt-get install -y python-pystache doxygen
+    patch:
+      - 4.0-gradle.patch
+    gradle:
+      - yes
+    output: bin/outputs/apk/release/org.linphone-release-unsigned.apk
+    rm:
+      - liblinphone_tester
+      - submodules/belle-sip/src/antlr3c/antlr-3.4-complete.jar
+      - src/android/org/linphone/firebase/Firebase*.java
+      - submodules/externals/xerces-c/tools/jars
+    prebuild: sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        res/values/non_localizable_custom.xml
+    scanignore:
+      - submodules/belcard/src/vcard_grammar
+      - submodules/linphone/share/cpim_grammar
+    scandelete:
+      - submodules
+    build:
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./prepare.py
+      - make -j`nproc` build
+      - make copy-libs
+    ndk: r16b
+    antifeatures:
+      - nonfreedep
+
+  - versionName: '4.1'
+    versionCode: 4124
+    commit: '4.1'
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends cmake -t stretch-backports
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.2
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+5d' app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        linphone-sdk-android/
+    ndk: r16b
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 4.1.1
+    versionCode: 4125
+    commit: 4.1.1
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends cmake -t stretch-backports
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.2
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+5d' app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        linphone-sdk-android/
+    ndk: r16b
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 4.2.1
+    versionCode: 4215
+    commit: 4.2.1
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends cmake -t stretch-backports
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.3.0
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+5d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        linphone-sdk-android/
+    ndk: r16b
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 4.2.3
+    versionCode: 4230
+    commit: 4.2.3
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends cmake -t stretch-backports
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.3.3
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+5d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        linphone-sdk-android/
+    ndk: r16b
+    antifeatures:
+      - nonfreedep
+
+  - versionName: 4.3.0
+    versionCode: 4300
+    commit: 4.3.0
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.4.1
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+7d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
+        -e "/bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\
+        dir\:\ 'libs')" app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - mkdir app/libs
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        app/libs/
+    ndk: r16b
+
+  - versionName: 4.3.1
+    versionCode: 4310
+    commit: 4.3.1
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen pkgconf python-pystache python-six yasm
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.4.2
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+7d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
+        -e "/bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\
+        dir\:\ 'libs')" app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - mkdir app/libs
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        app/libs/
+    ndk: r16b
+
+MaintainerNotes: Main repo for linphone-sdk is upstreams private Gitlab instance with
+    submodules, should we switch the main Repo link too?
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 4.3.1
+CurrentVersionCode: 4310

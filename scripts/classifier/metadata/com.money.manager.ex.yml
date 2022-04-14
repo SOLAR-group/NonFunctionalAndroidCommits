@@ -1,0 +1,70 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+WebSite: http://android.moneymanagerex.org/
+SourceCode: https://github.com/moneymanagerex/android-money-manager-ex
+IssueTracker: https://github.com/moneymanagerex/android-money-manager-ex/issues
+Changelog: https://github.com/moneymanagerex/android-money-manager-ex/milestones?state=closed
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5U7RXC25C9UES&source=url
+
+AutoName: Money Manager Ex
+Description: |-
+    A simple and easy-to-use application to manage personal finances, bank accounts,
+    family budget, and so on. It's main goal is to add a mobile implementation for
+    an application we love to use on our Desktop machines.
+
+    Features:
+
+    * Management of single transactions
+    * Account, payee, category, currency management
+    * Storage card Import/Export
+    * Dropbox synchronization
+    * Security, application lock/unlock
+    * Repeating transactions
+    * Charts
+    * Supported languages: English, Italian, Portuguese, Spanish and Russian
+
+RepoType: git
+Repo: https://github.com/moneymanagerex/android-money-manager-ex
+
+Builds:
+  - versionName: 2019.02.14.2
+    versionCode: 994
+    commit: 2019.02.17.1
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2019.02.24.1
+    versionCode: 996
+    commit: 2019.02.24.1
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2019.02.28.997-beta
+    versionCode: 997
+    commit: 2019.02.28.997-beta
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2019.03.30.998-beta
+    versionCode: 998
+    commit: 2019.03.30.998-beta
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2019.04.10.1000-beta
+    versionCode: 1000
+    commit: 2019.04.10.1000-beta
+    subdir: app/
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+UpdateCheckIgnore: beta
+CurrentVersion: 2019.04.10.1000-beta
+CurrentVersionCode: 1000

@@ -1,0 +1,81 @@
+Categories:
+  - Games
+License: MIT
+AuthorName: Boris Timofeev
+AuthorEmail: btimofeev@emunix.org
+SourceCode: https://github.com/btimofeev/instead-launcher-android/
+IssueTracker: https://github.com/btimofeev/instead-launcher-android/issues
+Changelog: https://github.com/btimofeev/instead-launcher-android/blob/HEAD/CHANGELOG.md
+Donate: https://www.paypal.me/btimofeev
+Bitcoin: 16coztryz7xbNNDNhhf98wuHmi3hEintsW
+
+AutoName: INSTEAD
+
+RepoType: git
+Repo: https://github.com/btimofeev/instead-launcher-android.git
+
+Builds:
+  - versionName: '0.7'
+    versionCode: 700
+    commit: v0.7
+    subdir: app
+    gradle:
+      - yes
+    ndk: r19c
+    preassemble:
+      - downloadDependencies
+
+  - versionName: 0.7.1
+    versionCode: 701
+    commit: v0.7.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r19c
+    preassemble:
+      - downloadDependencies
+
+  - versionName: '0.8'
+    versionCode: 800
+    commit: v0.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r20
+    preassemble:
+      - downloadDependencies
+
+  - versionName: 0.8.1
+    versionCode: 801
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r20
+    preassemble:
+      - downloadDependencies
+
+  - versionName: 0.8.2
+    versionCode: 802
+    commit: v0.8.2
+    subdir: app
+    gradle:
+      - yes
+    ndk: r20b
+    preassemble:
+      - downloadDependencies
+
+  - versionName: 0.8.3
+    versionCode: 803
+    commit: v0.8.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r20b
+    preassemble:
+      - downloadDependencies
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.8.3
+CurrentVersionCode: 803

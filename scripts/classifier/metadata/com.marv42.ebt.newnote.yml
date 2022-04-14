@@ -1,0 +1,62 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Games
+  - Internet
+  - Money
+License: GPL-2.0-only
+SourceCode: https://github.com/marv42/EbtNewNote
+IssueTracker: https://github.com/marv42/EbtNewNote/issues
+
+AutoName: EBT New Note
+
+RepoType: git
+Repo: https://github.com/marv42/EbtNewNote
+
+Builds:
+  - versionName: '0.19'
+    versionCode: 19
+    commit: v0.19
+    subdir: app
+    gradle:
+      - withoutKey
+
+  - versionName: 0.43.0
+    versionCode: 4300
+    commit: v0.43.0
+    subdir: app
+    gradle:
+      - withoutKey
+
+  - versionName: 0.44.0
+    versionCode: 4400
+    commit: v0.44.0
+    subdir: app
+    gradle:
+      - withoutKey
+
+  - versionName: 0.46.0
+    versionCode: 4600
+    commit: v0.46.0
+    subdir: app
+    gradle:
+      - withoutKey
+
+  - versionName: 0.47.0
+    versionCode: 4700
+    commit: v0.47.0
+    subdir: app
+    gradle:
+      - withoutKey
+
+  - versionName: 0.48.0
+    versionCode: 4800
+    commit: v0.48.0
+    subdir: app
+    gradle:
+      - withoutKey
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
+CurrentVersion: 0.48.0
+CurrentVersionCode: 4800

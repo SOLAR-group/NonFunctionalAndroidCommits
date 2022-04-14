@@ -1,0 +1,67 @@
+Categories:
+  - Time
+License: Apache-2.0
+SourceCode: https://github.com/xavierfreyburger/tempus-romanum
+IssueTracker: https://github.com/xavierfreyburger/tempus-romanum/issues
+Changelog: https://github.com/xavierfreyburger/tempus-romanum/releases
+Donate: https://www.paypal.me/XavierFreyburger
+
+AutoName: Tempus Romanum
+
+RepoType: git
+Repo: https://github.com/xavierfreyburger/tempus-romanum
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.0'
+    versionCode: 20
+    commit: v2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.1'
+    versionCode: 21
+    commit: v2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 211
+    commit: v2.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 220
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.1
+    versionCode: 221
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.3
+    versionCode: 223
+    commit: v2.2.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.3
+CurrentVersionCode: 223

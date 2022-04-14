@@ -1,0 +1,57 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: Faltenreich
+AuthorEmail: philipp.fahlteich@gmail.com
+AuthorWebSite: https://faltenreich.wordpress.com/
+WebSite: https://faltenreich.wordpress.com/2019/03/30/diaguard/
+SourceCode: https://github.com/Faltenreich/Diaguard
+IssueTracker: https://github.com/Faltenreich/Diaguard/issues
+Changelog: https://github.com/Faltenreich/Diaguard/releases
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AM6HG633T4BWY&source=url
+
+AutoName: Diaguard
+
+RepoType: git
+Repo: https://github.com/Faltenreich/Diaguard
+
+Builds:
+  - versionName: 3.4.4
+    versionCode: 42
+    commit: version/3.4.4
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.5.1
+    versionCode: 43
+    commit: version/3.5.1
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.5.2
+    versionCode: 44
+    commit: version/3.5.2
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.6.1
+    versionCode: 46
+    commit: version/3.6.1
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.7.0
+    versionCode: 47
+    commit: version/3.7.0
+    subdir: app
+    gradle:
+      - store
+
+AutoUpdateMode: Version version/%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.7.0
+CurrentVersionCode: 47

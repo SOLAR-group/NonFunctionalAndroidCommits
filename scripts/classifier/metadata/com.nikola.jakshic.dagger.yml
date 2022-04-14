@@ -1,0 +1,35 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Games
+License: MIT
+AuthorName: Nikola Jakšić
+AuthorEmail: nikolajakshic@gmail.com
+SourceCode: https://github.com/nikolajakshic/dagger
+IssueTracker: https://github.com/nikolajakshic/dagger/issues
+Changelog: https://github.com/nikolajakshic/dagger/releases
+
+AutoName: Dagger
+
+RepoType: git
+Repo: https://github.com/nikolajakshic/dagger
+
+Builds:
+  - versionName: 1.1.2
+    versionCode: 23
+    commit: 1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 24
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.0
+CurrentVersionCode: 24

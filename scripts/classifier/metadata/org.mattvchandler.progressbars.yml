@@ -1,0 +1,52 @@
+Categories:
+  - Time
+License: MIT
+SourceCode: https://github.com/mattvchandler/progressbars
+IssueTracker: https://github.com/mattvchandler/progressbars/issues
+Changelog: https://github.com/mattvchandler/ProgressBars/releases
+
+AutoName: Progress Bars
+
+RepoType: git
+Repo: https://github.com/mattvchandler/progressbars
+
+Builds:
+  - versionName: 2.0.2
+    versionCode: 190020002
+    commit: v2.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 190020003
+    commit: v2.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.4
+    versionCode: 190020004
+    commit: v2.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 190020005
+    commit: v2.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 190020101
+    commit: v2.1.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.1.1
+CurrentVersionCode: 190020101

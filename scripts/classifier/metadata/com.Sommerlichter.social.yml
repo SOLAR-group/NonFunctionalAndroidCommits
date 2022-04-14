@@ -1,0 +1,52 @@
+Categories:
+  - Internet
+License: CC0-1.0
+SourceCode: https://git.koyu.space/koyu/koyuspace-app
+IssueTracker: https://git.koyu.space/koyu/koyuspace-app/issues
+Changelog: https://git.koyu.space/koyu/koyuspace-app/releases
+LiberapayID: '28700'
+
+AutoName: koyu.space
+
+Builds:
+  - versionName: '1.2'
+    versionCode: 1200
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0.1
+    versionCode: 1201
+    commit: v1.2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1.0
+    versionCode: 1310
+    commit: v1.3.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.2.0
+    versionCode: 1320
+    commit: v1.3.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 1400
+    commit: 1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.4.0
+CurrentVersionCode: 1400
+
+NoSourceSince: 1.4.0

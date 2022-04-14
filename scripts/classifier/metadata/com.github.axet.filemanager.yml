@@ -1,0 +1,274 @@
+Categories:
+  - System
+License: GPL-3.0-only
+SourceCode: https://gitlab.com/axet/android-file-manager
+IssueTracker: https://gitlab.com/axet/android-file-manager/issues
+
+AutoName: File Manager
+Description: |-
+    File Manager with two panels, smart copy/move dialogs, easy open/share
+    files, multiple files sources including: root, SAF and direct files access.
+    It offers a.o.:
+
+    * clear and straight (material) design
+    * intuitive to use
+    * access all files, whether on SD card or in the internal storage
+    * bookmark your favorite folders
+    * root capabilities (enable in settings if your device is rooted)
+
+RepoType: git
+Repo: https://gitlab.com/axet/android-file-manager.git
+
+Builds:
+  - versionName: 0.2.58
+    versionCode: 101
+    commit: filemanager-0.2.58
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.59
+    versionCode: 102
+    commit: filemanager-0.2.59
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.60
+    versionCode: 103
+    commit: filemanager-0.2.60
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.62
+    versionCode: 105
+    commit: filemanager-0.2.62
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.63
+    versionCode: 106
+    commit: filemanager-0.2.63
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.64
+    versionCode: 107
+    commit: filemanager-0.2.64
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.67
+    versionCode: 110
+    commit: filemanager-0.2.67
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.68
+    versionCode: 111
+    commit: filemanager-0.2.68
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.69
+    versionCode: 112
+    commit: filemanager-0.2.69
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.70
+    versionCode: 113
+    commit: filemanager-0.2.70
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.73
+    versionCode: 116
+    commit: filemanager-0.2.73
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.75
+    versionCode: 118
+    commit: filemanager-0.2.75
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.76
+    versionCode: 119
+    commit: filemanager-0.2.76
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.78
+    versionCode: 121
+    commit: filemanager-0.2.78
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.79
+    versionCode: 122
+    commit: filemanager-0.2.79
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.84
+    versionCode: 127
+    commit: filemanager-0.2.84
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.85
+    versionCode: 128
+    commit: filemanager-0.2.85
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.89
+    versionCode: 132
+    commit: filemanager-0.2.89
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.92
+    versionCode: 135
+    commit: filemanager-0.2.92
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.94
+    versionCode: 137
+    commit: filemanager-0.2.94
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.95
+    versionCode: 138
+    commit: filemanager-0.2.95
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.0
+    versionCode: 139
+    commit: filemanager-0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.1
+    versionCode: 140
+    commit: filemanager-0.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.2
+    versionCode: 143
+    commit: filemanager-0.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.6
+    versionCode: 146
+    disable: fails to build
+    commit: filemanager-0.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.7
+    versionCode: 147
+    commit: filemanager-0.4.7
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.8
+    versionCode: 148
+    commit: filemanager-0.4.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.9
+    versionCode: 149
+    commit: filemanager-0.4.9
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.16
+    versionCode: 154
+    commit: filemanager-0.4.16
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.18
+    versionCode: 156
+    commit: filemanager-0.4.18
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.19
+    versionCode: 157
+    commit: filemanager-0.4.19
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.21
+    versionCode: 159
+    commit: filemanager-0.4.21
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.22
+    versionCode: 160
+    commit: filemanager-0.4.22
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.25
+    versionCode: 163
+    commit: filemanager-0.4.25
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+AutoUpdateMode: Version filemanager-%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.4.25
+CurrentVersionCode: 163

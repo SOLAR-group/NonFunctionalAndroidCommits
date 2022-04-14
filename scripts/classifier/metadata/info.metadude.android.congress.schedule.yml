@@ -1,0 +1,382 @@
+Categories:
+  - Time
+License: Apache-2.0
+SourceCode: https://github.com/EventFahrplan/EventFahrplan
+IssueTracker: https://github.com/EventFahrplan/EventFahrplan/issues
+Liberapay: EventFahrplan
+
+AutoName: 36C3 Schedule
+Description: |
+    Conference program app for the Chaos Communication Congress
+
+    [https://events.ccc.de/congress/2019]
+
+    '''Features'''
+    * View program by day and rooms (side by side)
+    * Custom grid layout for smartphones (try landscape mode 🙃) and tablets
+    * Read detailed descriptions (speaker names, start time, room name, links, ...) of events
+    * Add events to favorites list
+    * Export favorites list
+    * Setup alarms for individual events
+    * Add events to your personal calendar
+    * Share a website link to an event with others
+    * Keep track of program changes
+    * Automatic program updates (configurable in settings)
+    * Integration with the c3nav indoor navigation project [https://c3nav.de]
+    * Integration with the Engelsystem project [https://engelsystem.de] - Online tool for coordinating helpers and shifts on large events
+    * Integration with the Chaosflix [https://github.com/NiciDieNase/chaosflix] - Android app for [http://media.ccc.de], share Fahrplan favorites with Chaosflix to import them as bookmarks
+
+    🔤 '''Supported languages'''
+    (Event descriptions excluded)
+    * Dutch
+    * English
+    * French
+    * German
+    * Italian
+    * Japanese
+    * Portuguese
+    * Russian
+    * Spanish
+    * Swedish
+
+    💡 Questions regarding the content can only be answered by the
+    content team of the Congress. This app simply offers a way to
+    consume and personalize the conference schedule.
+
+    💣 Bug reports are very welcome. It would be awesome if you
+    can describe how to reproduce the particular error. The issue
+    tracker can be found here:
+    [https://github.com/EventFahrplan/EventFahrplan/issues]
+
+RepoType: git
+Repo: https://github.com/EventFahrplan/EventFahrplan.git
+
+Builds:
+  - versionName: 1.33.0
+    versionCode: 40
+    commit: v.1.33.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    rm:
+      - app/libs/TraceDroid-1.1.jar
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's@files("libs/TraceDroid-1.1.jar")@"org.ligi:tracedroid:1.2"@'
+        build.gradle
+      - sed -i -e 's/gradle-4.4/gradle-4.3.1/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.33.1
+    versionCode: 41
+    commit: v.1.33.1
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/gradle-4.4/gradle-4.3.1/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.33.3
+    versionCode: 43
+    commit: v.1.33.3
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/gradle-4.4/gradle-4.3.1/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.33.4
+    versionCode: 44
+    commit: v.1.33.4
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/gradle-4.4/gradle-4.3.1/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.34.0
+    versionCode: 45
+    disable: binaries under buildSrc directory
+    commit: v.1.34.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/gradle-4.4/gradle-4.3.1/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.34.1
+    versionCode: 46
+    commit: v.1.34.1
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.35.0
+    versionCode: 47
+    commit: v.1.35.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.36.0
+    versionCode: 48
+    commit: v.1.36.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.37.0
+    versionCode: 49
+    commit: v.1.37.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.0
+    versionCode: 50
+    disable: wrong flavour, should have been ccc35c3
+    commit: v.1.38.0
+    subdir: app
+    gradle:
+      - ccc34c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.0
+    versionCode: 51
+    commit: v.1.38.0
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/versionCode 50/versionCode 51/' build.gradle
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.1
+    versionCode: 52
+    commit: v.1.38.1
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.2
+    versionCode: 53
+    commit: v.1.38.2
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.3
+    versionCode: 54
+    commit: v.1.38.3
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.4
+    versionCode: 55
+    commit: v.1.38.4
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.38.5
+    versionCode: 56
+    commit: v.1.38.5
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.39.0
+    versionCode: 57
+    commit: v.1.39.0
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.40.0
+    versionCode: 61
+    commit: v.1.40.0
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.0
+    versionCode: 62
+    commit: v.1.41.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.1
+    versionCode: 63
+    commit: v.1.41.1
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.2
+    versionCode: 64
+    commit: v.1.41.2
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.3
+    versionCode: 65
+    commit: v.1.41.3
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.4
+    versionCode: 66
+    commit: v.1.41.4
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.5
+    versionCode: 67
+    commit: v.1.41.5
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.42.0
+    versionCode: 68
+    commit: v.1.42.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.43.0
+    versionCode: 69
+    commit: v.1.43.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.43.1
+    versionCode: 70
+    commit: v.1.43.1
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+
+  - versionName: 1.44.0
+    versionCode: 71
+    commit: v.1.44.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+
+  - versionName: 1.45.1
+    versionCode: 73
+    commit: v.1.45.1
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.5.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.45.2
+    versionCode: 74
+    commit: v.1.45.2
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.46.0
+    versionCode: 75
+    commit: v.1.46.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.47.0
+    versionCode: 76
+    commit: v.1.47.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+AutoUpdateMode: Version v.%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.47.0
+CurrentVersionCode: 76

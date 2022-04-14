@@ -1,0 +1,122 @@
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+WebSite: https://gitlab.com/gxworks/Dib2Qm
+SourceCode: https://gitlab.com/gxworks/Dib2Qm/tree/HEAD
+IssueTracker: https://gitlab.com/gxworks/Dib2Qm/issues
+
+AutoName: Dib2Qm
+
+RepoType: git
+Repo: https://gitlab.com/gxworks/Dib2Qm.git
+
+Builds:
+  - versionName: 0.17.30
+    versionCode: 1730
+    commit: 053a1382927fc042c987c08df18fa50830782229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.17.40
+    versionCode: 1740
+    commit: v0.17.40
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.50
+    versionCode: 1850
+    commit: v0.18.50
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.54
+    versionCode: 1854
+    commit: v0.18.54
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.60
+    versionCode: 1860
+    commit: v0.18.60
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.20
+    versionCode: 2020
+    commit: v0.20.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.10
+    versionCode: 2210
+    commit: v0.22.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.20
+    versionCode: 2220
+    commit: v0.22.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.30
+    versionCode: 2230
+    commit: v0.22.30
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.32
+    versionCode: 2232
+    commit: v0.22.32
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.34
+    versionCode: 2234
+    commit: v0.22.34
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.40
+    versionCode: 2240
+    commit: v0.22.40
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.44
+    versionCode: 2244
+    commit: v0.22.44
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.46
+    versionCode: 2246
+    commit: v0.22.46
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.60
+    versionCode: 2260
+    commit: v0.22.60
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.22.60
+CurrentVersionCode: 2260

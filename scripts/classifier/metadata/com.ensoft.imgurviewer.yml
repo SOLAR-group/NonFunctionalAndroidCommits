@@ -1,0 +1,49 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Martín Lucas Golini
+AuthorEmail: support@ensoft.dev
+SourceCode: https://github.com/SpartanJ/ImgurViewer
+IssueTracker: https://github.com/SpartanJ/ImgurViewer/issues
+
+AutoName: ImgurViewer
+
+RepoType: git
+Repo: https://github.com/SpartanJ/ImgurViewer
+
+Builds:
+  - versionName: 2.1.6
+    versionCode: 21600
+    disable: contains tracking
+    commit: 2.1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.9
+    versionCode: 21900
+    commit: 2.1.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 22000
+    commit: 2.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.1
+    versionCode: 22100
+    commit: 2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.1
+CurrentVersionCode: 22100

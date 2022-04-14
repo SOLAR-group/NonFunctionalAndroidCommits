@@ -1,0 +1,87 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Andreas Kromke
+SourceCode: https://gitlab.com/AndreasK/mediascanner
+IssueTracker: https://gitlab.com/AndreasK/mediascanner/issues
+Changelog: https://gitlab.com/AndreasK/mediascanner/blob/HEAD/app/src/main/assets/version-history.txt
+
+AutoName: Classical Music Scanner
+Description: |-
+    Scans the device for local audio files and builds a database to be used by
+    Unpopular Music Player or Opus 1 Music Player. Contrary to the Android service it
+    knows about composers, works, movements, conductors etc.
+
+RepoType: git
+Repo: https://gitlab.com/AndreasK/mediascanner.git
+
+Builds:
+  - versionName: '1.1'
+    versionCode: 3
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.2
+    versionCode: 8
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.3
+    versionCode: 9
+    commit: v1.2.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.4
+    versionCode: 10
+    commit: v1.2.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: '1.3'
+    versionCode: 11
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.3.1
+    versionCode: 12
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: '1.4'
+    versionCode: 13
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: '1.5'
+    versionCode: 15
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.5'
+CurrentVersionCode: 15

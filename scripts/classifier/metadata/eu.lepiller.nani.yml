@@ -1,0 +1,77 @@
+Categories:
+  - Science & Education
+  - Reading
+  - Writing
+License: GPL-3.0-or-later
+AuthorName: Julien Lepiller
+WebSite: https://nani.lepiller.eu
+SourceCode: https://framagit.org/nani-project/nani-app
+IssueTracker: https://framagit.org/nani-project/nani-app/issues
+Translation: https://framagit.org/nani-project/nani-app#translations
+
+AutoName: Nani?
+
+RepoType: git
+Repo: https://framagit.org/nani-project/nani-app.git
+
+Builds:
+  - versionName: '0.1'
+    versionCode: 1
+    commit: '0.1'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.2'
+    versionCode: 2
+    commit: '0.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.1
+    versionCode: 3
+    commit: 0.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.2.1
+    versionCode: 5
+    commit: 0.2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.3
+    versionCode: 6
+    commit: 0.2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.0
+    versionCode: 7
+    commit: 0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.1
+    versionCode: 8
+    commit: 0.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.1.1
+    versionCode: 9
+    commit: 0.3.1.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.3.1.1
+CurrentVersionCode: 9

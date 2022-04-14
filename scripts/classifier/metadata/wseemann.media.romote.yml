@@ -1,0 +1,163 @@
+Categories:
+  - Multimedia
+License: Apache-2.0
+AuthorName: William Seemann
+AuthorEmail: wseemann@gmail.com
+SourceCode: https://github.com/wseemann/RoMote
+IssueTracker: https://github.com/wseemann/RoMote/issues
+
+AutoName: RoMote
+Description: |-
+    Turn your Android Device into a control center for your Roku Player and Roku TV.
+
+    * Control your Roku player or Roku TV from your mobile device.
+    * Browse, add, and rate Channels from more than 2,000 streaming channels offered in the Roku Channel Store.
+    * Quickly launch your favorite Roku Channels on your Roku player or Roku TV from your mobile device.
+    * Enter text in your Roku player on-screen interface using your device’s keyboard instead of the included remote.
+    * Name and switch between multiple Roku players and Roku TVs.
+    * Additional features include shake to pause, voice search, homescreen widget and notification controls.
+
+RepoType: git
+Repo: https://github.com/wseemann/RoMote
+
+Builds:
+  - versionName: 1.0.7
+    versionCode: 8
+    commit: v1.0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.8
+    versionCode: 9
+    commit: v1.0.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.9
+    versionCode: 10
+    commit: v1.0.9
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.10
+    versionCode: 11
+    commit: v1.0.10
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.11
+    versionCode: 12
+    commit: v1.0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.12
+    versionCode: 13
+    commit: v1.0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.13
+    versionCode: 14
+    commit: v1.0.13
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.14
+    versionCode: 15
+    commit: v1.0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.15
+    versionCode: 16
+    commit: v1.0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 1.0.16
+    versionCode: 17
+    commit: v1.0.16
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - app/src/main/libs/jaku-1.6.jar
+    prebuild:
+      - sed -i -e 's/gradle-3\.3/gradle-4.6/' ../gradle/wrapper/gradle-wrapper.properties
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+      - cp ~/.m2/repository/com/wseemann/jaku/1.6/jaku-1.6.jar src/main/libs/
+    scanignore:
+      - app/src/main/libs/jaku-1.6.jar
+
+  - versionName: 1.0.17
+    versionCode: 18
+    disable: Unexpected version/version code in output
+    commit: v1.0.17
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - app/src/main/libs/jaku-1.6.jar
+    build:
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+      - cp ~/.m2/repository/com/wseemann/jaku/1.6/jaku-1.6.jar src/main/libs/
+
+  - versionName: 1.0.20
+    versionCode: 20
+    commit: v1.0.20
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - app/src/main/libs/jaku-1.6.jar
+    build:
+      - $$MVN3$$ install -f ../Jaku/pom.xml -Dmaven.test.skip=true
+      - cp ~/.m2/repository/com/wseemann/jaku/1.6/jaku-1.6.jar src/main/libs/
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.20
+CurrentVersionCode: 20

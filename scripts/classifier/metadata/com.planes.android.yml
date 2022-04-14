@@ -1,0 +1,66 @@
+Categories:
+  - Games
+License: MIT
+AuthorName: Cristian Cucu
+SourceCode: https://github.com/xxxcucus/planes
+IssueTracker: https://github.com/xxxcucus/planes/issues
+
+AutoName: Planes Android
+
+RepoType: git
+Repo: https://github.com/xxxcucus/planes
+
+Builds:
+  - versionName: 0.3.6
+    versionCode: 9
+    commit: 0.3.6
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.7
+    versionCode: 10
+    commit: 0.3.7
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.8
+    versionCode: 11
+    commit: 0.3.8
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.9
+    versionCode: 12
+    commit: 0.3.9
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.10
+    versionCode: 13
+    commit: 0.3.10
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.10.1
+    versionCode: 14
+    commit: 0.3.10.1
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.11
+    versionCode: 16
+    commit: 0.3.11
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.3.11
+CurrentVersionCode: 16

@@ -1,0 +1,115 @@
+Categories:
+  - System
+License: GPL-3.0-only
+SourceCode: https://github.com/sds100/KeyMapper
+IssueTracker: https://github.com/sds100/KeyMapper/issues
+Changelog: https://github.com/sds100/KeyMapper/blob/HEAD/CHANGELOG.md
+
+AutoName: Key Mapper
+
+RepoType: git
+Repo: https://github.com/sds100/KeyMapper
+
+Builds:
+  - versionName: 1.1.6
+    versionCode: 24
+    commit: v1.1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.7
+    versionCode: 25
+    commit: v1.1.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-beta.1
+    versionCode: 26
+    commit: v2.0.0-beta.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-beta.2
+    versionCode: 27
+    commit: v2.0.0-beta.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-beta.3
+    versionCode: 28
+    commit: v2.0.0-beta.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-beta.4
+    versionCode: 29
+    commit: v2.0.0-beta.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 30
+    commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.1
+    versionCode: 31
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 32
+    commit: v2.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0-beta.1
+    versionCode: 33
+    commit: v2.1.0-beta.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0-beta.2
+    versionCode: 34
+    commit: v2.1.0-beta.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0-beta.3
+    versionCode: 35
+    commit: v2.1.0-beta.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0-beta.4
+    versionCode: 36
+    commit: v2.1.0-beta.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 38
+    commit: v2.1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.1.0
+CurrentVersionCode: 38

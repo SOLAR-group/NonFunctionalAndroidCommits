@@ -1,0 +1,49 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: ajh3
+AuthorEmail: aaron.james.halbert@gmail.com
+SourceCode: https://github.com/ajh3/NoSurfForReddit
+IssueTracker: https://github.com/ajh3/NoSurfForReddit/issues
+Changelog: https://github.com/ajh3/NoSurfForReddit/releases
+
+AutoName: NoSurf for reddit
+
+RepoType: git
+Repo: https://github.com/ajh3/NoSurfForReddit.git
+
+Builds:
+  - versionName: '4'
+    versionCode: 4
+    commit: v4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5'
+    versionCode: 5
+    commit: v5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6'
+    versionCode: 6
+    commit: v6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '7'
+    versionCode: 7
+    commit: v7
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '7'
+CurrentVersionCode: 7

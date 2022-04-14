@@ -1,0 +1,68 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+AuthorName: Sylvia van Os
+SourceCode: https://github.com/TheLastProject/Catima
+IssueTracker: https://github.com/TheLastProject/Catima/issues
+Translation: https://hosted.weblate.org/projects/catima/catima/
+Changelog: https://github.com/TheLastProject/Catima/blob/HEAD/CHANGELOG.md
+
+AutoName: Catima
+
+RepoType: git
+Repo: https://github.com/TheLastProject/Catima
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 43
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 44
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.2
+    versionCode: 46
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 47
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 48
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.1
+    versionCode: 49
+    commit: v1.4.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.1
+    versionCode: 51
+    commit: v1.5.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.5.1
+CurrentVersionCode: 51

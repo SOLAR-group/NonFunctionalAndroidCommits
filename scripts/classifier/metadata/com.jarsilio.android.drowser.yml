@@ -1,0 +1,107 @@
+Categories:
+  - System
+License: GPL-3.0-only
+SourceCode: https://gitlab.com/juanitobananas/drowser/tree/HEAD
+IssueTracker: https://gitlab.com/juanitobananas/drowser/issues
+Bitcoin: 16DXeCxxKGvepYLehyHSr3M1nv1s1eUotZ
+
+AutoName: Drowser
+
+RequiresRoot: 'yes'
+
+RepoType: git
+Repo: https://gitlab.com/juanitobananas/drowser.git
+
+Builds:
+  - versionName: '0.6'
+    versionCode: 6
+    commit: v0.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.8'
+    versionCode: 8
+    commit: v0.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.9'
+    versionCode: 9
+    commit: v0.9
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.10'
+    versionCode: 10
+    commit: v0.10
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.10.1
+    versionCode: 11
+    commit: v0.10.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.11'
+    versionCode: 12
+    commit: v0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.12'
+    versionCode: 13
+    commit: v0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.14'
+    versionCode: 15
+    commit: v0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.14.1
+    versionCode: 16
+    commit: v0.14.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.15'
+    versionCode: 17
+    commit: v0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.15.1
+    versionCode: 18
+    commit: v0.15.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: 0.15.1
+CurrentVersionCode: 18

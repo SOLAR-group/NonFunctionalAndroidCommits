@@ -1,0 +1,45 @@
+Categories:
+  - Phone & SMS
+License: GPL-3.0-only
+SourceCode: https://gitlab.com/jnda/FlashAlert
+IssueTracker: https://gitlab.com/jnda/FlashAlert/issues
+Changelog: https://gitlab.com/jnda/FlashAlert/blob/HEAD/CHANGELOG
+
+AutoName: FlashAlert
+
+RepoType: git
+Repo: https://gitlab.com/jnda/FlashAlert.git
+
+Builds:
+  - versionName: 2.0.3
+    versionCode: 1597445
+    commit: 2.0.3
+    subdir: FlashAlerte
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 3382296
+    commit: 2.0.6
+    subdir: FlashAlerte
+    gradle:
+      - yes
+
+  - versionName: 2.0.7
+    versionCode: 3434710
+    commit: d742a4d83cc5c5083ec16713cf0b9c37727c6e62
+    subdir: FlashAlerte
+    gradle:
+      - yes
+
+  - versionName: 2.0.9-beta02
+    versionCode: 6528272
+    commit: 2.0.9-beta02
+    subdir: FlashAlerte
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.9-beta02
+CurrentVersionCode: 6528272

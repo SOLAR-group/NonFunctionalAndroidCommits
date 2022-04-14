@@ -1,0 +1,44 @@
+Categories:
+  - Money
+License: MIT
+AuthorName: Yevhenii Kanivets
+AuthorEmail: evgenii.kanivets@gmail.com
+SourceCode: https://github.com/xorum-io/open_money_tracker
+IssueTracker: https://github.com/xorum-io/open_money_tracker/issues
+Changelog: https://github.com/xorum-io/open_money_tracker/releases
+
+AutoName: Money Tracker
+
+RepoType: git
+Repo: https://github.com/xorum-io/open_money_tracker
+
+Builds:
+  - versionName: 2.1.1
+    versionCode: 33
+    commit: v2.1.1
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle
+
+  - versionName: 2.1.2
+    versionCode: 34
+    commit: v2.1.2
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle
+
+  - versionName: 2.1.3
+    versionCode: 35
+    commit: v2.1.3
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' build.gradle
+        ../build.gradle
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.1.3
+CurrentVersionCode: 35

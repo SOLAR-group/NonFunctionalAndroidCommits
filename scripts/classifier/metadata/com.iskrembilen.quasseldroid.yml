@@ -1,0 +1,471 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Janne Mareike Koschinski
+SourceCode: https://git.kuschku.de/justJanne/QuasselDroid-ng
+IssueTracker: https://git.kuschku.de/justJanne/QuasselDroid-ng/issues
+Translation: https://www.transifex.com/quasseldroid-1/quasseldroid-1/
+Donate: https://www.patreon.com/justjanne
+
+Name: Quasseldroid
+Description: |-
+    Chat comfortably. Everywhere.
+
+    '''REQUIRES A QUASSEL CORE – DOES NOT WORK AS STANDALONE IRC CLIENT'''
+
+    * Use IRC on the go – thanks to the Quassel core, you’ll never miss anything
+    * Always have your entire chat history available – just scroll up to load older messages, the core keeps them for you
+    * Be notified when someone messages you – even if you had no connection in the meantime
+
+    '''Requirements:'''
+
+    You need to have an account on a Quassel core to use this app. If you have none, you can either set a core up yourself, or check if you can get an account on someone else’s core.
+
+    This app only works with cores that run at least Quassel v0.10, for all features to be available you’ll need Quassel v0.13
+
+    To learn about how to set up a quassel core, see the wiki at http://bugs.quassel-irc.org/projects/quassel-irc/wiki
+
+    '''Contact:'''
+
+    You can find us in #quasseldroid on Freenode, or contact us under support@kuschku.de
+
+RepoType: git
+Repo: https://git.kuschku.de/justjanne/QuasselDroid-ng/
+
+Builds:
+  - versionName: v1.0.11
+    versionCode: 1019
+    commit: v1.0.11
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.14
+    versionCode: 1035
+    commit: v1.0.14
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.16
+    versionCode: 1061
+    commit: v1.0.16
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.18
+    versionCode: 1076
+    commit: v1.0.18
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.19
+    versionCode: 1091
+    commit: v1.0.19
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.20
+    versionCode: 1092
+    commit: v1.0.20
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.22
+    versionCode: 1096
+    commit: v1.0.22
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.23
+    versionCode: 1100
+    commit: v1.0.23
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.25
+    versionCode: 1108
+    commit: v1.0.25
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.26
+    versionCode: 1111
+    commit: v1.0.26
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.27
+    versionCode: 1113
+    commit: v1.0.27
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.28
+    versionCode: 1114
+    commit: v1.0.28
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.29
+    versionCode: 1117
+    commit: v1.0.29
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.31
+    versionCode: 1120
+    commit: v1.0.31
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.35
+    versionCode: 1131
+    commit: v1.0.35
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.37
+    versionCode: 1135
+    commit: v1.0.37
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.38
+    versionCode: 1136
+    commit: v1.0.38
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.39
+    versionCode: 1141
+    commit: v1.0.39
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.40
+    versionCode: 1145
+    commit: v1.0.40
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.41
+    versionCode: 1153
+    commit: v1.0.41
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.42
+    versionCode: 1155
+    commit: v1.0.42
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.43
+    versionCode: 1159
+    commit: v1.0.43
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.44
+    versionCode: 1171
+    commit: v1.0.44
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.45
+    versionCode: 1173
+    commit: v1.0.45
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.1.0
+    versionCode: 1176
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.1.1
+    versionCode: 1177
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.1.3
+    versionCode: 1183
+    commit: v1.1.3
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.1.4
+    versionCode: 1184
+    commit: v1.1.4
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.1
+    versionCode: 1210
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.2
+    versionCode: 1211
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.4
+    versionCode: 1214
+    commit: v1.2.4
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.5
+    versionCode: 1219
+    commit: v1.2.5
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.6
+    versionCode: 1220
+    commit: v1.2.6
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.7
+    versionCode: 1221
+    commit: v1.2.7
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.9
+    versionCode: 1223
+    commit: v1.2.9
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.10
+    versionCode: 1226
+    commit: v1.2.10
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.12
+    versionCode: 1232
+    commit: v1.2.12
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.13
+    versionCode: 1233
+    commit: v1.2.13
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.14
+    versionCode: 1234
+    commit: v1.2.14
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.16
+    versionCode: 1240
+    commit: v1.2.16
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.17
+    versionCode: 1241
+    commit: v1.2.17
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.18
+    versionCode: 1242
+    commit: v1.2.18
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.19
+    versionCode: 1243
+    commit: v1.2.19
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.21
+    versionCode: 1248
+    commit: v1.2.21
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.23
+    versionCode: 1252
+    commit: v1.2.23
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.2.26
+    versionCode: 1266
+    commit: v1.2.26
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.3.0
+    versionCode: 1273
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.3.2
+    versionCode: 1275
+    commit: v1.3.2
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: v1.3.2
+CurrentVersionCode: 1275

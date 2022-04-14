@@ -1,0 +1,244 @@
+Categories:
+  - Games
+License: GPL-3.0-only
+WebSite: https://supertuxkart.net/Main_Page
+SourceCode: https://github.com/supertuxkart/stk-code
+IssueTracker: https://github.com/supertuxkart/stk-code/issues
+Translation: https://www.transifex.com/supertuxkart/supertuxkart/
+Changelog: https://github.com/supertuxkart/stk-code/blob/HEAD/CHANGELOG.md
+Donate: https://supertuxkart.net/Donate
+
+Description: |-
+    Karts. Nitro. Action! SuperTuxKart is a 3D open-source arcade racer with a
+    variety of characters, tracks, and modes to play. Our aim is to create a
+    game that is more fun than realistic, and provide an enjoyable experience
+    for all ages.
+
+    Discover the mystery of an underwater world, or drive through the jungles
+    of Val Verde and visit the famous Cocoa Temple. Race underground or in a
+    spaceship, through a rural farmland or a strange alien planet.
+    Or rest under the palm trees on the beach, watching the other karts
+    overtake you. But don't eat the bananas! Watch for bowling balls,
+    plungers, bubble gum, and cakes thrown by your opponents.
+
+    You can do a single race against other karts, compete in one of several
+    Grand Prix, try to beat the high score in time trials on your own, play
+    battle mode against the computer or your friends, and more! For a greater
+    challenge, race online against players from all over the world and prove
+    your racing prowess!
+
+RepoType: git
+Repo: https://github.com/supertuxkart/stk-code
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    disable: sdk-issues
+    commit: 91e7c51ae7aaf8be799785e8fb4126a9fc9526c4
+    subdir: android
+    srclibs:
+      - supertuxkartdeps@69590c5c344ebd914a1726563aebfae369f6d374
+    prebuild:
+      - mv ../data/supertuxkart.git ../data/supertuxkart.$$VERSION$$
+      - sed -i -e '/STK_VERSION/s/git/$$VERSION$$/g' ../src/utils/constants.cpp
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/android/dependencies-android.tar.xz
+    target: android-19
+    build:
+      - export USE_SDK_WRAPPER=yes
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - ./generate_assets.sh
+      - ./make.sh -j5
+    ndk: r13b
+
+  - versionName: 0.9.3
+    versionCode: 10
+    commit: 0.9.3
+    subdir: android
+    output: build/outputs/apk/android-release-unsigned.apk
+    srclibs:
+      - supertuxkartdeps@eeb6a5e1841ec5f0c02848abc00f8fa9466ea8bb
+      - supertuxkartassets093@17659
+    prebuild:
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/dependencies-android.tar.xz
+      - sed -i 's/android:versionCode="1"/android:versionCode="$$VERCODE$$"/' AndroidManifest.xml
+      - sed -i 's/android:versionName="1.0"/android:versionName="$$VERSION$$"/' AndroidManifest.xml
+      - sed -i -e 's#../../stk-assets#$$supertuxkartassets093$$#' generate_assets.sh
+    scandelete:
+      - lib/curl/tests
+      - tools/windows_installer
+    build:
+      - export BUILD_TYPE=release
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - ./generate_assets.sh
+      - ./make.sh
+    ndk: r12b
+
+  - versionName: '1.0'
+    versionCode: 104
+    disable: delete huge apk without optimizations
+    commit: '1.0'
+    subdir: android
+    output: build/outputs/apk/android-release-unsigned.apk
+    srclibs:
+      - supertuxkartdeps@f0a772c941b77e0cdae02baac332089b3af3f4dc
+      - supertuxkartassets10@18212
+    prebuild:
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/dependencies-android.tar.xz
+      - sed -i -e 's#../../stk-assets#$$supertuxkartassets10$$#' generate_assets.sh
+    scandelete:
+      - lib/curl/tests
+      - tools/windows_installer
+    build:
+      - export BUILD_TYPE=release
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - export PROJECT_VERSION=$$VERSION$$
+      - export PROJECT_CODE=$$VERCODE$$
+      - ./generate_assets.sh
+      - ./make.sh -j`nproc`
+    ndk: r12b
+
+  - versionName: '1.0'
+    versionCode: 105
+    commit: '1.0'
+    subdir: android
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y imagemagick pngquant vorbis-tools
+    output: build/outputs/apk/android-release-unsigned.apk
+    srclibs:
+      - supertuxkartdeps@f0a772c941b77e0cdae02baac332089b3af3f4dc
+      - supertuxkartassets10@18212
+    prebuild:
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/dependencies-android.tar.xz
+      - sed -i -e 's#../../stk-assets#$$supertuxkartassets10$$#' generate_assets.sh
+    scandelete:
+      - lib/curl/tests
+      - tools/windows_installer
+    build:
+      - export BUILD_TYPE=release
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - export PROJECT_VERSION=$$VERSION$$
+      - export PROJECT_CODE=$$VERCODE$$
+      - ./generate_assets.sh
+      - ./make.sh -j`nproc`
+    ndk: r12b
+
+  - versionName: '1.1'
+    versionCode: 144
+    commit: '1.1'
+    subdir: android
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y imagemagick pngquant vorbis-tools
+    output: build/outputs/apk/release/android-release-unsigned.apk
+    srclibs:
+      - supertuxkartdeps@03aae5b44d959746a147b071fa2574920d81c25d
+    prebuild:
+      - wget https://github.com/supertuxkart/stk-assets-mobile/releases/download/$$VERSION$$/stk-assets-lq.zip
+      - echo '40239115a13b90bc0bee3e4962a59037df526610  stk-assets-lq.zip' | shasum
+        -c -
+      - unzip stk-assets-lq.zip -d stk-assets
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/dependencies-android.tar.xz
+      - sed -i -e 's#../../stk-assets#stk-assets#' generate_assets.sh
+      - sed -i -e 's#./gradlew#gradle#' make.sh
+    scanignore:
+      - android/stk-assets/textures/
+    scandelete:
+      - lib/curl/tests
+      - tools/windows_installer
+      - lib/harfbuzz/test/
+    build:
+      - export BUILD_TYPE=release
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - export PROJECT_VERSION=$$VERSION$$
+      - export PROJECT_CODE=$$VERCODE$$
+      - export DECREASE_QUALITY=0
+      - export CONVERT_TO_JPG=0
+      - ./generate_assets.sh
+      - ./make.sh -j`nproc`
+    ndk: r12b
+
+  - versionName: '1.2'
+    versionCode: 205
+    commit: '1.2'
+    subdir: android
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y imagemagick libogg-dev pngquant vorbis-tools
+    output: build/outputs/apk/release/android-release-unsigned.apk
+    srclibs:
+      - supertuxkartdeps@5b135b51bdddc3ce91af70dd2add7fb8a5ece964
+    prebuild:
+      - sed -i -e 's#./gradlew#gradle#' -e '/Check\ if\ we\ have\ key/,+22d' -e '/ANDROID_HOME/,+15d'
+        make.sh
+      - sed -i -e '/keystore/,+3d' build.gradle
+      - wget https://github.com/supertuxkart/stk-assets-mobile/releases/download/$$VERSION$$/stk-assets-lq.zip
+      - echo '9d5a921efa63ef27756af171900fa73566c262c83358fad2f1f337b85f1b54bc  stk-assets-lq.zip'
+        | sha256sum -c -
+      - unzip stk-assets-lq.zip -d stk-assets
+      - sed -i -e 's#../../stk-assets#stk-assets#' generate_assets.sh
+      - tar -C '../lib' -xf $$supertuxkartdeps$$/dependencies-android-1.2.tar.xz
+      - mkdir tmp_lib
+    scanignore:
+      - android/stk-assets/textures/
+    scandelete:
+      - android/stk-assets-lq.zip
+      - lib/curl/tests
+      - lib/freetype/docs/reference/sitemap.xml.gz
+      - lib/harfbuzz/test/
+      - lib/sdl2/Xcode/SDL/pkg-support/resources/SDL_DS_Store
+      - tools/windows_installer
+    build:
+      - export BUILD_TYPE=release
+      - export SDK_PATH=$$SDK$$
+      - export NDK_PATH=$$NDK$$
+      - export PROJECT_VERSION=$$VERSION$$
+      - export PROJECT_CODE=$$VERCODE$$
+      - export DECREASE_QUALITY=0
+      - export CONVERT_TO_JPG=0
+      - export COMPILE_ARCH=armv7
+      - bash ./generate_assets.sh
+      - bash ./make.sh -j`nproc`
+      - cp -r libs/* tmp_lib/
+      - bash ./make.sh clean
+      - export COMPILE_ARCH=aarch64
+      - bash ./generate_assets.sh
+      - bash ./make.sh -j`nproc`
+      - cp -r libs/* tmp_lib/
+      - bash ./make.sh clean
+      - export COMPILE_ARCH=x86
+      - bash ./generate_assets.sh
+      - bash ./make.sh -j`nproc`
+      - cp -r libs/* tmp_lib/
+      - bash ./make.sh clean
+      - export COMPILE_ARCH=x86_64
+      - bash ./generate_assets.sh
+      - bash ./make.sh -j`nproc`
+      - cp -r tmp_lib/* libs/
+      - gradle -Pcompile_sdk_version=29 -Pbuild_tools_ver=29.0.3 assembleRelease
+    ndk: r20b
+
+MaintainerNotes: |-
+    We remove the gradle steps from make.sh so we can run it only after *all* the arches are build.
+
+    We need to regenerate the assets after clean up and before make for each arch.
+
+    make.sh has a '()' bashism so we explicitely use bash to run in.
+
+    make.sh needs to clean up before building each arch so we save the built libs first and bring them back right before gradle is run.
+
+    The resulting APK is 112Mb per arch, but per arch lib is only 10-20Mb so either we have 4 APKs (one per arch) each 112Mbs (3 versions mean 12 APKs, right?_or one for all at 140Mb.
+
+    Upstream sets the version manually during the build so we can't enable auto update.
+
+    Starting with 1.1, git-svn crashes when cloning the assets repository, so we have to use a Zip archive instead.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '1.2'
+CurrentVersionCode: 205

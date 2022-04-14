@@ -1,0 +1,46 @@
+Categories:
+  - Connectivity
+  - System
+License: MIT
+AuthorName: cyanomiko
+SourceCode: https://github.com/cyanomiko/dcnnt-android
+IssueTracker: https://github.com/cyanomiko/dcnnt-android/issues
+
+AutoName: Device Connect
+
+RepoType: git
+Repo: https://github.com/cyanomiko/dcnnt-android
+
+Builds:
+  - versionName: 0.3.7
+    versionCode: 12
+    commit: 0.3.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.8
+    versionCode: 13
+    commit: 0.3.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.0
+    versionCode: 14
+    commit: 0.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.5.0
+    versionCode: 15
+    commit: 0.5.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.5.0
+CurrentVersionCode: 15

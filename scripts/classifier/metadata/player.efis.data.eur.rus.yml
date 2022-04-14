@@ -1,0 +1,43 @@
+Categories:
+  - Navigation
+License: Apache-2.0
+WebSite: http://ninelima.org/efis/
+SourceCode: https://gitlab.com/ninelima/kwikEFIS
+IssueTracker: https://gitlab.com/ninelima/kwikEFIS/issues
+Changelog: https://gitlab.com/ninelima/kwikEFIS/blob/HEAD/CHANGELOG.md
+Bitcoin: 1KKWRF25NwVgNdankr1vBphtkLbX766Ee1
+
+AutoName: Kwik DataPac (eur.rus)
+Description: |-
+    The synthetic vision terrain (DEM) data pack for use with
+    <a href="https://f-droid.org/en/packages/player.efis.pfd/">Kwik EFIS</a>,
+    <a href="https://f-droid.org/en/packages/player.efis.mfd/">Kwik DMAP</a> and
+    <a href="https://f-droid.org/en/packages/player.efis.cfd/">Kwik COMP</a>.
+
+    * Europe
+    * Russia
+
+    <a href="http://ninelima.org/efis/datapac.html">Help</a>
+
+RepoType: git
+Repo: https://gitlab.com/ninelima/kwikEFIS.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 5741d28a68f6bd5acfb3ec799e27c825824d1baa
+    subdir: data.eur.rus
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 3
+    commit: VER_3.6
+    subdir: data.eur.rus
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags ^VER
+CurrentVersion: '1.2'
+CurrentVersionCode: 3

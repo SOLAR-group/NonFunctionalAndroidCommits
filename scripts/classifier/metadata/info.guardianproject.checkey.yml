@@ -1,0 +1,62 @@
+Categories:
+  - Development
+License: GPL-3.0-only
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
+WebSite: https://dev.guardianproject.info/projects/checkey
+SourceCode: https://gitlab.com/guardianproject/checkey
+IssueTracker: https://gitlab.com/guardianproject/checkey/issues
+Translation: https://hosted.weblate.org/projects/guardianproject/checkey/
+Liberapay: GuardianProject
+Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
+
+AutoName: Checkey
+Description: |-
+    Checkey is a utility for getting information about the APKs that are installed
+    on your device. Starting with a list of all of the apps that you have installed
+    on your device, it will show you the APK signature with a single touch, and
+    provides links to virustotal.com and androidobservatory.org to easily access the
+    profiles of that APK. It will also let you export the signing certificate and
+    generate ApkSignaturePin pin files for use with the TrustedIntents library.
+
+RepoType: git
+Repo: https://gitlab.com/guardianproject/checkey.git
+Binaries: https://guardianproject.info/releases/Checkey-%v.apk
+
+Builds:
+  - versionName: 0.1.1
+    versionCode: 101
+    commit: 0.1.1
+
+  - versionName: 0.1.2
+    versionCode: 102
+    disable: does not verify, META-INF/BUILD.MF is different
+    commit: 0.1.2
+
+  - versionName: 0.1.3
+    versionCode: 103
+    disable: build output is not a valid apk file
+    commit: 0.1.3
+
+  - versionName: 0.1.4
+    versionCode: 201
+    disable: https://gitlab.com/guardianproject/checkey/issues/3
+    commit: 0.1.4
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y disorderfs
+    init:
+      - cd ../..
+      - mv info.guardianproject.checkey info.guardianproject.checkey.build
+      - mkdir info.guardianproject.checkey
+      - disorderfs --sort-dirents=yes --reverse-dirents=no info.guardianproject.checkey.build
+        info.guardianproject.checkey
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.4
+CurrentVersionCode: 201

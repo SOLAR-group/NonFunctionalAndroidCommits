@@ -1,0 +1,41 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+WebSite: https://fedilab.app
+SourceCode: https://codeberg.org/tom79/Fedilab_Lite
+IssueTracker: https://framagit.org/tom79/fedilab/issues
+Translation: https://crowdin.com/project/mastalab
+Changelog: https://codeberg.org/tom79/Fedilab_Lite/src/branch/master/CHANGELOG
+OpenCollective: mastalab
+
+AutoName: Fedilab
+
+RepoType: git
+Repo: https://codeberg.org/tom79/Fedilab_Lite.git
+
+Builds:
+  - versionName: 2.20.0
+    versionCode: 317
+    commit: 2.20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.23.0
+    versionCode: 318
+    commit: 2.23.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.23.1
+    versionCode: 319
+    commit: 2.23.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.23.1
+CurrentVersionCode: 319

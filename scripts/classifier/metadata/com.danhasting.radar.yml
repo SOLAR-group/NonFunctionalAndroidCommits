@@ -1,0 +1,36 @@
+Categories:
+  - Multimedia
+  - Internet
+License: GPL-3.0-or-later
+AuthorName: Dan Hasting
+AuthorEmail: appsupport@danhasting.com
+SourceCode: https://github.com/dh4/WeatherRadar
+IssueTracker: https://github.com/dh4/WeatherRadar/issues
+Changelog: https://github.com/dh4/WeatherRadar/releases
+Donate: https://dh4.github.io/donate/
+Bitcoin: 1EwgjPGYiChJ5vyBndt9ugzd963FiVc6gj
+
+AutoName: Weather Radar
+
+RepoType: git
+Repo: https://github.com/dh4/WeatherRadar
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 2
+    commit: '1.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.1'
+    versionCode: 3
+    commit: '1.1'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.1'
+CurrentVersionCode: 3

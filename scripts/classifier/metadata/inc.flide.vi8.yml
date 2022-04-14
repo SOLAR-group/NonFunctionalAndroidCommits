@@ -1,0 +1,40 @@
+Categories:
+  - System
+License: Apache-2.0
+AuthorName: Ravi Agarwal
+AuthorEmail: 8vim@protonmail.com
+SourceCode: https://github.com/flide/8VIM
+IssueTracker: https://github.com/flide/8VIM/issues
+
+AutoName: 8Vim
+
+RepoType: git
+Repo: https://github.com/flide/8VIM
+
+Builds:
+  - versionName: iteration-3
+    versionCode: 4
+    commit: iteration-3
+    subdir: 8vim
+    gradle:
+      - yes
+
+  - versionName: iteration-5
+    versionCode: 5
+    commit: iteration-5
+    subdir: 8vim
+    gradle:
+      - yes
+
+  - versionName: iteration-6
+    versionCode: 6
+    disable: fails to build
+    commit: iteration-6
+    subdir: 8vim
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: iteration-6
+CurrentVersionCode: 6

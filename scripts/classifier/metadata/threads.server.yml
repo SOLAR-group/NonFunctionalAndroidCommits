@@ -1,0 +1,125 @@
+Categories:
+  - Connectivity
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/remmer.wilts/threads-server
+IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
+
+AutoName: IPFS Lite
+Description: |-
+    Support of the standard uses cases of IPFS (like add, cat, get, publish, etc).
+    Provide a modern UI to realize this common use cases.
+    Possibility to customize the configuration of the IPFS node.
+
+    '''Enhancements:'''
+    * Precondition is that both communicating nodes using this IPFS Lite application
+    * Enhance the pubsub feature of IPFS to share files between two nodes (Send Option)
+    * Integration of WebRTC via the pubsub feature of IPFS to support telephony between two nodes
+    * Integration of IOTA to support faster node detection and to support a kind of offline mode
+    between nodes
+    * Inbox contains all notifications from other nodes which were sent while your node
+    was offline (Stored on the Tangle, Data is encrypted)
+
+    '''IPFS:'''
+    The InterPlanetary File System is a peer-to-peer (p2p) filesharing system
+    that aims to fundamentally change the way information is distributed
+    across & beyond the globe. IPFS consists of several innovations in
+    communication protocols and distributed systems that have been combined
+    to produce a file system like no other.
+
+RepoType: git
+Repo: https://gitlab.com/remmer.wilts/threads-server.git
+
+Builds:
+  - versionName: 0.9.4
+    versionCode: 94
+    commit: 0.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.4
+    versionCode: 104
+    commit: 1.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.6
+    versionCode: 116
+    commit: 1.1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 120
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: 1.5.5
+    versionCode: 155
+    commit: 1.5.5
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.5.8
+    versionCode: 158
+    commit: 1.5.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.5.9
+    versionCode: 159
+    commit: 1.5.9
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.6.0
+    versionCode: 160
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.6.1
+    versionCode: 161
+    commit: 1.6.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.7.3
+    versionCode: 173
+    commit: 1.7.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.7.8
+    versionCode: 178
+    commit: 1.7.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+MaintainerNotes: Includes a prebuilt library (lite.aar) since 1.7.9.
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.1
+CurrentVersionCode: 201
+
+NoSourceSince: 1.7.9

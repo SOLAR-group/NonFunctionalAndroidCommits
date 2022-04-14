@@ -1,0 +1,280 @@
+Categories:
+  - Writing
+License: Apache-2.0
+SourceCode: https://github.com/rkkr/simple-keyboard
+IssueTracker: https://github.com/rkkr/simple-keyboard/issues
+Translation: https://crowdin.com/project/simple-keyboard
+Changelog: https://github.com/rkkr/simple-keyboard/releases
+
+AutoName: Simple Keyboard
+Description: |-
+    This keyboard is created for those who only need a keyboard and nothing more.
+
+    Features:
+
+    * Small size
+    * Adjustable keyboard height for more screen space
+    * Custom theme colors
+    * Minimal permissions
+    * Ads-free
+
+RepoType: git
+Repo: https://github.com/rkkr/simple-keyboard.git
+
+Builds:
+  - versionName: '2.7'
+    versionCode: 31
+    commit: '31'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.9'
+    versionCode: 34
+    commit: '34'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.10'
+    versionCode: 35
+    commit: '35'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.11'
+    versionCode: 36
+    commit: '36'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.14'
+    versionCode: 39
+    commit: '39'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.15'
+    versionCode: 40
+    commit: '40'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.16'
+    versionCode: 41
+    commit: '41'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.17'
+    versionCode: 42
+    commit: '42'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.18'
+    versionCode: 43
+    commit: '43'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.0'
+    versionCode: 45
+    commit: '45'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 48
+    commit: '48'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.2'
+    versionCode: 49
+    commit: '49'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.3'
+    versionCode: 50
+    commit: '50'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.4'
+    versionCode: 51
+    commit: '51'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.5'
+    versionCode: 53
+    commit: '53'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.6'
+    versionCode: 54
+    commit: '54'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.7'
+    versionCode: 55
+    commit: '55'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.71'
+    versionCode: 56
+    commit: '56'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.72'
+    versionCode: 57
+    commit: '57'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.8'
+    versionCode: 58
+    commit: '58'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.9'
+    versionCode: 59
+    commit: '59'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.10'
+    versionCode: 60
+    commit: '60'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.11'
+    versionCode: 61
+    commit: '61'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.12'
+    versionCode: 62
+    commit: '62'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.13'
+    versionCode: 63
+    commit: '63'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.14'
+    versionCode: 64
+    commit: '64'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.16'
+    versionCode: 66
+    commit: '66'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.17'
+    versionCode: 67
+    commit: '67'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.18'
+    versionCode: 68
+    commit: '68'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.19'
+    versionCode: 69
+    commit: '69'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.20'
+    versionCode: 70
+    commit: '70'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.21'
+    versionCode: 71
+    commit: '71'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.22'
+    versionCode: 72
+    commit: '72'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.23'
+    versionCode: 73
+    commit: '73'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.24'
+    versionCode: 74
+    commit: '74'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.0'
+    versionCode: 75
+    commit: '75'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %c
+UpdateCheckMode: Tags
+CurrentVersion: '4.0'
+CurrentVersionCode: 75

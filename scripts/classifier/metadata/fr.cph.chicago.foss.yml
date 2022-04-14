@@ -1,0 +1,539 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Navigation
+License: Apache-2.0
+AuthorName: carlphilipp
+AuthorEmail: cp.harmant@gmail.com
+SourceCode: https://github.com/carlphilipp/chicago-commutes
+IssueTracker: https://github.com/carlphilipp/chicago-commutes/issues
+Bitcoin: 13WUmCX1AePEKFGv5U1qRgBockFahsm21o
+
+AutoName: Chicago Commutes
+
+RepoType: git
+Repo: https://github.com/carlphilipp/chicago-commutes.git
+
+Builds:
+  - versionName: 5.5.7
+    versionCode: 158
+    commit: 5.5.7-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+
+  - versionName: 5.5.10
+    versionCode: 161
+    commit: 5.5.10-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.6.1
+    versionCode: 164
+    commit: 5.6.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.7.0
+    versionCode: 165
+    commit: 5.7.0-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.7.1
+    versionCode: 166
+    commit: 5.7.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.7.2
+    versionCode: 167
+    commit: 5.7.2-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.7.4
+    versionCode: 169
+    commit: 5.7.4-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.8.0
+    versionCode: 171
+    commit: 5.8.0-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.8.1
+    versionCode: 172
+    commit: 5.8.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+    scanignore:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.9.0
+    versionCode: 173
+    commit: 5.9.0-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.9.1
+    versionCode: 174
+    commit: 5.9.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.9.3
+    versionCode: 176
+    commit: 5.9.3-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.9.4
+    versionCode: 177
+    commit: 5.9.4-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.10.1
+    versionCode: 179
+    commit: 5.10.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.11.1
+    versionCode: 183
+    commit: 5.11.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.0
+    versionCode: 184
+    commit: 5.12.0-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.1
+    versionCode: 185
+    commit: 5.12.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.2
+    versionCode: 186
+    commit: 5.12.2-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.3
+    versionCode: 187
+    commit: 5.12.3-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.5
+    versionCode: 189
+    commit: 5.12.5-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.7
+    versionCode: 191
+    commit: 5.12.7-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.12.8
+    versionCode: 192
+    commit: 5.12.8-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.13.1
+    versionCode: 194
+    commit: 5.13.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.13.2
+    versionCode: 195
+    commit: 5.13.2-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.14.0
+    versionCode: 197
+    commit: 5.14.0-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.14.1
+    versionCode: 198
+    commit: 5.14.1-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+      - .gradle/
+
+  - versionName: 5.14.2
+    versionCode: 199
+    commit: 5.14.2-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - buildSrc/
+
+  - versionName: 5.14.3
+    versionCode: 200
+    commit: 5.14.3-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 5.14.4
+    versionCode: 201
+    commit: 5.14.4-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 5.14.5
+    versionCode: 202
+    commit: 5.14.5-fdroid
+    subdir: android-app
+    gradle:
+      - foss
+    prebuild:
+      - echo "cta.train.key = OWU4YzlkNjhkMGY2NGE1Y2E5NGZiNzFkNWZmMDEzZjM=" >> app.properties
+      - echo "cta.bus.key = bXh4OHNlckFZZTJ6Z1p1OUJxU3l5NU5Wcw==" >> app.properties
+      - echo "mapbox.token = cGsuZXlKMUlqb2lZMkZ5YkhCb2FXeHBjSEFpTENKaElqb2lZMnB1TW1SbFpYRnNNR2x4WWpOeGJ6aHNjMlJqYjJKdmF5SjkuaFREZnUxRVpHNFFneThfOVBfZURkdw=="
+        >> app.properties
+      - echo "google.streetmap.key = QUl6YVN5QU50eTVLdnA4NkpOVExTdVlFSXRCdXJsaENPSWFabjBj"
+        >> app.properties
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+AutoUpdateMode: Version %v-fdroid
+UpdateCheckMode: Tags
+CurrentVersion: 5.14.5
+CurrentVersionCode: 202

@@ -1,0 +1,52 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorEmail: fnepcbxayn@tutanota.com
+SourceCode: https://gitlab.com/LaDaubePhotoChiotte/photochiotte
+IssueTracker: https://gitlab.com/LaDaubePhotoChiotte/photochiotte/issues
+
+AutoName: PhotoChiotte
+
+RepoType: git
+Repo: https://gitlab.com/LaDaubePhotoChiotte/photochiotte
+
+Builds:
+  - versionName: '1.6'
+    versionCode: 7
+    commit: v1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.8'
+    versionCode: 9
+    commit: v1.8
+    subdir: app
+    gradle:
+      - flavorA
+
+  - versionName: '1.10'
+    versionCode: 11
+    commit: v1.10
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+      - apt-get install -y -t testing nasm
+      - pip3 install wheel==0.35.1
+      - pip3 install ninja==1.10.0
+      - pip3 install meson==0.56.0
+    gradle:
+      - flavorA
+    build:
+      - cd ..
+      - bash dlbuild.sh all
+      - cd app/src/main/cpp
+      - cmake -DANDROID_NATIVE_API_LEVEL=21 -DCMAKE_TOOLCHAIN_FILE=$$NDK$$/build/cmake/android.toolchain.cmake
+        .
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.10'
+CurrentVersionCode: 11

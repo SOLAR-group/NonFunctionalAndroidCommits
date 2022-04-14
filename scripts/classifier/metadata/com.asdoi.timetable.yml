@@ -1,0 +1,55 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-or-later
+AuthorName: Asdoi
+AuthorEmail: asdoi@t-online.de
+WebSite: https://asdoi.gitlab.io/timetable.html
+SourceCode: https://gitlab.com/asdoi/TimeTable
+IssueTracker: https://gitlab.com/asdoi/TimeTable/-/issues
+Changelog: https://gitlab.com/asdoi/TimeTable/-/releases
+
+AutoName: TimeTable
+
+RepoType: git
+Repo: https://gitlab.com/asdoi/TimeTable.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 10
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.1'
+    versionCode: 11
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 12
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 13
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.4'
+    versionCode: 14
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.4'
+CurrentVersionCode: 14

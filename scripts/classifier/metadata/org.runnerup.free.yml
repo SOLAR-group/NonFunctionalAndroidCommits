@@ -1,0 +1,257 @@
+AntiFeatures:
+  - NonFreeNet
+  - UpstreamNonFree
+Categories:
+  - Sports & Health
+License: GPL-3.0-only
+WebSite: https://github.com/jonasoreland/runnerup/wiki
+SourceCode: https://github.com/jonasoreland/runnerup
+IssueTracker: https://github.com/jonasoreland/runnerup/issues
+Translation: https://www.transifex.com/runner-up/runner-up-android/dashboard
+Changelog: https://htmlpreview.github.io/?https://raw.githubusercontent.com/jonasoreland/runnerup/blob/HEAD/app/assets/changes.html
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=runnerup%2eandroid%40gmail%2ecom&lc=US&item_name=RunnerUp&button_subtype=services&currency_code=EUR&tax_rate=25%2e000&bn=PP%2dBuyNowBF%3abtn_buynow_LG%2egif%3aNonHosted
+
+Name: RunnerUp
+Description: |-
+    Track your sport activities with RunnerUp using the GPS in your Android phone:
+
+    * See detailed stats around your pace, distance and time.
+    * Get stats and progress with built-in highly configurable audio cues.
+    * Run free runs with target pace or target heart rate zone
+    * Easily configure and run effective interval workouts modeled after Garmin
+    * Share your favorite workouts with friends
+    * Heart rate monitor: Bluetooth SMART (BLE)
+    * Configure and use heart rate zones
+
+    Upload your activities to a variety of running sites with a single click:
+
+    * Strava
+    * Endomondo
+    * RunKeeper
+    * RunningAHEAD
+
+    Explanation to anti-features:
+
+    * NonFreeNet: Uploading to Strava and other services makes use of non free net services. (The uploading is open similar to uploading a .tcx file, but the services are not open.)
+    * UpstreamNonFree: The Play version (can be installed at the same time as the F-Droid version) has additional features using non free libraries, see below
+
+    Features removed compared to Play version:
+
+    * Map view (no MapBox API key in free)
+    * WearOS app (requires non-free Play services)
+    * HR ANT+ connectivity (requires closed source lib)
+    * Runalyze and Dropbox upload (Requires API keys. Runalyze test upload possible.)
+    * Download customized apk to device (F-Droid binary is universal for all supported binaries).
+
+RepoType: git
+Repo: https://github.com/jonasoreland/runnerup
+
+Builds:
+  - versionName: 2.0.2.1
+    versionCode: 14000203
+    commit: v2.0.2.1
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i "/play-services/d" build.gradle
+
+  - versionName: 2.0.3.0
+    versionCode: 14000205
+    commit: v2.0.3.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild:
+      - sed -i -e 's/\r//' ../gradle/wrapper/gradle-wrapper.properties
+      - sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.0.5.1
+    versionCode: 14000208
+    commit: v2.0.5.1
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.0.5.2
+    versionCode: 14000209
+    commit: v2.0.5.2
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.0.6.1
+    versionCode: 14000211
+    commit: v2.0.6.1
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.0.6.2
+    versionCode: 14000212
+    commit: v2.0.6.2
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.0.6.3
+    versionCode: 14000213
+    commit: v2.0.6.3
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.1.0.0
+    versionCode: 14000240
+    commit: v2.1.0.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.0.3
+    versionCode: 15000253
+    commit: v2.2.0.3
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.1.0
+    versionCode: 15000254
+    commit: v2.2.1.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.2.2
+    versionCode: 15000262
+    commit: v2.2.2.2
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.2.4
+    versionCode: 15000264
+    commit: v2.2.2.4
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.3.0
+    versionCode: 15000270
+    commit: v2.2.3.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.3.2
+    versionCode: 15000272
+    commit: v2.2.3.2
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.4.1
+    versionCode: 15000283
+    commit: v2.2.4.1
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.5.0
+    versionCode: 15000290
+    commit: v2.2.5.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.6.0
+    versionCode: 15000292
+    commit: v2.2.6.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+  - versionName: 2.2.7.0
+    versionCode: 15000294
+    commit: v2.2.7.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
+MaintainerNotes: This replaces RunnerUp 1.x https://f-droid.org/packages/org.runnerup
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
+VercodeOperation: '%c + 15000000'
+CurrentVersion: 2.2.7.0
+CurrentVersionCode: 15000294

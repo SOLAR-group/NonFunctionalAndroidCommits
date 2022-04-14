@@ -1,0 +1,35 @@
+Categories:
+  - Sports & Health
+  - Writing
+License: GPL-3.0-only
+WebSite: https://copoer.gitlab.io/CBTAndroid/
+SourceCode: https://gitlab.com/copoer/CBTAndroid/tree/HEAD
+IssueTracker: https://gitlab.com/copoer/CBTAndroid/issues
+
+AutoName: CBTAndroid
+Description: |-
+    A simple implementation of a seven column thought journal.
+
+    What is CBT:
+    CBT is a form of therapy that helps you restructure negative thoughts in order to improve your life
+
+    How to use:
+    When you find yourself feeling down, record the thoughts you are currently having. Then prove that those thoughts are wrong with facts. Finally come up with a new way of looking at the situation.
+
+    <a href="https://copoer.gitlab.io/CBTAndroid/">Learn More</a>
+
+RepoType: git
+Repo: https://gitlab.com/copoer/CBTAndroid.git
+
+Builds:
+  - versionName: 0.0.4
+    versionCode: 3
+    commit: v0.0.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.4
+CurrentVersionCode: 3

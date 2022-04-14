@@ -1,0 +1,218 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+WebSite: https://anuke.itch.io/mindustry
+SourceCode: https://github.com/Anuken/Mindustry
+IssueTracker: https://github.com/Anuken/Mindustry/issues
+Translation: https://github.com/Anuken/Mindustry/blob/HEAD/TRANSLATING.md
+Changelog: https://github.com/Anuken/Mindustry/releases
+
+AutoName: Mindustry
+
+RepoType: git
+Repo: https://github.com/Anuken/Mindustry.git
+
+Builds:
+  - versionName: 4-fdroid-89
+    versionCode: 89
+    commit: v89
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$(expr $$VERCODE$$ - 2)" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "number=4" >> ../core/assets/version.properties
+    scanignore:
+      - core/assets/saves
+    scandelete:
+      - android/libs
+    gradleprops:
+      - buildversion=89
+      - versionType=fdroid
+
+  - versionName: 4-fdroid-93
+    versionCode: 93
+    commit: v93
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "number=4" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 4-fdroid-95
+    versionCode: 95
+    commit: v95
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "number=4" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 4-fdroid-96
+    versionCode: 96
+    commit: v96
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "number=4" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 5-fdroid-98
+    versionCode: 98
+    commit: v98
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 5-fdroid-99
+    versionCode: 99
+    commit: v99
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 5-fdroid-102
+    versionCode: 102
+    commit: a797618f6c5f04b1665b6f2c6d82175b3e63099b
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidRhinoContext.java
+    scandelete:
+      - android/libs
+
+  - versionName: 5-fdroid-103
+    versionCode: 103
+    commit: v103
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidRhinoContext.java
+    scandelete:
+      - android/libs
+
+  - versionName: 5-fdroid-104
+    versionCode: 104
+    commit: v104
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidRhinoContext.java
+    scandelete:
+      - android/libs
+
+  - versionName: 6-fdroid-107
+    versionCode: 107
+    disable: unstable
+    commit: v107
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidLauncher.java
+      - android/src/mindustry/android/AndroidRhinoContext.java
+    scandelete:
+      - android/libs
+
+MaintainerNotes: |-
+    v108 and later require Java 14 which is a bit too new for Debian 9.
+
+    libgdx.so and libgdx-freetype.so binaries are extracted from
+    com.badlogicgames.gdx:gdx-platform JARs that come from Maven Central.
+
+    The folder "assets/saves" contains savegames not executables.
+
+    android/src/mindustry/android/{AndroidLauncher,AndroidRhinoContext}.java uses DexClassLoader 
+    together with Mozilla's Rhino to provide JavaScript automation to user mods
+    (https://mindustrygame.github.io/wiki/modding/) 
+
+AutoUpdateMode: None
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/Anuken/MindustryBuilds/master/version_fdroid.txt|versionCode=(.*)|.|versionName=(.*)
+CurrentVersion: 6-fdroid-116
+CurrentVersionCode: 116

@@ -1,0 +1,196 @@
+Categories:
+  - Multimedia
+  - Connectivity
+License: GPL-3.0-or-later
+SourceCode: https://github.com/mkulesh/onpc
+IssueTracker: https://github.com/mkulesh/onpc/issues
+Changelog: https://github.com/mkulesh/onpc/releases
+
+AutoName: Enhanced Controller for Onkyo and Pioneer
+Description: |-
+    This app allows remote control of an Onkyo Network Player or a Network A/V
+    Receiver via the "Integra Serial Communication  Protocol". Its two most
+    popular features are music playback and sound profile management.
+
+    Other benefits include:
+
+    * Maximum privacy: No ads, no trackers, no telemetry, no special permissions
+    * One-click access to music playback actions
+    * Full music playback control (play, stop, pause, track up/down, time seek, repeat and random modes)
+    * The modern material design supports different color themes and works on smartphones and/or tablets in portrait and  landscape mode
+    * Tuneln Radio and Deezer streaming
+    * Multi-zone support
+    * Control of devices attached via RI
+    * Play queue support (add, remove, clear, change playback order)
+    * Display device details and control device settings such as dimmer level, digital filter, auto power
+    * Allows control of receivers over an OpenVPN connection (even over a cellular connection)
+
+RepoType: git
+Repo: https://github.com/mkulesh/onpc
+
+Builds:
+  - versionName: '0.8'
+    versionCode: 8
+    commit: v0.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.9'
+    versionCode: 9
+    commit: v0.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.0'
+    versionCode: 10
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.1'
+    versionCode: 11
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 12
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 13
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.4'
+    versionCode: 15
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.5'
+    versionCode: 16
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 17
+    commit: v1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.7'
+    versionCode: 18
+    commit: v1.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.8'
+    versionCode: 19
+    commit: v1.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.2
+    versionCode: 22
+    commit: v1.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.10'
+    versionCode: 23
+    commit: v1.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.11'
+    versionCode: 24
+    commit: v1.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.12'
+    versionCode: 25
+    commit: v1.12
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.13'
+    versionCode: 26
+    commit: v1.13
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.14'
+    versionCode: 27
+    commit: v1.14
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.15'
+    versionCode: 28
+    commit: v1.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.16'
+    versionCode: 29
+    commit: v1.16
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.17'
+    versionCode: 30
+    commit: v1.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.18'
+    versionCode: 31
+    commit: v1.18
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.19'
+    versionCode: 32
+    commit: v1.19
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.20'
+    versionCode: 33
+    commit: v1.20
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.20'
+CurrentVersionCode: 33

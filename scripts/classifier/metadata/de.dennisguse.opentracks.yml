@@ -1,0 +1,255 @@
+Categories:
+  - Sports & Health
+License: Apache-2.0
+AuthorName: OpenTracks Team
+WebSite: https://OpenTracksApp.com
+SourceCode: https://github.com/OpenTracksApp/OpenTracks
+IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
+Changelog: https://github.com/OpenTracksApp/OpenTracks/releases
+Liberapay: OpenTracks
+Bitcoin: bc1qckpls3lpjlcpyxzm66hcy65hnesas9zgacy6yc
+
+AutoName: OpenTracks
+
+RepoType: git
+Repo: https://github.com/OpenTracksApp/OpenTracks
+
+Builds:
+  - versionName: v3.0.1
+    versionCode: 2947
+    commit: v3.0.1
+    gradle:
+      - yes
+
+  - versionName: v3.1.0
+    versionCode: 2991
+    commit: v3.1.0
+    gradle:
+      - yes
+
+  - versionName: v3.2.0
+    versionCode: 3054
+    commit: v3.2.0
+    gradle:
+      - yes
+
+  - versionName: v3.2.1
+    versionCode: 3063
+    commit: v3.2.1
+    gradle:
+      - yes
+
+  - versionName: v3.2.2
+    versionCode: 3079
+    commit: v3.2.2
+    gradle:
+      - yes
+
+  - versionName: v3.2.3
+    versionCode: 3101
+    commit: v3.2.3
+    gradle:
+      - yes
+
+  - versionName: v3.2.5
+    versionCode: 3123
+    commit: v3.2.5
+    gradle:
+      - yes
+
+  - versionName: v3.2.6
+    versionCode: 3137
+    commit: v3.2.6
+    gradle:
+      - yes
+
+  - versionName: v3.2.7
+    versionCode: 3149
+    commit: v3.2.7
+    gradle:
+      - yes
+
+  - versionName: v3.2.8
+    versionCode: 3162
+    commit: v3.2.8
+    gradle:
+      - yes
+
+  - versionName: v3.2.9
+    versionCode: 3175
+    commit: v3.2.9
+    gradle:
+      - yes
+
+  - versionName: v3.2.11
+    versionCode: 3213
+    commit: v3.2.11
+    gradle:
+      - yes
+
+  - versionName: v3.3.1
+    versionCode: 3251
+    commit: v3.3.1
+    gradle:
+      - yes
+
+  - versionName: v3.3.2
+    versionCode: 3272
+    commit: v3.3.2
+    gradle:
+      - yes
+
+  - versionName: v3.4.0
+    versionCode: 3287
+    commit: v3.4.0
+    gradle:
+      - yes
+
+  - versionName: v3.5.0
+    versionCode: 3305
+    commit: v3.5.0
+    gradle:
+      - yes
+
+  - versionName: v3.6.2
+    versionCode: 3335
+    commit: v3.6.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.1
+    versionCode: 3372
+    commit: v3.7.1
+    gradle:
+      - yes
+
+  - versionName: v3.7.2
+    versionCode: 3381
+    commit: v3.7.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.3
+    versionCode: 3386
+    commit: v3.7.3
+    gradle:
+      - yes
+
+  - versionName: v3.7.4
+    versionCode: 3396
+    commit: v3.7.4
+    gradle:
+      - yes
+
+  - versionName: v3.7.5
+    versionCode: 3427
+    commit: v3.7.5
+    gradle:
+      - yes
+
+  - versionName: v3.7.6
+    versionCode: 3449
+    commit: v3.7.6
+    gradle:
+      - yes
+
+  - versionName: v3.8.0
+    versionCode: 3466
+    commit: v3.8.0
+    gradle:
+      - yes
+
+  - versionName: v3.8.1
+    versionCode: 3474
+    commit: v3.8.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.0
+    versionCode: 3522
+    commit: v3.9.0
+    gradle:
+      - yes
+
+  - versionName: v3.9.1
+    versionCode: 3530
+    commit: v3.9.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.2
+    versionCode: 3541
+    commit: v3.9.2
+    gradle:
+      - yes
+
+  - versionName: v3.9.3
+    versionCode: 3544
+    commit: v3.9.3
+    gradle:
+      - yes
+
+  - versionName: v3.9.4
+    versionCode: 3573
+    commit: v3.9.4
+    gradle:
+      - yes
+
+  - versionName: v3.9.5
+    versionCode: 3584
+    commit: v3.9.5
+    gradle:
+      - yes
+
+  - versionName: v3.10.0
+    versionCode: 3611
+    commit: v3.10.0
+    gradle:
+      - yes
+
+  - versionName: v3.11.0
+    versionCode: 3656
+    commit: v3.11.0
+    gradle:
+      - yes
+
+  - versionName: v3.11.1
+    versionCode: 3661
+    commit: v3.11.1
+    gradle:
+      - yes
+
+  - versionName: v3.12.0
+    versionCode: 3704
+    commit: v3.12.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.0
+    versionCode: 3732
+    commit: v3.13.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.1
+    versionCode: 3737
+    commit: v3.13.1
+    gradle:
+      - yes
+
+  - versionName: v3.13.2
+    versionCode: 3740
+    commit: v3.13.2
+    gradle:
+      - yes
+
+  - versionName: v3.14.0
+    versionCode: 3761
+    commit: v3.14.0
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: v3.14.0
+CurrentVersionCode: 3761

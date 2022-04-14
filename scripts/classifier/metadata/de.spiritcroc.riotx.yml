@@ -1,0 +1,260 @@
+Categories:
+  - Internet
+  - Phone & SMS
+License: Apache-2.0
+AuthorName: SpiritCroc
+WebSite: https://schildi.chat
+SourceCode: https://github.com/SchildiChat/SchildiChat-android
+IssueTracker: https://github.com/SchildiChat/SchildiChat-android/issues
+
+RepoType: git
+Repo: https://github.com/SchildiChat/SchildiChat-android
+
+Builds:
+  - versionName: 1.0.5.sc.17
+    versionCode: 40100220
+    commit: sc_v1.0.5.sc.17
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.5.sc.18
+    versionCode: 40100230
+    commit: sc_v1.0.5.sc.18
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.6.sc.19
+    versionCode: 40100250
+    commit: sc_v1.0.6.sc.19
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.7.sc.20
+    versionCode: 40100270
+    commit: sc_v1.0.7.sc.20
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.8.sc.21
+    versionCode: 40100290
+    commit: sc_v1.0.8.sc.21
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.8.sc.22
+    versionCode: 40100300
+    commit: sc_v1.0.8.sc.22
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.8.sc.23
+    versionCode: 40100310
+    commit: sc_v1.0.8.sc.23
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.9.sc.24
+    versionCode: 40100330
+    commit: sc_v1.0.9.sc.24
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - sed -i -e 's/gradle-6.7/gradle-6.6.1/' ../gradle/wrapper/gradle-wrapper.properties
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.9.sc.25
+    versionCode: 40100340
+    commit: sc_v1.0.9.sc.25
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - sed -i -e 's/gradle-6.7/gradle-6.6.1/' ../gradle/wrapper/gradle-wrapper.properties
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.10.sc.25
+    versionCode: 40100350
+    commit: sc_v1.0.10.sc.25
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - sed -i -e 's/gradle-6.7/gradle-6.6.1/' ../gradle/wrapper/gradle-wrapper.properties
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.10.sc.26
+    versionCode: 40100360
+    commit: sc_v1.0.10.sc.26
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - sed -i -e 's/gradle-6.7/gradle-6.6.1/' ../gradle/wrapper/gradle-wrapper.properties
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.11.sc.26
+    versionCode: 40100370
+    commit: sc_v1.0.11.sc.26
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - sed -i -e 's/gradle-6.7/gradle-6.6.1/' ../gradle/wrapper/gradle-wrapper.properties
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+MaintainerNotes: |-
+    Uses piasy/BigImageViewer which gets build and installed to a local maven repo in srclib prepare step.
+
+    In prebuild we do weird stuff for replacing `maven {` with `mavenLocal {`. tac reverses the lines so we can match the following repo url.
+    The awk call then matches the url, deletes the matching line and replaces the following line. No idea how it works, but it does.
+    Finally reverse the lines again and move back to original build.gradle file.
+
+    Upstream builds and publishes a libre build of the jitsi sdk. The maven repo can be recreated by using tools/jitsi/build_jitsi_libs.sh
+    We use that build instead of doing our own for now as jitsi embeds a timstamp in the version number and it's a major pain to maintain.
+
+AutoUpdateMode: Version sc_v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.11.sc.26
+CurrentVersionCode: 40100370

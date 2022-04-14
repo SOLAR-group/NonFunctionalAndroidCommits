@@ -1,0 +1,346 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+WebSite: https://handynewsreader.blogspot.com/
+SourceCode: https://github.com/yanus171/Handy-News-Reader
+IssueTracker: https://github.com/yanus171/Handy-News-Reader/issues
+Translation: https://crowdin.com/project/handy-news-reader
+Changelog: https://github.com/yanus171/Handy-News-Reader/releases
+
+AutoName: Handy News Reader
+Description: |
+    '''Main functions:'''
+
+    * RSS feeds of articles
+    * search for a feed by keyword when adding
+    * automatic (by shedule) download offline full-text versions of articles with images
+    * import / export of the channel list from OPML
+    * filter articles by keywords or regular expressions
+    * full screen reading mode
+
+    '''Additional features:'''
+
+    * collapsing (folding) the groups of feeds
+    * hide read articles mode
+    * bold articles text font setting
+    * share a link with this app to prepare it for reading
+    * limit the number of downloadable images of the article
+    * the ability to download individual images of the article
+    * a detailed description of the process of downloading articles to understand what the application is doing at the moment
+    * the counter of the consumed traffic
+    * setting up automatic marking of articles as read while scrolling the list
+    * setting the display of the text of articles in the article list (these two items are useful for reading forums)
+    * Tap areas to go to the next / previous page while reading the article
+    * Swipe to change brightness while reading the article
+    * Quick transition to full screen mode and back, as well as showing / hiding the action bar
+    * much more ...
+
+RepoType: git
+Repo: https://github.com/yanus171/Handy-News-Reader
+
+Builds:
+  - versionName: 0.7.28
+    versionCode: 126
+    commit: 0.7.29
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.29
+    versionCode: 127
+    disable: "Unexpected version/version code in output; APK: '0.7.28' / '126',  Expected:\
+        \ '0.7.29' / '127'"
+    commit: 0.7.29
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.35
+    versionCode: 133
+    commit: 0.7.35
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.36
+    versionCode: 134
+    commit: eff316f032c0683149aa8fd1fe8389807f6d4c79
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.38
+    versionCode: 136
+    commit: 0.7.38
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.40
+    versionCode: 138
+    commit: 0.7.40
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.44
+    versionCode: 142
+    commit: v0.7.44
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.46
+    versionCode: 144
+    commit: v0.7.46
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.47
+    versionCode: 145
+    commit: v0.7.47
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.49
+    versionCode: 147
+    commit: v0.7.49
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.50
+    versionCode: 148
+    commit: v0.7.50
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.52
+    versionCode: 150
+    commit: v0.7.52
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.53
+    versionCode: 151
+    commit: v0.7.53
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.0
+    versionCode: 153
+    commit: v0.8.0
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.2
+    versionCode: 155
+    commit: v0.8.2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.3
+    versionCode: 156
+    commit: v0.8.3
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.4
+    versionCode: 157
+    commit: v0.8.4
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.5
+    versionCode: 158
+    commit: v0.8.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.8.6
+    versionCode: 159
+    commit: v0.8.6
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.9.0
+    versionCode: 161
+    commit: v0.9.0
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.9.1
+    versionCode: 163
+    commit: v0.9.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.9.2
+    versionCode: 164
+    commit: 0.9.2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.9.3
+    versionCode: 165
+    commit: v0.9.3
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.9.4
+    versionCode: 166
+    commit: v0.9.4
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.10.7
+    versionCode: 182
+    disable: fails to build
+    commit: v0.10.7
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.1
+    versionCode: 187
+    commit: v0.11.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.5
+    versionCode: 189
+    commit: v0.11.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.9
+    versionCode: 193
+    disable: missing resources
+    commit: v0.11.9
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.12.2
+    versionCode: 201
+    commit: v0.12.2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.0
+    versionCode: 202
+    disable: https://github.com/yanus171/Handy-News-Reader/issues/453
+    commit: v0.13.0
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.1
+    versionCode: 203
+    commit: v0.13.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.4
+    versionCode: 206
+    commit: v0.13.4
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.5
+    versionCode: 207
+    commit: v0.13.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.14.2
+    versionCode: 208
+    commit: v0.14.2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.1
+    versionCode: 212
+    commit: v0.15.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.5
+    versionCode: 215
+    commit: v0.15.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.6
+    versionCode: 216
+    commit: v0.15.6
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.7
+    versionCode: 217
+    commit: v0.15.7
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.10
+    versionCode: 220
+    disable: fails to build
+    commit: v0.15.10
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.13
+    versionCode: 223
+    disable: fails to build
+    commit: v0.15.13
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.14
+    versionCode: 224
+    commit: v0.15.14
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.15
+    versionCode: 225
+    commit: v0.15.15
+    subdir: FlymFork
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 0.15.15
+CurrentVersionCode: 225

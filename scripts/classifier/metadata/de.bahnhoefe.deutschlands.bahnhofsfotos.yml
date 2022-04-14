@@ -1,0 +1,82 @@
+Categories:
+  - Navigation
+  - Games
+License: MIT
+AuthorName: Railwaystations Team
+WebSite: https://railway-stations.org
+SourceCode: https://github.com/RailwayStations/RSAndroidApp
+IssueTracker: https://github.com/RailwayStations/RSAndroidApp/issues
+
+AutoName: Railway station photos
+
+RepoType: git
+Repo: https://github.com/RailwayStations/RSAndroidApp.git
+
+Builds:
+  - versionName: 12.2.2
+    versionCode: 48
+    commit: 12.2.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.2.5
+    versionCode: 51
+    commit: 12.2.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.3.0
+    versionCode: 52
+    commit: 12.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.3.1
+    versionCode: 53
+    commit: 12.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.3.2
+    versionCode: 54
+    commit: 12.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.4.3
+    versionCode: 58
+    commit: 12.4.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.5.0
+    versionCode: 59
+    commit: 12.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.6.0
+    versionCode: 60
+    commit: 12.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.7.0
+    versionCode: 61
+    commit: 12.7.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 12.7.0
+CurrentVersionCode: 61

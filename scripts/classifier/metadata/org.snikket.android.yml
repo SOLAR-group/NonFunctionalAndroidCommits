@@ -1,0 +1,48 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Matthew Wild
+WebSite: https://snikket.org/
+SourceCode: https://github.com/snikket-im/snikket-android
+IssueTracker: https://github.com/snikket-im/snikket-android/issues
+Translation: https://www.transifex.com/siacs/conversations/
+Changelog: https://github.com/snikket-im/snikket-android/blob/HEAD/CHANGELOG.md
+
+AutoName: Snikket
+
+RepoType: git
+Repo: https://github.com/snikket-im/snikket-android
+
+Builds:
+  - versionName: 2.6.3+fcr
+    versionCode: 360
+    commit: 2.6.3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.8.3+fcr
+    versionCode: 383
+    commit: 2.8.3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21
+
+  - versionName: 2.9.0+fcr
+    versionCode: 398
+    commit: 2.9.0
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+AutoUpdateMode: Version ++fcr %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.9.0
+CurrentVersionCode: 398

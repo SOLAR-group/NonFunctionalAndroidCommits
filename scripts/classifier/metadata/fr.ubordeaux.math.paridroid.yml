@@ -1,0 +1,194 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-or-later
+WebSite: https://pari.math.u-bordeaux.fr/paridroid
+SourceCode: https://pari.math.u-bordeaux.fr/cgi-bin/gitweb.cgi?p=paridroid.git
+IssueTracker: https://pari.math.u-bordeaux.fr/Bugs
+
+AutoName: PariDroid
+Description: |-
+    PariDroid is a port of PARI/GP to Android.
+
+    PARI/GP is a widely used computer algebra system designed for fast computations
+    in number theory (factorizations, algebraic number theory, elliptic curves...),
+    but also contains a large number of other useful functions to compute with
+    mathematical entities such as matrices, polynomials, power series, algebraic
+    numbers etc., and a lot of transcendental functions.
+
+RepoType: git
+Repo: https://pari.math.u-bordeaux.fr/git/paridroid.git
+
+Builds:
+  - versionName: 2.7.2.1.3
+    versionCode: 8
+    commit: 2.7.2.1.3
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.7.2
+    prebuild: sed -i -e 's/x86_64/x86/g' ../Makefile
+    target: android-10
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r12b
+
+  - versionName: 2.7.3.1.3
+    versionCode: 9
+    commit: 2.7.3.1.3
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.7.3
+    prebuild: sed -i -e 's/x86_64/x86/g' ../Makefile
+    target: android-10
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r12b
+
+  - versionName: 2.7.4.1.3
+    versionCode: 10
+    commit: 2.7.4.1.3
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.7.4
+    prebuild: sed -i -e 's/x86_64/x86/g' ../Makefile
+    target: android-10
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r12b
+
+  - versionName: 2.7.5.1.3
+    versionCode: 11
+    commit: 2.7.5.1.3
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.7.5
+    prebuild: sed -i -e 's/x86_64/x86/g' ../Makefile
+    target: android-10
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r12b
+
+  - versionName: 2.7.6.1.4
+    versionCode: 12
+    commit: 2.7.6.1.4
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.7.6
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.9.1.1.4
+    versionCode: 13
+    commit: 2.9.1.1.4
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.9.1
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.9.3.1.4
+    versionCode: 14
+    commit: 2.9.3.1.4
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.9.3
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.11.0.1.5
+    versionCode: 15
+    commit: 2.11.0.1.5
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.11.0
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.11.1.1.6
+    versionCode: 16
+    commit: 2.11.1.1.6
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.11.1
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.11.2.1.6
+    versionCode: 18
+    commit: 2.11.2.1.6
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.11.2
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.11.3.1.7
+    versionCode: 19
+    commit: 2.11.3.1.7
+    subdir: PariDroid
+    srclibs:
+      - pari@pari-2.11.3
+    target: android-11
+    build:
+      - cd ..
+      - make pari
+    buildjni:
+      - yes
+    ndk: r10e
+
+  - versionName: 2.11.4.1.8
+    versionCode: 20
+    commit: 2.11.4.1.8
+    output: PariDroid/bin/PariDroid-release-unsigned.apk
+    srclibs:
+      - gmp@18021:413ede7e6962
+      - pari@pari-2.11.4
+    target: android-11
+    build: make fdroid
+    ndk: r13b
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 2.11.4.1.8
+CurrentVersionCode: 20

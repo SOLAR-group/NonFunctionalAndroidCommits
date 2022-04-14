@@ -1,0 +1,169 @@
+Categories:
+  - Internet
+  - Security
+License: GPL-3.0-only
+AuthorName: Oxford HCC
+WebSite: https://hcc.cs.ox.ac.uk/projects/#TrackerControl
+SourceCode: https://github.com/OxfordHCC/tracker-control-android
+IssueTracker: https://github.com/OxfordHCC/tracker-control-android/issues
+Changelog: https://github.com/OxfordHCC/tracker-control-android/releases
+
+AutoName: TrackerControl
+
+RepoType: git
+Repo: https://github.com/OxfordHCC/tracker-control-android
+
+Builds:
+  - versionName: 2020.04.25-fdroid
+    versionCode: 2020042502
+    commit: '2020042502'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.05.08-fdroid
+    versionCode: 2020050802
+    commit: '2020050802'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.05.17-fdroid
+    versionCode: 2020051702
+    commit: '2020051702'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.05.21-fdroid
+    versionCode: 2020052102
+    commit: '2020052102'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.06.08-fdroid
+    versionCode: 2020060801
+    commit: '2020060801'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.07.07-fdroid
+    versionCode: 2020070701
+    commit: '2020070701'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.07.07-fdroid
+    versionCode: 2020070702
+    commit: '2020070702'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.07.25-fdroid
+    versionCode: 2020072502
+    commit: '2020072502'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.08.09-fdroid
+    versionCode: 2020080901
+    commit: '2020080901'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.08.17-fdroid
+    versionCode: 2020081701
+    commit: '2020081701'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.08.27-fdroid
+    versionCode: 2020082701
+    commit: '2020082701'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.09.09-fdroid
+    versionCode: 2020090901
+    commit: '2020090901'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.09.10-fdroid
+    versionCode: 2020091001
+    commit: '2020091001'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.10.06-fdroid
+    versionCode: 2020100601
+    commit: '2020100601'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.10.25-fdroid
+    versionCode: 2020102501
+    commit: '2020102501'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.11.17-fdroid
+    versionCode: 2020111701
+    commit: '2020111701'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2020.12.01-fdroid
+    versionCode: 2020120101
+    commit: '2020120101'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+AutoUpdateMode: Version %c
+UpdateCheckMode: Tags ^[0-9]+$
+CurrentVersion: 2020.12.01-fdroid
+CurrentVersionCode: 2020120101

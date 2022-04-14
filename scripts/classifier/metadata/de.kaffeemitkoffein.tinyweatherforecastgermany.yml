@@ -1,0 +1,74 @@
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+AuthorName: Pawel Dube
+SourceCode: https://codeberg.org/Starfish/TinyWeatherForecastGermany
+IssueTracker: https://codeberg.org/Starfish/TinyWeatherForecastGermany/issues
+
+AutoName: Tiny Weather Forecast Germany
+
+RepoType: git
+Repo: https://codeberg.org/Starfish/TinyWeatherForecastGermany
+
+Builds:
+  - versionName: '0.51'
+    versionCode: 12
+    commit: '0.51'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.52'
+    versionCode: 13
+    commit: '0.52'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.52.1
+    versionCode: 14
+    commit: 0.52.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.52.2
+    versionCode: 15
+    commit: 0.52.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.52.3
+    versionCode: 16
+    commit: 0.52.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.53.0
+    versionCode: 17
+    commit: 0.53.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.54.0
+    versionCode: 18
+    disable: cannot find symbol TEXT_PAINT
+    commit: 0.54.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.54.1
+    versionCode: 19
+    commit: 0.54.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.54.1
+CurrentVersionCode: 19

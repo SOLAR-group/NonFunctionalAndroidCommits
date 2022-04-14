@@ -1,0 +1,44 @@
+Categories:
+  - Connectivity
+License: Apache-2.0
+SourceCode: https://github.com/EventInfra/wifisetup
+
+AutoName: 36C3 Wifi Setup
+Description: |
+    This app creates a secure profile with CA certificate checking (Let's
+    Encrypt) and certificate subject verification (radius.c3noc.net).
+    Current iteration for 36c3.
+
+RepoType: git
+Repo: https://github.com/EventInfra/wifisetup.git
+
+Builds:
+  - versionName: '0.25'
+    versionCode: 20181222
+    commit: 867323075f00c2bc64f726ce30281c50b0186883
+    subdir: app
+    patch:
+      - 0001-add-google-repo.patch
+    gradle:
+      - yes
+    prebuild: rm local.properties
+
+  - versionName: '0.26'
+    versionCode: 20190813
+    commit: 3342817dc3d06e8a0a078ec1ab58dd0a8b4d80d7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.31'
+    versionCode: 20191205
+    commit: fb248d405c69b5f8a11421abf17eda9d9e1d3cbf
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.0.1/5.6.4/' ../gradle/wrapper/gradle-wrapper.properties
+
+AutoUpdateMode: None
+UpdateCheckMode: RepoManifest
+CurrentVersion: '0.31'
+CurrentVersionCode: 20191205

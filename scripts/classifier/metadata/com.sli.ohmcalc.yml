@@ -1,0 +1,23 @@
+Categories:
+  - Science & Education
+License: AGPL-3.0-only
+SourceCode: https://github.com/sli/ohmcalc
+
+AutoName: Ohm Calc
+Description: |-
+    Simple app that calculates total resistance of your coils and lets you apply
+    Ohm’s law to also find amp draw and power output.
+
+Builds:
+  - versionName: '0.1'
+    versionCode: 1
+    commit: '0.1'
+    srclibs:
+      - 1:ActionBarSherlock@4.4.0
+
+MaintainerNotes: Source repo deleted.
+
+AutoUpdateMode: None
+UpdateCheckMode: Static
+
+NoSourceSince: '0.1'

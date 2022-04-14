@@ -1,0 +1,539 @@
+Categories:
+  - Reading
+License: AGPL-3.0-only
+WebSite: https://koreader.rocks/
+SourceCode: https://github.com/koreader/koreader
+IssueTracker: https://github.com/koreader/koreader/issues
+Translation: https://hosted.weblate.org/engage/koreader/
+Changelog: https://github.com/koreader/koreader/releases
+LiberapayID: '1628593'
+
+RepoType: git
+Repo: https://github.com/koreader/koreader.git
+
+Builds:
+  - versionName: v2019.03.1
+    versionCode: 6623
+    commit: v2019.03.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.04
+    versionCode: 6696
+    commit: v2019.04
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.05
+    versionCode: 6780
+    commit: v2019.05
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.06
+    versionCode: 6808
+    commit: v2019.06
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.07
+    versionCode: 6832
+    commit: v2019.07
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.08
+    versionCode: 6890
+    commit: v2019.08
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.09.2
+    versionCode: 6997
+    commit: v2019.09.2
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.09.3
+    versionCode: 6999
+    commit: v2019.09.3
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.10
+    versionCode: 7085
+    commit: v2019.10
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.11
+    versionCode: 7129
+    commit: v2019.11
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.12
+    versionCode: 7219
+    disable: Fetched in submodule path 'l10n', but it did not contain c848073a4c0c7a08b8a1c29f0686962a6e97af36
+    commit: v2019.12
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.01
+    versionCode: 7278
+    disable: fails to build
+    commit: v2020.01
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.03
+    versionCode: 7360
+    disable: mismatched versionCode waiting for upstream
+    commit: v2020.03
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.03.2
+    versionCode: 7365
+    disable: versionCode different see upstream
+    commit: v2020.03.2
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.04.1
+    versionCode: 7402
+    commit: v2020.04.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.05
+    versionCode: 7444
+    commit: v2020.05
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.06
+    versionCode: 7492
+    commit: v2020.06
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.07
+    versionCode: 7554
+    commit: v2020.07
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.07.1
+    versionCode: 7562
+    commit: v2020.07.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.08
+    versionCode: 7617
+    commit: v2020.08
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.08.1
+    versionCode: 7629
+    commit: v2020.08.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.09
+    versionCode: 7706
+    commit: v2020.09
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.10
+    versionCode: 7763
+    commit: v2020.10
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.10.1
+    versionCode: 7768
+    commit: v2020.10.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.11
+    versionCode: 7820
+    commit: v2020.11
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://ota.koreader.rocks/koreader-android-fdroid-latest|(\d+)$|.|(v.*)
+CurrentVersion: v2020.11
+CurrentVersionCode: 7820

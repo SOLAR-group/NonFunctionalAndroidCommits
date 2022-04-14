@@ -1,0 +1,140 @@
+Categories:
+  - Internet
+  - Connectivity
+License: Apache-2.0
+WebSite: https://www.freerdp.com/
+SourceCode: https://github.com/FreeRDP/FreeRDP
+IssueTracker: https://github.com/FreeRDP/FreeRDP/issues
+Changelog: https://github.com/FreeRDP/FreeRDP/blob/HEAD/ChangeLog
+
+AutoName: aFreeRDP
+Description: |-
+    ''FreeRDP'' is a free implementation of the Remote Desktop Protocol (RDP),
+    released under the Apache license. Enjoy the freedom of using your software
+    wherever you want, the way you want it, in a world where interoperability can
+    finally liberate your computing experience.
+
+    You can simply use your Android device to start all your applications like Word,
+    Outlook, Adobe Photoshop, games or any other installed application.
+
+    ''aFreeRDP'' supports all operating systems that support Terminal Services
+    respectively Remote Desktop Services out of the box.
+
+RepoType: git
+Repo: https://github.com/FreeRDP/FreeRDP.git
+
+Builds:
+  - versionName: 2.0.0-rc0
+    versionCode: 10
+    commit: 2.0.0-rc0
+    subdir: client/Android/Studio/aFreeRDP
+    patch:
+      - 2.0.0-rc0-gcc-sysroot.diff
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "RELEASE_STORE_FILE=\nRELEASE_KEY_ALIAS=" >>../gradle.properties
+      - cd ../../../../scripts
+      - sed -i -e 's/OPENSSL_TAG=OpenSSL_1_1_0[a-f]/OPENSSL_TAG=OpenSSL_1_1_0g/' -e
+        's/WITH_OPENH264=0/WITH_OPENH264=1/' android-build-*.conf
+      - sed -i -e 's/make/make USE_ASM=no/' android-build-openh264.sh
+    build:
+      - cd ../../../../scripts
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-32.conf
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-64.conf
+    ndk: r12b
+
+  - versionName: 2.0.0-rc1
+    versionCode: 11
+    commit: 2.0.0-rc1
+    subdir: client/Android/Studio/aFreeRDP
+    patch:
+      - 2.0.0-rc0-gcc-sysroot.diff
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "RELEASE_STORE_FILE=\nRELEASE_KEY_ALIAS=" >>../gradle.properties
+      - cd ../../../../scripts
+      - sed -i -e 's/OPENSSL_TAG=OpenSSL_1_1_0[a-f]/OPENSSL_TAG=OpenSSL_1_1_0g/' -e
+        's/WITH_OPENH264=0/WITH_OPENH264=1/' android-build-*.conf
+      - sed -i -e 's/make/make USE_ASM=no/' android-build-openh264.sh
+    build:
+      - cd ../../../../scripts
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-32.conf
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-64.conf
+    ndk: r12b
+
+  - versionName: 2.0.0-rc2
+    versionCode: 12
+    commit: 2.0.0-rc2
+    subdir: client/Android/Studio/aFreeRDP
+    patch:
+      - 2.0.0-rc0-gcc-sysroot.diff
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "RELEASE_STORE_FILE=\nRELEASE_KEY_ALIAS=" >>../gradle.properties
+      - cd ../../../../scripts
+      - sed -i -e 's/OPENSSL_TAG=OpenSSL_1_1_0[a-g]/OPENSSL_TAG=OpenSSL_1_1_0h/' -e
+        's/WITH_OPENH264=0/WITH_OPENH264=1/' android-build-*.conf
+      - sed -i -e 's/make/make USE_ASM=no/' android-build-openh264.sh
+    build:
+      - cd ../../../../scripts
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-32.conf
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-64.conf
+    ndk: r12b
+
+  - versionName: 2.0.0-rc4
+    versionCode: 14
+    commit: 2.0.0-rc4
+    subdir: client/Android/Studio/aFreeRDP
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "RELEASE_STORE_FILE=\nRELEASE_KEY_ALIAS=" >>../gradle.properties
+      - cd ../../../../scripts
+      - sed -i -e 's/OPENSSL_TAG=OpenSSL_1_1_0[a-h]/OPENSSL_TAG=OpenSSL_1_1_0i/' -e
+        's/WITH_OPENH264=0/WITH_OPENH264=1/' android-build-*.conf
+      - sed -i -e 's/make/make USE_ASM=no/' android-build-openh264.sh
+    build:
+      - cd ../../../../scripts
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-32.conf
+      - ./android-build-freerdp.sh --ndk $$NDK$$ --sdk $$SDK$$ --conf android-build-64.conf
+    ndk: r12b
+
+  - versionName: 2.2.0
+    versionCode: 19
+    commit: 2.2.0
+    subdir: client/Android/Studio/aFreeRDP
+    patch:
+      - openh264-ndk.patch
+    gradle:
+      - yes
+    prebuild:
+      - $$SDK$$/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
+      - pushd ../../../../scripts
+      - sed -i -e 's/OPENSSL_TAG=OpenSSL_1_1_[0-1][a-h]/OPENSSL_TAG=OpenSSL_1_1_1h/'
+        -e 's/WITH_OPENH264=0/WITH_OPENH264=1/' -e 's/NDK_TARGET=14/NDK_TARGET=21/'
+        android-build-*.conf
+    build:
+      - pushd ../../../../scripts
+      - export ANDROID_NDK=$$NDK$$
+      - export ANDROID_SDK=$$SDK$$
+      - export ANDROID_NDK_OPENH264=$$NDK$$/../*r15c
+      - ./android-build-freerdp.sh --conf android-build-32.conf
+      - ./android-build-freerdp.sh --conf android-build-64.conf
+      - popd
+    ndk: r21d
+
+MaintainerNotes: |-
+    * Keep OpenH264 at 1.8.0 as the newer versions have issues with reference frames and
+      the H264 data sent by microsoft RDP servers.
+    * OpenH264 need maximum NDK r15c, so we assume that is available on the buildserver
+      next to the one we are using in the rest of the build
+    * Need to update NDK target to 21 for tmerfd_create
+    * The build script argument passing is buggy, provide NDK and SDK via environment too
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 2.2.0
+CurrentVersionCode: 19

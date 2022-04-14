@@ -1,0 +1,36 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+AuthorName: Phil Roggenbuck
+AuthorEmail: me@phrogg.de
+SourceCode: https://github.com/phrogg/BatteryCalibrator
+IssueTracker: https://github.com/phrogg/BatteryCalibrator/issues
+Changelog: https://github.com/phrogg/BatteryCalibrator/releases
+Donate: https://www.paypal.me/proggenbuck
+
+AutoName: BatteryCalibrate
+
+RequiresRoot: 'True'
+
+RepoType: git
+Repo: https://github.com/phrogg/BatteryCalibrator/
+
+Builds:
+  - versionName: Charger
+    versionCode: 8
+    commit: v8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: Reverser
+    versionCode: 10
+    commit: v10
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%c
+UpdateCheckMode: Tags
+CurrentVersion: Reverser
+CurrentVersionCode: 10

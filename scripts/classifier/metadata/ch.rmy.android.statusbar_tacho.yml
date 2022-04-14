@@ -1,0 +1,41 @@
+Categories:
+  - Navigation
+License: MIT
+AuthorName: Waboodoo
+AuthorEmail: android@rmy.ch
+SourceCode: https://github.com/Waboodoo/Status-Bar-Tachometer
+IssueTracker: https://github.com/Waboodoo/Status-Bar-Tachometer/issues
+
+AutoName: Speedometer
+Description: |-
+    Displays your current speed as a notification in the status bar. It is
+    toggleable through shortcuts and supports 4 different units: m/s, km/h, mi/h and
+    ft/s.
+
+RepoType: git
+Repo: https://github.com/Waboodoo/Status-Bar-Tachometer
+
+Builds:
+  - versionName: '1.2'
+    versionCode: 3
+    commit: '1.2'
+    subdir: Status Bar Tacho
+
+  - versionName: 3.0.0
+    versionCode: 2003000001
+    commit: v3.0
+    subdir: StatusBarSpeedometer/app/
+    gradle:
+      - yes
+
+  - versionName: 3.1.0
+    versionCode: 2003010000
+    commit: v3.1
+    subdir: StatusBarSpeedometer/app/
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.1.0
+CurrentVersionCode: 2003010000

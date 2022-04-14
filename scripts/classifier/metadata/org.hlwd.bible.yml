@@ -1,0 +1,285 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+AuthorName: hotlittlewhitedog
+WebSite: https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/blob/HEAD/README.md
+SourceCode: https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight
+IssueTracker: https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/issues
+Changelog: https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/blob/HEAD/CHANGELOG
+
+AutoName: The Light
+
+RepoType: git
+Repo: https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight.git
+
+Builds:
+  - versionName: '2.8'
+    versionCode: 20171010
+    commit: 0a8efec9fc6a57e13924aac289aefd8da2f23f99
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.9'
+    versionCode: 20171212
+    commit: 3f23d351ecc3281ccfe744a0372391e43cc6d65e
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.10'
+    versionCode: 20180107
+    commit: a38c666f2ec6742ef976dcdfa14652a41dcbc75c
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.11'
+    versionCode: 20180114
+    commit: 6e8e8206011800e2c4094ec42355d99514e2ed8f
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.12'
+    versionCode: 20180203
+    commit: 0535f0df117bf338484d5925e13f5dd672eb26f5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.13'
+    versionCode: 20180304
+    commit: v2.13
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.0'
+    versionCode: 20180422
+    commit: v3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 20180501
+    commit: v3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.2'
+    versionCode: 20180505
+    commit: v3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.3'
+    versionCode: 20180610
+    commit: v3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.4'
+    versionCode: 20181014
+    commit: v3.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.5'
+    versionCode: 20181110
+    commit: v3.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.6'
+    versionCode: 20181118
+    commit: v3.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.7'
+    versionCode: 20181125
+    commit: v3.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.8'
+    versionCode: 20181216
+    commit: v3.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.9'
+    versionCode: 20190127
+    commit: v3.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.10'
+    versionCode: 20190511
+    commit: v3.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.11'
+    versionCode: 20190616
+    commit: v3.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.12'
+    versionCode: 20190623
+    commit: v3.12
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.13'
+    versionCode: 20190707
+    commit: v3.13
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.14'
+    versionCode: 20190717
+    commit: v3.14
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.15'
+    versionCode: 20190724
+    commit: v3.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.16'
+    versionCode: 20190815
+    commit: v3.16
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.18'
+    versionCode: 20190825
+    commit: v3.18
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.19'
+    versionCode: 20190908
+    commit: v3.19
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.20'
+    versionCode: 20190918
+    commit: v3.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.21'
+    versionCode: 20190922
+    commit: v3.21
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.22'
+    versionCode: 20191009
+    commit: v3.22
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.23'
+    versionCode: 20191013
+    commit: v3.23
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.24'
+    versionCode: 20191020
+    commit: v3.24
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.25'
+    versionCode: 20191102
+    commit: v3.25
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.26'
+    versionCode: 20191229
+    commit: v3.26
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.27'
+    versionCode: 20200206
+    commit: v3.27
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.28'
+    versionCode: 20200402
+    commit: v3.28
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.29'
+    versionCode: 20200628
+    commit: v3.29
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.30'
+    versionCode: 20200826
+    commit: v3.30
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.31'
+    versionCode: 20201004
+    commit: v3.31
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.34'
+    versionCode: 20201207
+    commit: v3.34
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '3.34'
+CurrentVersionCode: 20201207

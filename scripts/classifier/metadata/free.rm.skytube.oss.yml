@@ -1,0 +1,353 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Multimedia
+  - Internet
+License: GPL-3.0-only
+WebSite: https://skytube-app.com
+SourceCode: https://github.com/ram-on/SkyTube
+IssueTracker: https://github.com/ram-on/SkyTube/issues
+Translation: https://hosted.weblate.org/engage/skytube/?
+Changelog: https://github.com/ram-on/SkyTube/releases
+
+AutoName: SkyTube
+
+RepoType: git
+Repo: https://github.com/ram-on/SkyTube
+
+Builds:
+  - versionName: 1.0 OSS
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: '2.0'
+    versionCode: 2
+    commit: v2.0
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: '2.1'
+    versionCode: 3
+    commit: v2.1
+    subdir: app
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.2'
+    versionCode: 4
+    commit: v2.2
+    subdir: app
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.3'
+    versionCode: 5
+    commit: v2.3
+    subdir: app
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.4'
+    versionCode: 6
+    commit: v2.4
+    subdir: app
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.41'
+    versionCode: 7
+    commit: v2.41
+    subdir: app
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.50'
+    versionCode: 8
+    commit: v2.50
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.60'
+    versionCode: 9
+    commit: v2.60
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.70'
+    versionCode: 10
+    commit: v2.70
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.80'
+    versionCode: 11
+    commit: v2.80
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.81'
+    versionCode: 12
+    commit: v2.81
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.82'
+    versionCode: 13
+    commit: v2.82
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.90'
+    versionCode: 14
+    commit: v2.90
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.91'
+    versionCode: 15
+    commit: v2.91
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.92'
+    versionCode: 16
+    commit: v2.92
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.93'
+    versionCode: 17
+    commit: v2.93
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.94'
+    versionCode: 18
+    commit: v2.94
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.95'
+    versionCode: 19
+    commit: v2.95
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.96'
+    versionCode: 20
+    commit: v2.96
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.961'
+    versionCode: 21
+    commit: v2.961
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.962'
+    versionCode: 22
+    commit: v2.962
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.963'
+    versionCode: 23
+    commit: v2.963
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.964'
+    versionCode: 24
+    commit: v2.964
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.966'
+    versionCode: 26
+    commit: v2.966
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.967'
+    versionCode: 27
+    commit: v2.967
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.968'
+    versionCode: 28
+    commit: v2.968
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.969'
+    versionCode: 29
+    commit: v2.969
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.970'
+    versionCode: 30
+    commit: v2.970
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.971'
+    versionCode: 31
+    commit: v2.971
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.972'
+    versionCode: 32
+    commit: v2.972
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.973'
+    versionCode: 33
+    commit: v2.973
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.974'
+    versionCode: 34
+    commit: v2.974
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.975'
+    versionCode: 35
+    commit: v2.975
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '2.975'
+CurrentVersionCode: 35

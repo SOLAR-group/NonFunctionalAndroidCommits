@@ -1,0 +1,295 @@
+Categories:
+  - Security
+License: GPL-3.0-or-later
+AuthorName: Kunzisoft
+AuthorEmail: contact@kunzisoft.com
+WebSite: https://www.kunzisoft.com/KeepassDX
+SourceCode: https://github.com/Kunzisoft/KeePassDX
+IssueTracker: https://github.com/Kunzisoft/KeePassDX/issues
+Translation: https://hosted.weblate.org/projects/keepass-dx/strings/
+Changelog: https://github.com/Kunzisoft/KeePassDX/blob/HEAD/CHANGELOG
+Donate: https://www.kunzisoft.com/donation?project=keepassdx
+LiberapayID: '4971'
+Bitcoin: 1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F
+Litecoin: LRmhvGbKNXFLTxyK8Q9zBxDXjBWm6Rzt34
+
+AutoName: KeePassDX
+
+RepoType: git
+Repo: https://github.com/Kunzisoft/KeePassDX
+
+Builds:
+  - versionName: 2.5.0.0beta2-libre
+    versionCode: 2
+    commit: 2.5.0.0beta2
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta3-libre
+    versionCode: 3
+    commit: 2.5.0.0beta3
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta4-libre
+    versionCode: 4
+    commit: 2.5.0.0beta4
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta6-libre
+    versionCode: 6
+    commit: 2.5.0.0beta6
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta7-libre
+    versionCode: 7
+    commit: 2.5.0.0beta7
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta9-libre
+    versionCode: 9
+    commit: 2.5.0.0beta9
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta11-libre
+    versionCode: 11
+    commit: 2.5.0.0beta11
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta14-libre
+    versionCode: 14
+    commit: 2.5.0.0beta14
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta15-libre
+    versionCode: 15
+    commit: 2.5.0.0beta15
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta17-libre
+    versionCode: 17
+    commit: 2.5.0.0beta17
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta18
+    versionCode: 18
+    commit: 2.5.0.0beta18
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta22
+    versionCode: 22
+    commit: 2.5.0.0beta22
+    subdir: app
+    gradle:
+      - libre
+
+  - versionName: 2.5.0.0beta23
+    versionCode: 23
+    commit: 2.5.0.0beta23
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20
+
+  - versionName: 2.5.0.0beta25
+    versionCode: 25
+    commit: 2.5.0.0beta25
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20
+
+  - versionName: 2.5beta28
+    versionCode: 28
+    commit: 2.5beta28
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5beta30
+    versionCode: 30
+    commit: 2.5beta30
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5RC1
+    versionCode: 31
+    commit: 2.5RC1
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5RC2
+    versionCode: 32
+    commit: 2.5RC2
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.5'
+    versionCode: 33
+    commit: '2.5'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.6'
+    versionCode: 34
+    commit: '2.6'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.7'
+    versionCode: 35
+    commit: '2.7'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.8'
+    versionCode: 36
+    commit: '2.8'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.1
+    versionCode: 37
+    commit: 2.8.1
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.2
+    versionCode: 38
+    commit: 2.8.2
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.3
+    versionCode: 39
+    commit: 2.8.3
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.5
+    versionCode: 41
+    commit: 2.8.5
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.6
+    versionCode: 42
+    disable: crashes see upstream 733
+    commit: 2.8.6
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.7
+    versionCode: 43
+    commit: 2.8.7
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.9'
+    versionCode: 44
+    commit: '2.9'
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.1
+    versionCode: 45
+    commit: 2.9.1
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.2
+    versionCode: 46
+    commit: 2.9.2
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.3
+    versionCode: 47
+    commit: 2.9.3
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.4
+    versionCode: 48
+    commit: 2.9.4
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+MaintainerNotes: |-
+    The file at `app/src/main/assets/publicsuffixes` is a version of the
+    [Public Suffix List](https://publicsuffix.org/) that has been sorted and
+    stripped of all comments. It is identified as a binary files because it
+    contains two 4-byte length fields, one right at the beginning, but is
+    otherwise plaintext.
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.9.4
+CurrentVersionCode: 48

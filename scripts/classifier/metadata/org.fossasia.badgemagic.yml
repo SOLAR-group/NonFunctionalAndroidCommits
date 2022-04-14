@@ -1,0 +1,87 @@
+Categories:
+  - Connectivity
+License: Apache-2.0
+AuthorName: FOSSASIA
+AuthorEmail: fossasia@googlegroups.com
+AuthorWebSite: https://fossasia.org/
+SourceCode: https://github.com/fossasia/badge-magic-android
+IssueTracker: https://github.com/fossasia/badge-magic-android/issues
+Changelog: https://github.com/fossasia/badge-magic-android/releases
+
+AutoName: Badge Magic
+Description: The Badge Magic Android app lets you create scrolling symbols and text
+    on LED name badges through Bluetooth. The app provides options to portray names,
+    clipart and simple animations on LED badges. For the data transfer from the smartphone
+    to the LED badge we use Bluetooth. The project is based on the work of <a href="https://github.com/Nilhcem">Nilhcem</a>.
+
+RepoType: git
+Repo: https://github.com/fossasia/badge-magic-android
+
+Builds:
+  - versionName: 1.0.1
+    versionCode: 2
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.0
+    versionCode: 3
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 4
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 5
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.4.0
+    versionCode: 6
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.5.0
+    versionCode: 7
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.6.0
+    versionCode: 8
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.7.0
+    versionCode: 9
+    commit: v1.7.0
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/LOCAL_KEY/d' build.gradle
+      - echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.7.0
+CurrentVersionCode: 9

@@ -1,0 +1,38 @@
+Categories:
+  - Graphics
+License: GPL-3.0-or-later
+AuthorWebSite: https://kaffeemitkoffein.de/blog/me/
+SourceCode: https://codeberg.org/Starfish/Feinstaubwidget
+IssueTracker: https://codeberg.org/Starfish/Feinstaubwidget/issues
+
+AutoName: FeinstaubWidget
+
+RepoType: git
+Repo: https://codeberg.org/Starfish/Feinstaubwidget
+
+Builds:
+  - versionName: '0.71'
+    versionCode: 27
+    commit: v0.71
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.73'
+    versionCode: 29
+    commit: v0.73
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.74'
+    versionCode: 30
+    commit: v0.74
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.74'
+CurrentVersionCode: 30

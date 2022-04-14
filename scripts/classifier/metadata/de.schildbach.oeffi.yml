@@ -1,0 +1,359 @@
+Categories:
+  - Navigation
+License: GPL-3.0-only
+AuthorName: Andreas Schildbach
+WebSite: https://oeffi.schildbach.de
+SourceCode: https://gitlab.com/oeffi/oeffi
+Changelog: https://gitlab.com/oeffi/oeffi/raw/HEAD/oeffi/CHANGES
+Donate: https://oeffi.schildbach.de/donate.html
+Bitcoin: bc1qxm9r8n3pe47r30e04gs2xsalxef55zrfvelvln
+
+RepoType: git
+Repo: https://gitlab.com/oeffi/oeffi.git
+Binaries: https://oeffi.schildbach.de/downloads/oeffi-%v.apk
+
+Builds:
+  - versionName: 10.0-aosp
+    versionCode: 610
+    commit: v10.0
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.0.2-aosp
+    versionCode: 612
+    commit: v10.0.2
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.0.3-aosp
+    versionCode: 613
+    commit: v10.0.3
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.1.4-aosp
+    versionCode: 618
+    commit: v10.1.4
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.3.4-aosp
+    versionCode: 626
+    commit: v10.3.4
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.3.6-aosp
+    versionCode: 628
+    commit: v10.3.6
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.4.2-aosp
+    versionCode: 634
+    commit: v10.4.2
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.4.5-aosp
+    versionCode: 637
+    commit: v10.4.5
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.4.7-aosp
+    versionCode: 639
+    commit: v10.4.7
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.4.11-aosp
+    versionCode: 643
+    commit: v10.4.11
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.5.1-aosp
+    versionCode: 645
+    commit: v10.5.1
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.5.3-aosp
+    versionCode: 647
+    commit: v10.5.3
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"3.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.5.5-aosp
+    versionCode: 649
+    commit: v10.5.5
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.5.6-aosp
+    versionCode: 650
+    commit: v10.5.6
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.5.9-aosp
+    versionCode: 653
+    commit: v10.5.9
+    subdir: oeffi
+    submodules: true
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+
+  - versionName: 10.6-aosp
+    versionCode: 654
+    commit: v10.6
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.0.1-aosp
+    versionCode: 661
+    commit: v11.0.1
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.1-aosp
+    versionCode: 662
+    commit: v11.1
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.1.2-aosp
+    versionCode: 664
+    commit: v11.1.2
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.1.6-aosp
+    versionCode: 668
+    commit: v11.1.6
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.1.8-aosp
+    versionCode: 670
+    commit: v11.1.8
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.1.10-aosp
+    versionCode: 672
+    commit: v11.1.10
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.2.4-aosp
+    versionCode: 678
+    commit: v11.2.4
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.3.3-aosp
+    versionCode: 682
+    commit: v11.3.3
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.3.6-aosp
+    versionCode: 685
+    commit: v11.3.6
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.4-aosp
+    versionCode: 687
+    commit: v11.4
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.4.1-aosp
+    versionCode: 688
+    commit: v11.4.1
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+AutoUpdateMode: None
+UpdateCheckMode: None

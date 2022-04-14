@@ -1,0 +1,137 @@
+Categories:
+  - System
+License: Apache-2.0
+SourceCode: https://gitlab.com/termapps/termoneplus
+IssueTracker: https://gitlab.com/termapps/termoneplus/issues
+
+AutoName: Terminal Emulator
+Description: |-
+    "TermOne Plus" is a terminal emulator for communicating with the built-in
+    Android shell. It emulates a reasonably large subset of Digital Equipment
+    Corporation VT-100 terminal codes. Supported terminal types include vt100,
+    screen (default), linux and xterm. As result console programs like "vi"
+    (unix visual editor), "emacs", "mc" (Midnight Commander file manager), nano
+    (Nano's ANOther editor) and other work smoothly.
+
+    This application is a clone of Jack Palevich's https://f-droid.org/packages/jackpal.androidterm.
+
+RepoType: git
+Repo: https://gitlab.com/termapps/termoneplus.git
+
+Builds:
+  - versionName: 3.0.0
+    versionCode: 300
+    commit: v3.0.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.1.0
+    versionCode: 310
+    commit: v3.1.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.1.1
+    versionCode: 311
+    commit: v3.1.1
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.2.0
+    versionCode: 320
+    commit: v3.2.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.2.3
+    versionCode: 323
+    commit: v3.2.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.2.4
+    versionCode: 324
+    commit: v3.2.4
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.1
+    versionCode: 331
+    commit: v3.3.1
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.2
+    versionCode: 332
+    commit: v3.3.2
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.3
+    versionCode: 333
+    commit: v3.3.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.4
+    versionCode: 334
+    commit: v3.3.4
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.5
+    versionCode: 335
+    commit: v3.3.5
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.4.2
+    versionCode: 342
+    commit: v3.4.2
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.5.0
+    versionCode: 350
+    commit: v3.5.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.5.1
+    versionCode: 351
+    commit: v3.5.1
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.5.1
+CurrentVersionCode: 351

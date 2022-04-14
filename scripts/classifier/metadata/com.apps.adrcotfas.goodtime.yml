@@ -1,0 +1,220 @@
+Categories:
+  - Time
+License: Apache-2.0
+AuthorName: Adrian Cotfas
+AuthorEmail: goodtime-app@googlegroups.com
+SourceCode: https://github.com/goodtime-productivity/Goodtime
+IssueTracker: https://github.com/goodtime-productivity/Goodtime/issues
+Translation: https://crowdin.com/project/goodtime
+Changelog: https://github.com/goodtime-productivity/Goodtime/releases
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CH2SJKS6GXG6L
+
+Name: Goodtime - Minimalist Pomodoro Timer
+AutoName: Goodtime
+Description: |-
+    A minimalist but powerful productivity timer designed to keep you focused
+    and free of distractions.
+
+    Alternate between focused work sessions and short breaks handled by the app.
+
+    Get rid of procrastination and improve your time management!
+
+    ⏳ split your work into sessions of focus and then reward yourself with a break
+
+    ☕ after more sessions of work, take a longer break
+
+    '''Features:'''
+
+    * Lightweight and battery friendly
+    * Configurable timer
+    * Pause, skip or add 60 seconds
+    * Detailed statistics
+    * Disable sound and Wi-Fi connection during the work sessions
+    * AMOLED-friendly user interface
+    * Colored labels
+    * Timer styles
+    * Manually add sessions
+    * Edit completed sessions
+    * Backup export and import
+    * Export statistics to CSV
+    * Screensaver mode
+    * Themes
+    * Separate notification sound for work and break
+    * Insistent notifications
+
+RepoType: git
+Repo: https://github.com/goodtime-productivity/Goodtime
+
+Builds:
+  - versionName: 2.0.3
+    versionCode: 79
+    commit: 2.0.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.6
+    versionCode: 82
+    commit: 2.0.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.8
+    versionCode: 84
+    commit: 2.0.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.11
+    versionCode: 88
+    commit: 2.0.11
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.1
+    versionCode: 100
+    commit: 2.1.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.3
+    versionCode: 102
+    commit: 2.1.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.4
+    versionCode: 103
+    commit: 2.1.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.5
+    versionCode: 105
+    commit: 2.1.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.6
+    versionCode: 106
+    commit: 2.1.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.7
+    versionCode: 107
+    commit: 2.1.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.8
+    versionCode: 110
+    commit: 2.1.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.9
+    versionCode: 112
+    commit: 2.1.9
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.10
+    versionCode: 113
+    commit: 2.1.10
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.11
+    versionCode: 114
+    commit: 2.1.11
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.12
+    versionCode: 115
+    commit: 2.1.12
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.13
+    versionCode: 116
+    commit: 2.1.13
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.14
+    versionCode: 118
+    commit: 2.1.14
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.15
+    versionCode: 119
+    commit: 2.1.15
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.17
+    versionCode: 122
+    commit: 2.1.17
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.0
+    versionCode: 123
+    commit: 2.2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.2
+    versionCode: 126
+    commit: 2.2.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.3
+    versionCode: 127
+    commit: 2.2.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.4
+    versionCode: 128
+    commit: 2.2.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.5
+    versionCode: 129
+    commit: 2.2.5
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.5
+CurrentVersionCode: 129

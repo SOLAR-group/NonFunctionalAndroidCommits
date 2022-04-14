@@ -1,0 +1,76 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+  - Multimedia
+License: GPL-3.0-or-later
+AuthorName: Austin Huang & Ammar Githam
+AuthorEmail: barinsta@austinhuang.me
+AuthorWebSite: https://austinhuang.me
+WebSite: https://barinsta.austinhuang.me
+SourceCode: https://github.com/austinhuang0131/barinsta
+IssueTracker: https://github.com/austinhuang0131/barinsta/issues
+Translation: https://crowdin.com/project/instagrabber
+Changelog: https://github.com/austinhuang0131/barinsta/releases
+Donate: https://austinhuang.me/donate
+Liberapay: austinhuang
+
+AutoName: Barinsta
+
+RepoType: git
+Repo: https://github.com/austinhuang0131/barinsta.git
+
+Builds:
+  - versionName: '17.9'
+    versionCode: 45
+    commit: v17.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.0'
+    versionCode: 46
+    commit: v18.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.1'
+    versionCode: 47
+    commit: v18.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.2'
+    versionCode: 48
+    commit: v18.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.3'
+    versionCode: 49
+    commit: v18.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.0.1
+    versionCode: 53
+    commit: v19.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.0.2
+    versionCode: 54
+    commit: v19.0.2
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 19.0.2
+CurrentVersionCode: 54

@@ -1,0 +1,50 @@
+Categories:
+  - Writing
+License: Apache-2.0
+AuthorName: Ryosuke839
+AuthorEmail: ryosukem16@yahoo.co.jp
+SourceCode: https://github.com/Ryosuke839/UnicodePad
+IssueTracker: https://github.com/Ryosuke839/UnicodePad/issues
+Changelog: https://github.com/Ryosuke839/UnicodePad/releases
+
+AutoName: UnicodePad
+Description: |-
+    ''UnicodePad'' lets you input every character in Unicode. And input string can
+    be copied to the clipboard or input directly by Mushroom. You can find out
+    where selected character is in list. By long clicking, larger character and
+    code point will be shown. Favorite characters can be memorized.
+
+    If you can’t see special characters, you have to get a font such as Noto font
+    and select it. You can download Noto fonts <a href="https://www.google.com/get/noto/
+    from">Google</a>.
+
+RepoType: git
+Repo: https://github.com/Ryosuke839/UnicodePad.git
+
+Builds:
+  - versionName: 2.4.0
+    versionCode: 34
+    commit: v2.4.0
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2.5.0
+    versionCode: 35
+    commit: v2.5.0
+    subdir: app/
+    gradle:
+      - yes
+
+  - versionName: 2.6.1
+    versionCode: 39
+    disable: non-FOSS libs
+    commit: v2.6.1
+    subdir: app/
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 2.8.0
+CurrentVersionCode: 43

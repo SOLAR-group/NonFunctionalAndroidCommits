@@ -1,0 +1,25 @@
+Categories:
+  - Theming
+License: Apache-2.0
+AuthorName: Pierre Rudloff
+AuthorEmail: contact@rudloff.pro
+AuthorWebSite: https://rudloff.pro/
+SourceCode: https://github.com/Rudloff/muzei-commons
+IssueTracker: https://github.com/Rudloff/muzei-commons/issues
+
+AutoName: Wikimedia Commons for Muzei
+
+RepoType: git
+Repo: https://github.com/Rudloff/muzei-commons
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 1
+    commit: 0.1.0
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.0
+CurrentVersionCode: 1

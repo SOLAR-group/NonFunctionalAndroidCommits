@@ -1,0 +1,222 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+AuthorName: Julien Veyssier
+WebSite: https://gitlab.com/eneiluj/moneybuster/wikis/home
+SourceCode: https://gitlab.com/eneiluj/moneybuster
+IssueTracker: https://gitlab.com/eneiluj/moneybuster/issues
+Translation: https://crowdin.com/project/moneybuster
+Changelog: https://gitlab.com/eneiluj/moneybuster/blob/HEAD/CHANGELOG.md
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66PALMY8SF5JE
+LiberapayID: '1520530'
+
+AutoName: MoneyBuster
+
+RepoType: git
+Repo: https://gitlab.com/eneiluj/moneybuster.git
+
+Builds:
+  - versionName: 0.0.4
+    versionCode: 4
+    commit: v0.0.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.5
+    versionCode: 5
+    commit: v0.0.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.6
+    versionCode: 6
+    commit: v0.0.6
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.7
+    versionCode: 7
+    commit: v0.0.7
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.8
+    versionCode: 8
+    commit: v0.0.8
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.9
+    versionCode: 9
+    commit: v0.0.9
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.10
+    versionCode: 10
+    commit: v0.0.10
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.11
+    versionCode: 11
+    commit: v0.0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.12
+    versionCode: 12
+    commit: v0.0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.13
+    versionCode: 13
+    commit: v0.0.13
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.14
+    versionCode: 14
+    commit: v0.0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.15
+    versionCode: 15
+    commit: v0.0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.16
+    versionCode: 16
+    commit: v0.0.16
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.17
+    versionCode: 17
+    commit: v0.0.17
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.18
+    versionCode: 18
+    commit: v0.0.18
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.19
+    versionCode: 19
+    commit: v0.0.19
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.0
+    versionCode: 20
+    commit: v0.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.1
+    versionCode: 21
+    commit: v0.1.1
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.2
+    versionCode: 22
+    commit: v0.1.2
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.3
+    versionCode: 23
+    commit: v0.1.3
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.4
+    versionCode: 24
+    commit: v0.1.4
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.5
+    versionCode: 25
+    commit: v0.1.5
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.6
+    versionCode: 26
+    commit: v0.1.6
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.7
+    versionCode: 27
+    commit: v0.1.7
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.8
+    versionCode: 28
+    commit: v0.1.8
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.8
+CurrentVersionCode: 28

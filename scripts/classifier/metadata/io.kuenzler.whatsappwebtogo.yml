@@ -1,0 +1,54 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: MIT
+SourceCode: https://github.com/92lleo/WhatsappWebToGo
+IssueTracker: https://github.com/92lleo/WhatsappWebToGo/issues
+Changelog: https://github.com/92lleo/WhatsappWebToGo/releases
+
+AutoName: WhatsApp Web To Go
+
+RepoType: git
+Repo: https://github.com/92lleo/WhatsappWebToGo
+
+Builds:
+  - versionName: 1.5.3
+    versionCode: 28
+    commit: v1.5.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 29
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.1
+    versionCode: 30
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.2
+    versionCode: 31
+    commit: v1.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.3
+    versionCode: 32
+    commit: v1.6.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.6.3
+CurrentVersionCode: 32

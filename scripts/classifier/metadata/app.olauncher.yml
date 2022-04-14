@@ -1,0 +1,108 @@
+Categories:
+  - Theming
+License: GPL-3.0-only
+AuthorName: Tanuj M.
+AuthorEmail: tanuj@frndly.app
+WebSite: https://olauncher.app
+SourceCode: https://github.com/tanujnotes/Olauncher
+IssueTracker: https://github.com/tanujnotes/Olauncher/issues
+Donate: https://www.buymeacoffee.com/tanujnotes
+
+AutoName: Olauncher
+Description: |-
+    FEATURES
+    * No ads
+    * FOSS forever
+    * Daily new wallpaper
+    * Double tap to lock screen
+    * Clean, fast and lightweight
+
+    HOW TO USE
+    * Swipe up to see all the apps and quick search
+    * Swipe down for notification drawer
+    * Long press home apps to change them
+    * '''Important''': Long press on empty space to open settings
+    Once you open the settings, you'll see all the available options.
+    So basically, swipe and long press anywhere and you'll be fine.
+
+    I'm available at Twitter if you need for anything. Thank you.
+    https://twitter.com/tanujnotes/
+
+RepoType: git
+Repo: https://github.com/tanujnotes/Olauncher
+
+Builds:
+  - versionName: v1.1
+    versionCode: 11
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.2
+    versionCode: 12
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.3
+    versionCode: 13
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.4
+    versionCode: 14
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.5
+    versionCode: 15
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.8
+    versionCode: 18
+    commit: v1.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.0
+    versionCode: 20
+    commit: v2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.1
+    versionCode: 21
+    commit: v2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.3
+    versionCode: 23
+    commit: v2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.4
+    versionCode: 24
+    commit: v2.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: v2.4
+CurrentVersionCode: 24

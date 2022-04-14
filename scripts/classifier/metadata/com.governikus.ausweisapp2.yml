@@ -1,0 +1,136 @@
+Categories:
+  - Internet
+License: EUPL-1.2
+AuthorName: Governikus GmbH & Co. KG
+AuthorEmail: ausweisapp2@governikus.de
+WebSite: https://www.ausweisapp.bund.de/
+SourceCode: https://github.com/Governikus/AusweisApp2
+IssueTracker: https://github.com/Governikus/AusweisApp2/issues
+Changelog: https://github.com/Governikus/AusweisApp2/releases
+
+Description: |-
+    Mit der Online-Ausweisfunktion des Personalausweises und des elektronischen
+    Aufenthaltstitels können Sie sich im Internet ausweisen.
+
+RepoType: git
+Repo: https://github.com/Governikus/AusweisApp2
+
+Builds:
+  - versionName: 1.16.1
+    versionCode: 1
+    commit: 1.16.1
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+      - apt-get install -y -t stretch-backports cmake
+    patch:
+      - 1.16.1-unsigned-apk.patch
+      - 1.16.1-qstring-constructor.patch
+    output: build/dist/AusweisApp2-$$VERSION$$-armeabi-v7a.apk
+    rm:
+      - test
+      - resources/packaging/macos
+    build:
+      - export ANDROID_BUILD_TOOLS_REVISION=28.0.3
+      - mkdir libs/build build
+      - cd libs/build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+      - make
+      - cd ../../build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+        -DCMAKE_PREFIX_PATH=$(realpath ../libs/build/dist) -DANDROID_VERSION_CODE=$$VERCODE$$
+      - make
+      - make install
+      - make apk
+    ndk: r18b
+
+  - versionName: 1.16.2
+    versionCode: 2
+    commit: 1.16.2
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+      - apt-get install -y -t stretch-backports cmake
+    patch:
+      - 1.16.2-statx.patch
+    output: build/dist/AusweisApp2-$$VERSION$$-armeabi-v7a.apk
+    rm:
+      - test
+      - resources/packaging/macos
+    build:
+      - export ANDROID_BUILD_TOOLS_REVISION=28.0.3
+      - mkdir libs/build build
+      - cd libs/build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+      - make
+      - cd ../../build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+        -DCMAKE_PREFIX_PATH=$(realpath ../libs/build/dist) -DANDROID_VERSION_CODE=$$VERCODE$$
+        -DVENDOR=F-Droid -DVENDOR_DOMAIN=f-droid.org
+      - make
+      - make install
+      - make apk
+    ndk: r18b
+
+  - versionName: 1.20.0
+    versionCode: 3
+    commit: 1.20.0
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+      - apt-get install -y -t stretch-backports cmake
+    patch:
+      - 1.20.0-fixture.patch
+    output: build/dist/AusweisApp2-$$VERSION$$-armeabi-v7a.apk
+    rm:
+      - test/fixture
+      - resources/packaging/macos
+    build:
+      - mkdir libs/build build
+      - cd libs/build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+      - make
+      - cd ../../build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=MinSizeRel
+        -DCMAKE_PREFIX_PATH=$(realpath ../libs/build/dist) -DANDROID_VERSION_CODE=$$VERCODE$$
+        -DVENDOR=F-Droid -DVENDOR_DOMAIN=f-droid.org
+      - make
+      - make install
+      - make apk
+    ndk: r18b
+
+  - versionName: 1.20.2
+    versionCode: 4
+    commit: 1.20.2
+    timeout: 20000
+    sudo:
+      - apt update || apt update
+      - apt install -y g++
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+      - sed -i '26iset(_CMAKE_TOOLCHAIN_PREFIX \"${CMAKE_ANDROID_ARCH_TRIPLE}-\")'
+        /usr/share/cmake-3.16/Modules/Platform/Android/Determine-Compiler-NDK.cmake
+    output: build/dist/AusweisApp2-$$VERSION$$-armeabi-v7a.apk
+    rm:
+      - test/fixture
+      - resources/packaging/macos
+    build:
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - mkdir libs/build build
+      - cd libs/build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=release
+      - make
+      - cd ../../build
+      - cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=MinSizeRel
+        -DCMAKE_PREFIX_PATH=$(realpath ../libs/build/dist) -DANDROID_VERSION_CODE=$$VERCODE$$
+        -DVENDOR=F-Droid -DVENDOR_DOMAIN=f-droid.org
+      - make
+      - make install
+      - make apk
+    ndk: r21d
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.20.2
+CurrentVersionCode: 4

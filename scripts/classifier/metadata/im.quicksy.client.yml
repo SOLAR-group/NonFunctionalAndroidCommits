@@ -1,0 +1,426 @@
+AntiFeatures:
+  - NonFreeNet
+  - Tracking
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Daniel Gultsch
+WebSite: https://quicksy.im/
+SourceCode: https://github.com/iNPUTmice/Conversations
+IssueTracker: https://github.com/iNPUTmice/Conversations/issues
+Translation: https://www.transifex.com/siacs/conversations/
+Changelog: https://github.com/iNPUTmice/Conversations/blob/HEAD/CHANGELOG.md
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL
+LiberapayID: '34225'
+Bitcoin: 3KAD8vew6tPZDjiUJNnZ3YUoUxrCEVNwFL
+
+AutoName: Quicksy
+Description: |-
+    Quicksy is a spin off of the popular Jabber/XMPP client
+    https://f-droid.org/packages/eu.siacs.conversations with automatic contact discovery.
+
+    You sign up with your phone number and Quicksy will automatically—based on
+    the phone numbers in your address book—suggest possible contacts to you.
+
+    Under the hood Quicksy is a full-fledged Jabber client that lets you
+    communicate with any user on any publicly federating server. Likewise users
+    on Quicksy can be contacted from the outside simply by adding
+    +phonenumber@quicksy.im to your contact list.
+
+    Aside from the contact sync the user interface is deliberately as close to
+    Conversations as possible. This allows users to eventually migrate from
+    Quicksy to Conversations without having to relearn how the app works.
+
+    Suggested contacts consists of other Quicksy users and regular Jabber/XMPP
+    users who have entered their Jabber ID into the
+    <a href="https://quicksy.im/#get-listed">Quicksy Directory</a>.
+
+    NOTE: To <a href="https://quicksy.im/enter/">enter</a> your Jabber ID in the Quicksy
+    directory an one time registration fee is required.
+
+    Read the <a href="https://quicksy.im/#privacy">Privacy Policy</a> for more info.
+
+    Anti-Features:
+    * NonFreeNet - you can't change the server where the accounts are created
+    * Tracking - uses a 3rd party service provider (<a href="https://twilio.com">Twilio</a>) to send SMS as needed for authentication
+
+RepoType: git
+Repo: https://github.com/iNPUTmice/Conversations.git
+
+Builds:
+  - versionName: 2.3.6+fcr
+    versionCode: 299
+    commit: 2.3.6
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.3.7+fcr
+    versionCode: 303
+    commit: 2.3.7
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.3.8+fcr
+    versionCode: 305
+    commit: 2.3.8
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.3.9+fcr
+    versionCode: 307
+    commit: 2.3.9
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.3.10+fcr
+    versionCode: 309
+    commit: 2.3.10
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.3.11+fcr
+    versionCode: 314
+    commit: 2.3.11
+    gradle:
+      - quicksyFreeCompat
+    prebuild:
+      - sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+      - sed -i -e 's/4.10.3/4.10.2/' gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.3.12+fcr
+    versionCode: 317
+    commit: 2.3.12
+    gradle:
+      - quicksyFreeCompat
+    prebuild:
+      - sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+      - sed -i -e 's/4.10.3/4.10.2/' gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.4.0+fcr
+    versionCode: 320
+    commit: 2.4.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.1+fcr
+    versionCode: 321
+    commit: 2.4.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.2+fcr
+    versionCode: 322
+    commit: 2.4.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.3+fcr
+    versionCode: 323
+    commit: 2.4.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.0+fcr
+    versionCode: 326
+    commit: 2.5.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.1+fcr
+    versionCode: 327
+    commit: 2.5.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.2+fcr
+    versionCode: 329
+    commit: 2.5.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.3+fcr
+    versionCode: 330
+    commit: 2.5.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.4+fcr
+    versionCode: 333
+    commit: 2.5.4
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.5+fcr
+    versionCode: 334
+    commit: 2.5.5
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.6+fcr
+    versionCode: 336
+    commit: 2.5.6
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.7+fcr
+    versionCode: 337
+    commit: 2.5.7
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.8+fcr
+    versionCode: 338
+    commit: 2.5.8
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.9+fcr
+    versionCode: 339
+    disable: issues on Xiaomi 8 and Android <5
+    commit: 2.5.9
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.11+fcr
+    versionCode: 341
+    commit: 2.5.11
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.12+fcr
+    versionCode: 346
+    commit: 2.5.12
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.6.0+fcr
+    versionCode: 349
+    commit: 2.6.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.6.1+fcr
+    versionCode: 351
+    commit: 2.6.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.6.2+fcr
+    versionCode: 353
+    commit: 2.6.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.6.3+fcr
+    versionCode: 360
+    commit: 2.6.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.6.4+fcr
+    versionCode: 362
+    commit: 2.6.4
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.7.0+fcr
+    versionCode: 364
+    commit: 2.7.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.7.1+fcr
+    versionCode: 367
+    commit: 2.7.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.8.1+fcr
+    versionCode: 381
+    commit: 2.8.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/aabortOnError\
+        false' -e '/libwebrtc/d' -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.+'"
+        -e '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+
+  - versionName: 2.8.2+fcr
+    versionCode: 382
+    commit: 2.8.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/aabortOnError\
+        false' -e '/libwebrtc/d' -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.+'"
+        -e '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+
+  - versionName: 2.8.3+fcr
+    versionCode: 383
+    commit: 2.8.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/aabortOnError\
+        false' -e '/libwebrtc/d' -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.+'"
+        -e '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+
+  - versionName: 2.8.4+fcr
+    versionCode: 387
+    commit: 2.8.4
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21
+
+  - versionName: 2.8.5+fcr
+    versionCode: 388
+    commit: 2.8.5
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21b
+
+  - versionName: 2.8.6+fcr
+    versionCode: 390
+    commit: 2.8.6
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21b
+
+  - versionName: 2.8.7+fcr
+    versionCode: 393
+    commit: 2.8.7
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21b
+
+  - versionName: 2.8.8+fcr
+    versionCode: 394
+    commit: 2.8.8
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.8.9+fcr
+    versionCode: 395
+    commit: 2.8.9
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.8.10+fcr
+    versionCode: 397
+    commit: 2.8.10
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.0+fcr
+    versionCode: 398
+    commit: 2.9.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.1+fcr
+    versionCode: 401
+    commit: 2.9.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.2+fcr
+    versionCode: 402
+    commit: 2.9.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 2.9.2+fcr
+CurrentVersionCode: 402

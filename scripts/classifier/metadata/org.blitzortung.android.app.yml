@@ -1,0 +1,271 @@
+Categories:
+  - Science & Education
+License: Apache-2.0
+WebSite: https://blitzortung.tryb.de/
+SourceCode: https://github.com/wuan/bo-android
+IssueTracker: https://github.com/wuan/bo-android/issues
+Translation: https://github.com/wuan/bo-android#translation-offers-are-welcome
+Changelog: https://github.com/wuan/bo-android/blob/HEAD/ChangeLog
+
+AutoName: Blitzortung Lightning Monitor
+Description: |-
+    Simple to use map based application visualizing real time full area
+    lightning data provided by the blitzortung.org lightning location network
+    project. The current thunderstorm situation at your fingertips.
+
+    '''Features:'''
+
+    * realtime display of lightning data
+    * display of historical lightning data of the last 24 hours
+    * for regions Europe, North & South America, Asia, Africa and Australia/New Zealand
+    * lightning strike time color coded
+    * reduced data volume and fast response
+    * current lightning strike time and lightning count
+    * optional user location marker
+    * alert function shows distance/direction of storms
+    * background service for alerts
+    * support for notifications, sound and vibration alarm
+    * single stroke display for blitzortung.org participants
+
+    Please visit [http://www.blitzortung.org] for more information regarding the
+    community based lightning location project.
+
+    The raster display ensures a fast performance of the application even if
+    there is a very high thunderstorm activity. Blitzortung.org participants can
+    visualize all stroke locations individually.
+
+    If you would like to contribute to a translation of the software in your
+    language, please do not hesitate to contact the author of the software.
+
+RepoType: git
+Repo: https://github.com/wuan/bo-android
+
+Builds:
+  - versionName: 2.0.1
+    versionCode: 215
+    commit: 2.0.1_215
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 217
+    commit: 2.0.2_217
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 220
+    commit: 2.0.2_220
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 222
+    commit: 2.0.2_222
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 223
+    commit: 2.0.3_223
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 224
+    commit: 2.0.3_224
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.4
+    versionCode: 226
+    commit: 2.0.4_226
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 228
+    commit: 2.0.5_228
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 229
+    commit: 2.0.6_229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 232
+    commit: 2.0.6_232
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.8
+    versionCode: 234
+    commit: 2.0.8_234
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 239
+    commit: 2.0.12_239
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 240
+    commit: 2.0.12_240
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 241
+    commit: 2.0.12_241
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.13
+    versionCode: 242
+    commit: 2.0.13_242
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.14
+    versionCode: 243
+    commit: 2.0.14_243
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.15
+    versionCode: 245
+    commit: 2.0.15_245
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.15
+    versionCode: 247
+    commit: 2.0.15_247
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.16
+    versionCode: 248
+    commit: 2.0.16_248
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.17
+    versionCode: 249
+    commit: 2.0.17_249
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.18
+    versionCode: 250
+    commit: 2.0.18_150
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.19
+    versionCode: 252
+    commit: 2.0.19_252
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 263
+    commit: 2.1.0_263
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 264
+    commit: 2.1.0_264
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 265
+    commit: 2.1.0_265
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 266
+    commit: 2.1.0_266
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 268
+    commit: 2.1.0_268
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 269
+    commit: 2.1.0_269
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 270
+    commit: 2.1.1_270
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.3
+    versionCode: 272
+    commit: 2.1.3_272
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.4
+    versionCode: 273
+    commit: 2.1.4_273
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.4
+    versionCode: 274
+    commit: 2.1.4_274
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v_%c
+UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+\_[0-9]+$
+CurrentVersion: 2.1.4
+CurrentVersionCode: 274

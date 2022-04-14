@@ -1,0 +1,82 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: Samuel Amantea-Collins
+AuthorEmail: help.trackandgraph@gmail.com
+SourceCode: https://github.com/SamAmco/track-and-graph
+IssueTracker: https://github.com/SamAmco/track-and-graph/issues
+Changelog: https://github.com/SamAmco/track-and-graph/releases
+
+AutoName: Track & Graph
+
+RepoType: git
+Repo: https://github.com/SamAmco/track-and-graph
+
+Builds:
+  - versionName: 1.4.3
+    versionCode: 10403
+    commit: v1.4.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.4
+    versionCode: 10404
+    commit: v1.4.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.1
+    versionCode: 10501
+    commit: v1.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.2
+    versionCode: 10602
+    commit: v1.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.2
+    versionCode: 10702
+    commit: v1.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.1
+    versionCode: 10801
+    commit: v1.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0
+    versionCode: 10900
+    commit: v1.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.1
+    versionCode: 101001
+    commit: v1.10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.3
+    versionCode: 101003
+    commit: v1.10.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v
+CurrentVersion: 1.10.3
+CurrentVersionCode: 101003

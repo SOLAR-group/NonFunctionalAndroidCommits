@@ -1,0 +1,113 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+AuthorName: Davide Depau
+AuthorEmail: etchdroid@depau.eu
+AuthorWebSite: https://depau.eu/
+WebSite: https://etchdroid.depau.eu/
+SourceCode: https://github.com/EtchDroid/EtchDroid
+IssueTracker: https://github.com/EtchDroid/EtchDroid/issues
+Translation: https://etchdroid-l10n.depau.eu/engage/etchdroid/?
+Changelog: https://github.com/EtchDroid/EtchDroid/releases
+Donate: https://etchdroid.depau.eu/donate/
+
+AutoName: EtchDroid
+Description: |-
+    EtchDroid is an open-source application that helps you write images to USB drives.
+    You can use it to make a bootable GNU/Linux USB drive when your laptop is dead
+    and you’re in the middle of nowhere.
+
+    Features:
+    * Supports raw disk images and most GNU/Linux distributions ISOs
+    * Supports most DMG disk images (beta)
+    * No root - everything is done within the bounds of the Android API
+    * Free as in freedom
+
+    Planned features:
+    * Write common GNU/Linux distro in streaming from the Internet without storing it on the device
+    * Support for Windows installation ISO (will likely require root)
+    * Support for Unetbootin-style image flashing
+
+RepoType: git
+Repo: https://github.com/Depau/EtchDroid.git
+
+Builds:
+  - versionName: '1.2'
+    versionCode: 3
+    commit: v1.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17b
+
+  - versionName: '1.3'
+    versionCode: 4
+    commit: v1.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17b
+
+  - versionName: 1.3.1
+    versionCode: 5
+    commit: v1.3.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17b
+
+  - versionName: 1.3.31
+    versionCode: 8
+    commit: v1.3.31
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17b
+
+  - versionName: 1.3.32
+    versionCode: 9
+    disable: lintVitalRelease fails
+    commit: v1.3.32
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 1.3.4
+    versionCode: 10
+    commit: v1.3.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: '1.4'
+    versionCode: 11
+    commit: v1.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: '1.5'
+    versionCode: 12
+    commit: v1.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' ../ci-scripts/setup_sdk.sh
+        ../dmg2img/build.gradle
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.5'
+CurrentVersionCode: 12

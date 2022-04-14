@@ -1,0 +1,86 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Anton
+AuthorEmail: ii1i7@yandex.ru
+AuthorWebSite: https://1i7.livejournal.com/
+SourceCode: https://github.com/sadr0b0t/yashlang
+IssueTracker: https://github.com/sadr0b0t/yashlang/issues
+Changelog: https://github.com/sadr0b0t/yashlang/releases
+
+AutoName: YaShlang
+
+RepoType: git
+Repo: https://github.com/sadr0b0t/yashlang
+
+Builds:
+  - versionName: 0.1.0-beta3
+    versionCode: 5
+    commit: v0.1.0-beta3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.1.0-beta5
+    versionCode: 7
+    commit: v0.1.0-beta5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.1.0-beta6
+    versionCode: 8
+    commit: v0.1.0-beta6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.1.0-beta7
+    versionCode: 9
+    commit: v0.1.0-beta7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.1.0
+    versionCode: 10
+    commit: v0.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.0
+    versionCode: 11
+    commit: v0.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.0
+    versionCode: 12
+    commit: v0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.0
+    versionCode: 13
+    commit: v0.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.5.0
+    versionCode: 14
+    commit: v0.5.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.5.0
+CurrentVersionCode: 14

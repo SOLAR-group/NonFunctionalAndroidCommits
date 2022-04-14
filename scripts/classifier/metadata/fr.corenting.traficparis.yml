@@ -1,0 +1,55 @@
+Categories:
+  - Navigation
+License: MIT
+AuthorName: corenting
+AuthorEmail: corenting@gmail.com
+SourceCode: https://github.com/corenting/ParisTransportTraffic
+IssueTracker: https://github.com/corenting/ParisTransportTraffic/issues
+Changelog: https://github.com/corenting/ParisTransportTraffic/releases
+Bitcoin: 3JmaEkuviReVdCG8fjqCs5LwQkaEGcTMtZ
+
+AutoName: Paris transport traffic
+
+RepoType: git
+Repo: https://github.com/corenting/ParisTransportTraffic.git
+
+Builds:
+  - versionName: 4.3.1.1
+    versionCode: 17
+    commit: v4.3.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.2
+    versionCode: 19
+    commit: v4.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.3
+    versionCode: 20
+    commit: v4.3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.4
+    versionCode: 21
+    commit: v4.3.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.4'
+    versionCode: 22
+    commit: v4.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '4.4'
+CurrentVersionCode: 22

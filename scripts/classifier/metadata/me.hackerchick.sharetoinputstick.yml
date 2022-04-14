@@ -1,0 +1,77 @@
+Categories:
+  - Connectivity
+License: MIT
+AuthorName: Sylvia van Os
+SourceCode: https://github.com/TheLastProject/ShareToInputStick
+IssueTracker: https://github.com/TheLastProject/ShareToInputStick/issues
+
+AutoName: Share To InputStick
+
+RepoType: git
+Repo: https://github.com/TheLastProject/ShareToInputStick.git
+
+Builds:
+  - versionName: '3.4'
+    versionCode: 13
+    commit: v3.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+  - versionName: 3.4.1
+    versionCode: 14
+    commit: v3.4.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+  - versionName: 3.4.2
+    versionCode: 15
+    commit: v3.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+  - versionName: 3.4.3
+    versionCode: 16
+    commit: v3.4.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+  - versionName: '3.5'
+    versionCode: 17
+    commit: v3.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+  - versionName: 3.5.1
+    versionCode: 18
+    commit: v3.5.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    antifeatures:
+      - NonFreeAdd
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.5.1
+CurrentVersionCode: 18

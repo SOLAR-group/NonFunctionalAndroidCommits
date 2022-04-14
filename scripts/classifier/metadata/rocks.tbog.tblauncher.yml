@@ -1,0 +1,53 @@
+Categories:
+  - System
+  - Theming
+License: GPL-3.0-only
+AuthorName: TBog
+SourceCode: https://github.com/TBog/TBLauncher
+IssueTracker: https://github.com/TBog/TBLauncher/issues
+
+AutoName: TinyBit launcher
+
+RepoType: git
+Repo: https://github.com/TBog/TBLauncher
+
+Builds:
+  - versionName: '4.5'
+    versionCode: 14
+    commit: v4.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.6'
+    versionCode: 15
+    commit: v4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.7'
+    versionCode: 16
+    commit: v4.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.0'
+    versionCode: 17
+    commit: v5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.1'
+    versionCode: 18
+    commit: v5.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '5.1'
+CurrentVersionCode: 18

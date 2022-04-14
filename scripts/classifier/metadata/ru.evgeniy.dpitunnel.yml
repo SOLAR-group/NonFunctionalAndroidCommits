@@ -1,0 +1,83 @@
+Categories:
+  - Internet
+License: MIT
+AuthorName: Evgeniy (aka zhenyolka)
+AuthorEmail: zhenyolka@gmail.com
+SourceCode: https://github.com/zhenyolka/DPITunnel
+IssueTracker: https://github.com/zhenyolka/DPITunnel/issues
+Changelog: https://github.com/zhenyolka/DPITunnel/releases
+
+AutoName: DPI Tunnel
+
+RepoType: git
+Repo: https://github.com/zhenyolka/DPITunnel
+
+Builds:
+  - versionName: '1.2'
+    versionCode: 3
+    commit: v1.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '1.3'
+    versionCode: 4
+    commit: v1.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '1.6'
+    versionCode: 8
+    commit: v1.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.0'
+    versionCode: 9
+    commit: v2.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.1'
+    versionCode: 10
+    commit: v2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.2'
+    versionCode: 11
+    commit: v2.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21b
+
+  - versionName: '3.0'
+    versionCode: 12
+    commit: v3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' build.gradle
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '3.0'
+CurrentVersionCode: 12

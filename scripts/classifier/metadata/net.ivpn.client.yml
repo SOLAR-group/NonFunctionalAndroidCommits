@@ -1,0 +1,98 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Security
+License: GPL-3.0-only
+WebSite: https://www.ivpn.net/
+SourceCode: https://github.com/ivpn/android-app
+IssueTracker: https://github.com/ivpn/android-app/issues
+Changelog: https://github.com/ivpn/android-app/releases
+
+AutoName: IVPN
+
+RepoType: git
+Repo: https://github.com/ivpn/android-app
+
+Builds:
+  - versionName: '1.65'
+    versionCode: 75
+    commit: v1.65
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21
+
+  - versionName: '1.66'
+    versionCode: 78
+    commit: v1.66
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21
+
+  - versionName: '1.67'
+    versionCode: 79
+    commit: v1.67
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21
+
+  - versionName: '1.68'
+    versionCode: 82
+    commit: v1.68
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
+  - versionName: '2.0'
+    versionCode: 87
+    commit: v2.0
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
+  - versionName: 2.1.0
+    versionCode: 90
+    commit: v2.1.0
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.1.0
+CurrentVersionCode: 90

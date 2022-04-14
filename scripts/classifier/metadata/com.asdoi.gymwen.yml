@@ -1,0 +1,93 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+  - Science & Education
+License: GPL-3.0-or-later
+AuthorName: Felix Hollederer
+AuthorEmail: GymWenApp@t-online.de
+WebSite: https://asdoi.gitlab.io/gymwenapp.html
+SourceCode: https://gitlab.com/asdoi/GymWen/tree/HEAD
+IssueTracker: https://gitlab.com/asdoi/GymWen/issues
+Changelog: https://gitlab.com/asdoi/GymWen/-/releases
+
+AutoName: GymWen
+
+RepoType: git
+Repo: https://gitlab.com/asdoi/GymWen.git
+
+Builds:
+  - versionName: 1.0.3
+    versionCode: 103
+    commit: v1.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.6
+    versionCode: 106
+    commit: v1.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.7
+    versionCode: 107
+    commit: v1.0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.0
+    versionCode: 110
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 111
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 112
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.3
+    versionCode: 113
+    commit: v1.1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 120
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 121
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.2
+    versionCode: 122
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.2
+CurrentVersionCode: 122

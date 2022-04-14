@@ -1,0 +1,110 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+AuthorName: CorruptedArk
+SourceCode: https://github.com/CorruptedArk/open-chaos-chess
+IssueTracker: https://github.com/CorruptedArk/open-chaos-chess/issues
+Changelog: https://github.com/CorruptedArk/open-chaos-chess/releases
+Liberapay: CorruptedArk
+
+AutoName: Open Chaos Chess
+
+RepoType: git
+Repo: https://github.com/CorruptedArk/open-chaos-chess
+
+Builds:
+  - versionName: 1.5.4
+    versionCode: 22
+    commit: v1.5.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.7
+    versionCode: 25
+    commit: v1.5.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.8
+    versionCode: 26
+    commit: v1.5.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 27
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.1
+    versionCode: 28
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.2
+    versionCode: 29
+    commit: v1.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.3
+    versionCode: 30
+    commit: v1.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.4
+    versionCode: 31
+    commit: v1.6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.5
+    versionCode: 32
+    commit: v1.6.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 33
+    commit: v1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 34
+    commit: v1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.2
+    versionCode: 35
+    commit: v1.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.3
+    versionCode: 36
+    commit: v1.7.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.7.3
+CurrentVersionCode: 36

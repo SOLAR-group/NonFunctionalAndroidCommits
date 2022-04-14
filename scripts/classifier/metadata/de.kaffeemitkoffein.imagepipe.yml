@@ -1,0 +1,45 @@
+Categories:
+  - Graphics
+License: GPL-3.0-or-later
+AuthorWebSite: https://kaffeemitkoffein.de/blog/me/
+SourceCode: https://codeberg.org/Starfish/Imagepipe
+IssueTracker: https://codeberg.org/Starfish/Imagepipe/issues
+
+AutoName: Imagepipe
+
+RepoType: git
+Repo: https://codeberg.org/Starfish/Imagepipe.git
+
+Builds:
+  - versionName: '0.31'
+    versionCode: 24
+    commit: v0.31
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+  - versionName: '0.40'
+    versionCode: 26
+    commit: v0.40
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+  - versionName: '0.41'
+    versionCode: 27
+    commit: v0.41
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+  - versionName: '0.42'
+    versionCode: 28
+    commit: v0.42
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.42'
+CurrentVersionCode: 28

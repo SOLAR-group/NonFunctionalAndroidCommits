@@ -1,0 +1,73 @@
+Categories:
+  - Games
+License: Apache-2.0
+AuthorName: Jonathan Herrmann-Engel
+SourceCode: https://github.com/MOROway/moroway-app-oc
+IssueTracker: https://github.com/MOROway/moroway-app-oc/issues
+
+AutoName: MOROway
+
+RepoType: git
+Repo: https://github.com/MOROway/moroway-app-oc
+
+Builds:
+  - versionName: 6.2.0
+    versionCode: 60200
+    commit: v6.2.0
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.2.3
+    versionCode: 60203
+    commit: v6.2.3
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.2.4
+    versionCode: 60204
+    commit: v6.2.4
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.2.5
+    versionCode: 60205
+    commit: v6.2.5
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.3.0
+    versionCode: 60300
+    commit: v6.3.0
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.3.3
+    versionCode: 60303
+    commit: v6.3.3
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.4.0
+    versionCode: 60400
+    commit: v6.4.0
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 6.4.2
+    versionCode: 60402
+    commit: v6.4.2
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 6.4.2
+CurrentVersionCode: 60402

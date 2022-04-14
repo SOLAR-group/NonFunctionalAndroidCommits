@@ -1,0 +1,1976 @@
+RUNNING CONFIG fd_lem_bow.txt
+Start: MLPClassifier 11:26:53
+Trained: 11:28:05
+Predicted: 11:28:05
+[[446  22]
+ [ 32  90]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.95      0.94       468
+    relevant       0.80      0.74      0.77       122
+
+    accuracy                           0.91       590
+   macro avg       0.87      0.85      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9084745762711864
+Start: KNeighborsClassifier 11:28:05
+Trained: 11:28:08
+Predicted: 11:28:31
+[[446  22]
+ [ 53  69]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.95      0.92       468
+    relevant       0.76      0.57      0.65       122
+
+    accuracy                           0.87       590
+   macro avg       0.83      0.76      0.79       590
+weighted avg       0.87      0.87      0.87       590
+
+0.8728813559322034
+Start: SVC 11:28:31
+Trained: 11:29:13
+Predicted: 11:29:24
+[[463   5]
+ [ 51  71]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.93      0.58      0.72       122
+
+    accuracy                           0.91       590
+   macro avg       0.92      0.79      0.83       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9050847457627119
+Start: NuSVC 11:29:24
+NuSVC has failed
+Start: LinearSVC 11:29:24
+Trained: 11:29:24
+Predicted: 11:29:24
+[[440  28]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.94      0.94       468
+    relevant       0.76      0.73      0.74       122
+
+    accuracy                           0.90       590
+   macro avg       0.85      0.83      0.84       590
+weighted avg       0.90      0.90      0.90       590
+
+0.8966101694915254
+Start: GaussianProcessClassifier 11:29:24
+Trained: 11:30:12
+Predicted: 11:30:23
+[[462   6]
+ [ 76  46]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.86      0.99      0.92       468
+    relevant       0.88      0.38      0.53       122
+
+    accuracy                           0.86       590
+   macro avg       0.87      0.68      0.72       590
+weighted avg       0.86      0.86      0.84       590
+
+0.8610169491525423
+Start: RBF 11:30:23
+RBF has failed
+Start: DecisionTreeClassifier 11:30:23
+Trained: 11:30:31
+Predicted: 11:30:31
+[[439  29]
+ [ 28  94]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.94      0.94       468
+    relevant       0.76      0.77      0.77       122
+
+    accuracy                           0.90       590
+   macro avg       0.85      0.85      0.85       590
+weighted avg       0.90      0.90      0.90       590
+
+0.9033898305084745
+Start: ExtraTreeClassifier 11:30:31
+Trained: 11:30:31
+Predicted: 11:30:31
+[[406  62]
+ [ 39  83]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.87      0.89       468
+    relevant       0.57      0.68      0.62       122
+
+    accuracy                           0.83       590
+   macro avg       0.74      0.77      0.76       590
+weighted avg       0.84      0.83      0.83       590
+
+0.8288135593220339
+Start: RandomForestClassifier 11:30:31
+Trained: 11:30:44
+Predicted: 11:30:44
+[[462   6]
+ [ 39  83]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.99      0.95       468
+    relevant       0.93      0.68      0.79       122
+
+    accuracy                           0.92       590
+   macro avg       0.93      0.83      0.87       590
+weighted avg       0.92      0.92      0.92       590
+
+0.923728813559322
+Start: AdaBoostClassifier 11:30:44
+Trained: 11:31:06
+Predicted: 11:31:06
+[[453  15]
+ [ 31  91]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       468
+    relevant       0.86      0.75      0.80       122
+
+    accuracy                           0.92       590
+   macro avg       0.90      0.86      0.87       590
+weighted avg       0.92      0.92      0.92       590
+
+0.9220338983050848
+Start: ExtraTreeClassifier 11:31:06
+Trained: 11:31:06
+Predicted: 11:31:06
+[[425  43]
+ [ 55  67]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.91      0.90       468
+    relevant       0.61      0.55      0.58       122
+
+    accuracy                           0.83       590
+   macro avg       0.75      0.73      0.74       590
+weighted avg       0.83      0.83      0.83       590
+
+0.8338983050847457
+Start: BaggingClassifier 11:31:06
+Trained: 11:31:17
+Predicted: 11:31:17
+[[448  20]
+ [ 27  95]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       468
+    relevant       0.83      0.78      0.80       122
+
+    accuracy                           0.92       590
+   macro avg       0.88      0.87      0.88       590
+weighted avg       0.92      0.92      0.92       590
+
+0.9203389830508475
+Start: GradientBoostingClassifier 11:31:17
+Trained: 11:32:24
+Predicted: 11:32:24
+[[455  13]
+ [ 36  86]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.97      0.95       468
+    relevant       0.87      0.70      0.78       122
+
+    accuracy                           0.92       590
+   macro avg       0.90      0.84      0.86       590
+weighted avg       0.91      0.92      0.91       590
+
+0.9169491525423729
+Start: VotingClassifier 11:32:24
+VotingClassifier has failed
+Start: GaussianNB 11:32:24
+Trained: 11:32:25
+Predicted: 11:32:25
+[[382  86]
+ [ 50  72]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.82      0.85       468
+    relevant       0.46      0.59      0.51       122
+
+    accuracy                           0.77       590
+   macro avg       0.67      0.70      0.68       590
+weighted avg       0.80      0.77      0.78       590
+
+0.7694915254237288
+Start: MultinomialNB 11:32:25
+Trained: 11:32:25
+Predicted: 11:32:25
+[[462   6]
+ [ 53  69]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.92      0.57      0.70       122
+
+    accuracy                           0.90       590
+   macro avg       0.91      0.78      0.82       590
+weighted avg       0.90      0.90      0.89       590
+
+0.9
+Start: CategoricalNB 11:32:25
+Trained: 11:32:26
+CategoricalNB has failed
+Start: BernoulliNB 11:32:26
+Trained: 11:32:26
+Predicted: 11:32:26
+[[467   1]
+ [116   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      1.00      0.89       468
+    relevant       0.86      0.05      0.09       122
+
+    accuracy                           0.80       590
+   macro avg       0.83      0.52      0.49       590
+weighted avg       0.81      0.80      0.72       590
+
+0.8016949152542373
+Start: ComplementNB 11:32:26
+Trained: 11:32:27
+Predicted: 11:32:27
+[[447  21]
+ [ 41  81]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.96      0.94       468
+    relevant       0.79      0.66      0.72       122
+
+    accuracy                           0.89       590
+   macro avg       0.86      0.81      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: QuadraticDiscriminantAnalysis 11:32:27
+Trained: 11:32:34
+Predicted: 11:32:35
+[[401  67]
+ [ 78  44]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.84      0.86      0.85       468
+    relevant       0.40      0.36      0.38       122
+
+    accuracy                           0.75       590
+   macro avg       0.62      0.61      0.61       590
+weighted avg       0.75      0.75      0.75       590
+
+0.7542372881355932
+Start: LinearDiscriminantAnalysis 11:32:35
+Trained: 11:32:47
+Predicted: 11:32:47
+[[323 145]
+ [ 45  77]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.69      0.77       468
+    relevant       0.35      0.63      0.45       122
+
+    accuracy                           0.68       590
+   macro avg       0.61      0.66      0.61       590
+weighted avg       0.77      0.68      0.71       590
+
+0.6779661016949152
+Start: SGDClassifier 11:32:47
+Trained: 11:32:48
+Predicted: 11:32:48
+[[442  26]
+ [ 36  86]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.94      0.93       468
+    relevant       0.77      0.70      0.74       122
+
+    accuracy                           0.89       590
+   macro avg       0.85      0.82      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: RidgeClassifier 11:32:48
+Trained: 11:32:49
+Predicted: 11:32:49
+[[437  31]
+ [ 31  91]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.93      0.93       468
+    relevant       0.75      0.75      0.75       122
+
+    accuracy                           0.89       590
+   macro avg       0.84      0.84      0.84       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: PassiveAggressiveClassifier 11:32:49
+Trained: 11:32:51
+Predicted: 11:32:51
+[[433  35]
+ [ 29  93]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.93       468
+    relevant       0.73      0.76      0.74       122
+
+    accuracy                           0.89       590
+   macro avg       0.83      0.84      0.84       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8915254237288136
+RUNNING CONFIG f_lem_bowimp.txt
+Start: MLPClassifier 11:32:51
+Trained: 11:33:02
+Predicted: 11:33:02
+[[452  16]
+ [ 51  71]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.97      0.93       468
+    relevant       0.82      0.58      0.68       122
+
+    accuracy                           0.89       590
+   macro avg       0.86      0.77      0.81       590
+weighted avg       0.88      0.89      0.88       590
+
+0.8864406779661017
+Start: KNeighborsClassifier 11:33:02
+Trained: 11:33:03
+Predicted: 11:33:07
+[[461   7]
+ [ 66  56]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.87      0.99      0.93       468
+    relevant       0.89      0.46      0.61       122
+
+    accuracy                           0.88       590
+   macro avg       0.88      0.72      0.77       590
+weighted avg       0.88      0.88      0.86       590
+
+0.8762711864406779
+Start: SVC 11:33:07
+Trained: 11:33:14
+Predicted: 11:33:16
+[[463   5]
+ [ 51  71]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.93      0.58      0.72       122
+
+    accuracy                           0.91       590
+   macro avg       0.92      0.79      0.83       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9050847457627119
+Start: NuSVC 11:33:16
+NuSVC has failed
+Start: LinearSVC 11:33:16
+Trained: 11:33:16
+Predicted: 11:33:16
+[[435  33]
+ [ 41  81]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.93      0.92       468
+    relevant       0.71      0.66      0.69       122
+
+    accuracy                           0.87       590
+   macro avg       0.81      0.80      0.80       590
+weighted avg       0.87      0.87      0.87       590
+
+0.8745762711864407
+Start: GaussianProcessClassifier 11:33:16
+Trained: 11:33:26
+Predicted: 11:33:28
+[[466   2]
+ [ 94  28]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.83      1.00      0.91       468
+    relevant       0.93      0.23      0.37       122
+
+    accuracy                           0.84       590
+   macro avg       0.88      0.61      0.64       590
+weighted avg       0.85      0.84      0.80       590
+
+0.8372881355932204
+Start: RBF 11:33:28
+RBF has failed
+Start: DecisionTreeClassifier 11:33:28
+Trained: 11:33:30
+Predicted: 11:33:31
+[[445  23]
+ [ 37  85]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.95      0.94       468
+    relevant       0.79      0.70      0.74       122
+
+    accuracy                           0.90       590
+   macro avg       0.86      0.82      0.84       590
+weighted avg       0.90      0.90      0.90       590
+
+0.8983050847457628
+Start: ExtraTreeClassifier 11:33:31
+Trained: 11:33:31
+Predicted: 11:33:31
+[[443  25]
+ [ 48  74]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.95      0.92       468
+    relevant       0.75      0.61      0.67       122
+
+    accuracy                           0.88       590
+   macro avg       0.82      0.78      0.80       590
+weighted avg       0.87      0.88      0.87       590
+
+0.8762711864406779
+Start: RandomForestClassifier 11:33:31
+Trained: 11:33:33
+Predicted: 11:33:33
+[[461   7]
+ [ 47  75]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.99      0.94       468
+    relevant       0.91      0.61      0.74       122
+
+    accuracy                           0.91       590
+   macro avg       0.91      0.80      0.84       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9084745762711864
+Start: AdaBoostClassifier 11:33:33
+Trained: 11:33:36
+Predicted: 11:33:36
+[[451  17]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.96      0.95       468
+    relevant       0.84      0.73      0.78       122
+
+    accuracy                           0.92       590
+   macro avg       0.89      0.85      0.86       590
+weighted avg       0.91      0.92      0.91       590
+
+0.9152542372881356
+Start: ExtraTreeClassifier 11:33:36
+Trained: 11:33:37
+Predicted: 11:33:37
+[[427  41]
+ [ 59  63]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.91      0.90       468
+    relevant       0.61      0.52      0.56       122
+
+    accuracy                           0.83       590
+   macro avg       0.74      0.71      0.73       590
+weighted avg       0.82      0.83      0.83       590
+
+0.8305084745762712
+Start: BaggingClassifier 11:33:37
+Trained: 11:33:39
+Predicted: 11:33:40
+[[452  16]
+ [ 37  85]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.97      0.94       468
+    relevant       0.84      0.70      0.76       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.83      0.85       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9101694915254237
+Start: GradientBoostingClassifier 11:33:40
+Trained: 11:33:57
+Predicted: 11:33:57
+[[459   9]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.98      0.96       468
+    relevant       0.91      0.73      0.81       122
+
+    accuracy                           0.93       590
+   macro avg       0.92      0.86      0.88       590
+weighted avg       0.93      0.93      0.93       590
+
+0.9288135593220339
+Start: VotingClassifier 11:33:57
+VotingClassifier has failed
+Start: GaussianNB 11:33:57
+Trained: 11:33:57
+Predicted: 11:33:57
+[[436  32]
+ [109  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      0.93      0.86       468
+    relevant       0.29      0.11      0.16       122
+
+    accuracy                           0.76       590
+   macro avg       0.54      0.52      0.51       590
+weighted avg       0.69      0.76      0.72       590
+
+0.7610169491525424
+Start: MultinomialNB 11:33:57
+Trained: 11:33:58
+Predicted: 11:33:58
+[[454  14]
+ [ 34  88]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.97      0.95       468
+    relevant       0.86      0.72      0.79       122
+
+    accuracy                           0.92       590
+   macro avg       0.90      0.85      0.87       590
+weighted avg       0.92      0.92      0.92       590
+
+0.9186440677966101
+Start: CategoricalNB 11:33:58
+Trained: 11:33:58
+CategoricalNB has failed
+Start: BernoulliNB 11:33:58
+Trained: 11:33:58
+Predicted: 11:33:58
+[[454  14]
+ [ 38  84]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.97      0.95       468
+    relevant       0.86      0.69      0.76       122
+
+    accuracy                           0.91       590
+   macro avg       0.89      0.83      0.85       590
+weighted avg       0.91      0.91      0.91       590
+
+0.911864406779661
+Start: ComplementNB 11:33:58
+Trained: 11:33:59
+Predicted: 11:33:59
+[[436  32]
+ [ 27  95]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.94       468
+    relevant       0.75      0.78      0.76       122
+
+    accuracy                           0.90       590
+   macro avg       0.84      0.86      0.85       590
+weighted avg       0.90      0.90      0.90       590
+
+0.9
+Start: QuadraticDiscriminantAnalysis 11:33:59
+Trained: 11:34:02
+Predicted: 11:34:02
+[[421  47]
+ [ 62  60]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.87      0.90      0.89       468
+    relevant       0.56      0.49      0.52       122
+
+    accuracy                           0.82       590
+   macro avg       0.72      0.70      0.70       590
+weighted avg       0.81      0.82      0.81       590
+
+0.8152542372881356
+Start: LinearDiscriminantAnalysis 11:34:02
+Trained: 11:34:06
+Predicted: 11:34:06
+[[388  80]
+ [ 46  76]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.83      0.86       468
+    relevant       0.49      0.62      0.55       122
+
+    accuracy                           0.79       590
+   macro avg       0.69      0.73      0.70       590
+weighted avg       0.81      0.79      0.80       590
+
+0.7864406779661017
+Start: SGDClassifier 11:34:06
+Trained: 11:34:07
+Predicted: 11:34:07
+[[447  21]
+ [ 50  72]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.96      0.93       468
+    relevant       0.77      0.59      0.67       122
+
+    accuracy                           0.88       590
+   macro avg       0.84      0.77      0.80       590
+weighted avg       0.87      0.88      0.87       590
+
+0.8796610169491526
+Start: RidgeClassifier 11:34:07
+Trained: 11:34:07
+Predicted: 11:34:07
+[[439  29]
+ [ 34  88]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.94      0.93       468
+    relevant       0.75      0.72      0.74       122
+
+    accuracy                           0.89       590
+   macro avg       0.84      0.83      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8932203389830509
+Start: PassiveAggressiveClassifier 11:34:07
+Trained: 11:34:08
+Predicted: 11:34:08
+[[438  30]
+ [ 43  79]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.94      0.92       468
+    relevant       0.72      0.65      0.68       122
+
+    accuracy                           0.88       590
+   macro avg       0.82      0.79      0.80       590
+weighted avg       0.87      0.88      0.87       590
+
+0.8762711864406779
+RUNNING CONFIG f_lem_tfidf.txt
+Start: MLPClassifier 11:34:08
+Trained: 11:34:54
+Predicted: 11:34:54
+[[451  17]
+ [ 42  80]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.96      0.94       468
+    relevant       0.82      0.66      0.73       122
+
+    accuracy                           0.90       590
+   macro avg       0.87      0.81      0.83       590
+weighted avg       0.90      0.90      0.90       590
+
+0.9
+Start: KNeighborsClassifier 11:34:54
+Trained: 11:34:56
+Predicted: 11:35:20
+[[465   3]
+ [ 55  67]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.99      0.94       468
+    relevant       0.96      0.55      0.70       122
+
+    accuracy                           0.90       590
+   macro avg       0.93      0.77      0.82       590
+weighted avg       0.91      0.90      0.89       590
+
+0.9016949152542373
+Start: SVC 11:35:20
+Trained: 11:36:20
+Predicted: 11:36:32
+[[464   4]
+ [ 52  70]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.95      0.57      0.71       122
+
+    accuracy                           0.91       590
+   macro avg       0.92      0.78      0.83       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9050847457627119
+Start: NuSVC 11:36:32
+NuSVC has failed
+Start: LinearSVC 11:36:33
+Trained: 11:36:33
+Predicted: 11:36:33
+[[457  11]
+ [ 39  83]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.98      0.95       468
+    relevant       0.88      0.68      0.77       122
+
+    accuracy                           0.92       590
+   macro avg       0.90      0.83      0.86       590
+weighted avg       0.91      0.92      0.91       590
+
+0.9152542372881356
+Start: GaussianProcessClassifier 11:36:33
+Trained: 11:37:22
+Predicted: 11:37:33
+[[467   1]
+ [ 76  46]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.86      1.00      0.92       468
+    relevant       0.98      0.38      0.54       122
+
+    accuracy                           0.87       590
+   macro avg       0.92      0.69      0.73       590
+weighted avg       0.88      0.87      0.85       590
+
+0.8694915254237288
+Start: RBF 11:37:33
+RBF has failed
+Start: DecisionTreeClassifier 11:37:33
+Trained: 11:37:42
+Predicted: 11:37:42
+[[436  32]
+ [ 32  90]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.93      0.93       468
+    relevant       0.74      0.74      0.74       122
+
+    accuracy                           0.89       590
+   macro avg       0.83      0.83      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8915254237288136
+Start: ExtraTreeClassifier 11:37:42
+Trained: 11:37:42
+Predicted: 11:37:42
+[[429  39]
+ [ 40  82]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.92      0.92       468
+    relevant       0.68      0.67      0.67       122
+
+    accuracy                           0.87       590
+   macro avg       0.80      0.79      0.80       590
+weighted avg       0.87      0.87      0.87       590
+
+0.8661016949152542
+Start: RandomForestClassifier 11:37:42
+Trained: 11:37:56
+Predicted: 11:37:56
+[[461   7]
+ [ 44  78]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.99      0.95       468
+    relevant       0.92      0.64      0.75       122
+
+    accuracy                           0.91       590
+   macro avg       0.92      0.81      0.85       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9135593220338983
+Start: AdaBoostClassifier 11:37:56
+Trained: 11:38:18
+Predicted: 11:38:19
+[[450  18]
+ [ 35  87]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.96      0.94       468
+    relevant       0.83      0.71      0.77       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.84      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9101694915254237
+Start: ExtraTreeClassifier 11:38:19
+Trained: 11:38:19
+Predicted: 11:38:19
+[[438  30]
+ [ 44  78]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.94      0.92       468
+    relevant       0.72      0.64      0.68       122
+
+    accuracy                           0.87       590
+   macro avg       0.82      0.79      0.80       590
+weighted avg       0.87      0.87      0.87       590
+
+0.8745762711864407
+Start: BaggingClassifier 11:38:19
+Trained: 11:38:28
+Predicted: 11:38:29
+[[449  19]
+ [ 32  90]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.96      0.95       468
+    relevant       0.83      0.74      0.78       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.85      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9135593220338983
+Start: GradientBoostingClassifier 11:38:29
+Trained: 11:39:36
+Predicted: 11:39:36
+[[459   9]
+ [ 36  86]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.98      0.95       468
+    relevant       0.91      0.70      0.79       122
+
+    accuracy                           0.92       590
+   macro avg       0.92      0.84      0.87       590
+weighted avg       0.92      0.92      0.92       590
+
+0.923728813559322
+Start: VotingClassifier 11:39:36
+VotingClassifier has failed
+Start: GaussianNB 11:39:36
+Trained: 11:39:36
+Predicted: 11:39:36
+[[388  80]
+ [ 52  70]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.83      0.85       468
+    relevant       0.47      0.57      0.51       122
+
+    accuracy                           0.78       590
+   macro avg       0.67      0.70      0.68       590
+weighted avg       0.80      0.78      0.78       590
+
+0.7762711864406779
+Start: MultinomialNB 11:39:36
+Trained: 11:39:36
+Predicted: 11:39:36
+[[468   0]
+ [104  18]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.82      1.00      0.90       468
+    relevant       1.00      0.15      0.26       122
+
+    accuracy                           0.82       590
+   macro avg       0.91      0.57      0.58       590
+weighted avg       0.86      0.82      0.77       590
+
+0.823728813559322
+Start: CategoricalNB 11:39:36
+Trained: 11:39:38
+Predicted: 11:39:38
+[[468   0]
+ [122   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.79      1.00      0.88       468
+    relevant       0.00      0.00      0.00       122
+
+    accuracy                           0.79       590
+   macro avg       0.40      0.50      0.44       590
+weighted avg       0.63      0.79      0.70       590
+
+0.7932203389830509
+Start: BernoulliNB 11:39:38
+Trained: 11:39:38
+Predicted: 11:39:38
+[[467   1]
+ [116   6]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      1.00      0.89       468
+    relevant       0.86      0.05      0.09       122
+
+    accuracy                           0.80       590
+   macro avg       0.83      0.52      0.49       590
+weighted avg       0.81      0.80      0.72       590
+
+0.8016949152542373
+Start: ComplementNB 11:39:38
+Trained: 11:39:38
+Predicted: 11:39:38
+[[464   4]
+ [ 58  64]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.99      0.94       468
+    relevant       0.94      0.52      0.67       122
+
+    accuracy                           0.89       590
+   macro avg       0.92      0.76      0.81       590
+weighted avg       0.90      0.89      0.88       590
+
+0.8949152542372881
+Start: QuadraticDiscriminantAnalysis 11:39:38
+Trained: 11:39:45
+Predicted: 11:39:46
+[[ 89 379]
+ [  7 115]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.19      0.32       468
+    relevant       0.23      0.94      0.37       122
+
+    accuracy                           0.35       590
+   macro avg       0.58      0.57      0.34       590
+weighted avg       0.78      0.35      0.33       590
+
+0.34576271186440677
+Start: LinearDiscriminantAnalysis 11:39:46
+Trained: 11:39:58
+Predicted: 11:39:58
+[[398  70]
+ [ 51  71]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.85      0.87       468
+    relevant       0.50      0.58      0.54       122
+
+    accuracy                           0.79       590
+   macro avg       0.69      0.72      0.70       590
+weighted avg       0.81      0.79      0.80       590
+
+0.7949152542372881
+Start: SGDClassifier 11:39:58
+Trained: 11:39:59
+Predicted: 11:39:59
+[[455  13]
+ [ 30  92]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.97      0.95       468
+    relevant       0.88      0.75      0.81       122
+
+    accuracy                           0.93       590
+   macro avg       0.91      0.86      0.88       590
+weighted avg       0.93      0.93      0.93       590
+
+0.9271186440677966
+Start: RidgeClassifier 11:39:59
+Trained: 11:40:00
+Predicted: 11:40:00
+[[462   6]
+ [ 50  72]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.92      0.59      0.72       122
+
+    accuracy                           0.91       590
+   macro avg       0.91      0.79      0.83       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9050847457627119
+Start: PassiveAggressiveClassifier 11:40:00
+Trained: 11:40:01
+Predicted: 11:40:01
+[[457  11]
+ [ 40  82]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.98      0.95       468
+    relevant       0.88      0.67      0.76       122
+
+    accuracy                           0.91       590
+   macro avg       0.90      0.82      0.85       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9135593220338983
+RUNNING CONFIG f_stem_bow.txt
+Start: MLPClassifier 11:40:01
+Trained: 11:41:11
+Predicted: 11:41:11
+[[436  32]
+ [ 36  86]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.93      0.93       468
+    relevant       0.73      0.70      0.72       122
+
+    accuracy                           0.88       590
+   macro avg       0.83      0.82      0.82       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8847457627118644
+Start: KNeighborsClassifier 11:41:11
+Trained: 11:41:13
+Predicted: 11:41:31
+[[446  22]
+ [ 48  74]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.95      0.93       468
+    relevant       0.77      0.61      0.68       122
+
+    accuracy                           0.88       590
+   macro avg       0.84      0.78      0.80       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8813559322033898
+Start: SVC 11:41:31
+Trained: 11:42:02
+Predicted: 11:42:10
+[[459   9]
+ [ 49  73]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.98      0.94       468
+    relevant       0.89      0.60      0.72       122
+
+    accuracy                           0.90       590
+   macro avg       0.90      0.79      0.83       590
+weighted avg       0.90      0.90      0.89       590
+
+0.9016949152542373
+Start: NuSVC 11:42:10
+NuSVC has failed
+Start: LinearSVC 11:42:10
+Trained: 11:42:10
+Predicted: 11:42:10
+[[431  37]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.92      0.92       468
+    relevant       0.71      0.73      0.72       122
+
+    accuracy                           0.88       590
+   macro avg       0.82      0.83      0.82       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8813559322033898
+Start: GaussianProcessClassifier 11:42:10
+Trained: 11:42:48
+Predicted: 11:42:57
+[[462   6]
+ [ 60  62]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.99      0.93       468
+    relevant       0.91      0.51      0.65       122
+
+    accuracy                           0.89       590
+   macro avg       0.90      0.75      0.79       590
+weighted avg       0.89      0.89      0.88       590
+
+0.888135593220339
+Start: RBF 11:42:57
+RBF has failed
+Start: DecisionTreeClassifier 11:42:57
+Trained: 11:43:05
+Predicted: 11:43:05
+[[434  34]
+ [ 29  93]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.93       468
+    relevant       0.73      0.76      0.75       122
+
+    accuracy                           0.89       590
+   macro avg       0.83      0.84      0.84       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8932203389830509
+Start: ExtraTreeClassifier 11:43:05
+Trained: 11:43:05
+Predicted: 11:43:05
+[[416  52]
+ [ 37  85]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.89      0.90       468
+    relevant       0.62      0.70      0.66       122
+
+    accuracy                           0.85       590
+   macro avg       0.77      0.79      0.78       590
+weighted avg       0.86      0.85      0.85       590
+
+0.8491525423728814
+Start: RandomForestClassifier 11:43:06
+Trained: 11:43:17
+Predicted: 11:43:17
+[[461   7]
+ [ 39  83]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.99      0.95       468
+    relevant       0.92      0.68      0.78       122
+
+    accuracy                           0.92       590
+   macro avg       0.92      0.83      0.87       590
+weighted avg       0.92      0.92      0.92       590
+
+0.9220338983050848
+Start: AdaBoostClassifier 11:43:17
+Trained: 11:43:43
+Predicted: 11:43:43
+[[447  21]
+ [ 30  92]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.96      0.95       468
+    relevant       0.81      0.75      0.78       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.85      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.9135593220338983
+Start: ExtraTreeClassifier 11:43:43
+Trained: 11:43:43
+Predicted: 11:43:43
+[[422  46]
+ [ 40  82]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.90      0.91       468
+    relevant       0.64      0.67      0.66       122
+
+    accuracy                           0.85       590
+   macro avg       0.78      0.79      0.78       590
+weighted avg       0.86      0.85      0.86       590
+
+0.8542372881355932
+Start: BaggingClassifier 11:43:43
+Trained: 11:43:50
+Predicted: 11:43:50
+[[437  31]
+ [ 29  93]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.93      0.94       468
+    relevant       0.75      0.76      0.76       122
+
+    accuracy                           0.90       590
+   macro avg       0.84      0.85      0.85       590
+weighted avg       0.90      0.90      0.90       590
+
+0.8983050847457628
+Start: GradientBoostingClassifier 11:43:50
+Trained: 11:45:13
+Predicted: 11:45:13
+[[451  17]
+ [ 35  87]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.96      0.95       468
+    relevant       0.84      0.71      0.77       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.84      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.911864406779661
+Start: VotingClassifier 11:45:13
+VotingClassifier has failed
+Start: GaussianNB 11:45:13
+Trained: 11:45:14
+Predicted: 11:45:14
+[[348 120]
+ [ 44  78]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.74      0.81       468
+    relevant       0.39      0.64      0.49       122
+
+    accuracy                           0.72       590
+   macro avg       0.64      0.69      0.65       590
+weighted avg       0.79      0.72      0.74       590
+
+0.7220338983050848
+Start: MultinomialNB 11:45:14
+Trained: 11:45:14
+Predicted: 11:45:14
+[[458  10]
+ [ 57  65]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.98      0.93       468
+    relevant       0.87      0.53      0.66       122
+
+    accuracy                           0.89       590
+   macro avg       0.88      0.76      0.80       590
+weighted avg       0.88      0.89      0.88       590
+
+0.8864406779661017
+Start: CategoricalNB 11:45:14
+Trained: 11:45:15
+CategoricalNB has failed
+Start: BernoulliNB 11:45:15
+Trained: 11:45:15
+Predicted: 11:45:15
+[[465   3]
+ [118   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      0.99      0.88       468
+    relevant       0.57      0.03      0.06       122
+
+    accuracy                           0.79       590
+   macro avg       0.68      0.51      0.47       590
+weighted avg       0.75      0.79      0.71       590
+
+0.7949152542372881
+Start: ComplementNB 11:45:15
+Trained: 11:45:15
+Predicted: 11:45:15
+[[441  27]
+ [ 41  81]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.94      0.93       468
+    relevant       0.75      0.66      0.70       122
+
+    accuracy                           0.88       590
+   macro avg       0.83      0.80      0.82       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8847457627118644
+Start: QuadraticDiscriminantAnalysis 11:45:15
+Trained: 11:45:22
+Predicted: 11:45:22
+[[412  56]
+ [ 81  41]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.84      0.88      0.86       468
+    relevant       0.42      0.34      0.37       122
+
+    accuracy                           0.77       590
+   macro avg       0.63      0.61      0.62       590
+weighted avg       0.75      0.77      0.76       590
+
+0.7677966101694915
+Start: LinearDiscriminantAnalysis 11:45:23
+Trained: 11:45:34
+Predicted: 11:45:34
+[[300 168]
+ [ 53  69]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.85      0.64      0.73       468
+    relevant       0.29      0.57      0.38       122
+
+    accuracy                           0.63       590
+   macro avg       0.57      0.60      0.56       590
+weighted avg       0.73      0.63      0.66       590
+
+0.6254237288135593
+Start: SGDClassifier 11:45:34
+Trained: 11:45:35
+Predicted: 11:45:35
+[[429  39]
+ [ 34  88]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.92      0.92       468
+    relevant       0.69      0.72      0.71       122
+
+    accuracy                           0.88       590
+   macro avg       0.81      0.82      0.81       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8762711864406779
+Start: RidgeClassifier 11:45:35
+Trained: 11:45:36
+Predicted: 11:45:36
+[[427  41]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.91      0.92       468
+    relevant       0.68      0.73      0.71       122
+
+    accuracy                           0.87       590
+   macro avg       0.81      0.82      0.81       590
+weighted avg       0.88      0.87      0.88       590
+
+0.8745762711864407
+Start: PassiveAggressiveClassifier 11:45:36
+Trained: 11:45:37
+Predicted: 11:45:37
+[[428  40]
+ [ 38  84]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.91      0.92       468
+    relevant       0.68      0.69      0.68       122
+
+    accuracy                           0.87       590
+   macro avg       0.80      0.80      0.80       590
+weighted avg       0.87      0.87      0.87       590
+
+0.8677966101694915
+RUNNING CONFIG f_stem_bowimp.txt
+Start: MLPClassifier 11:45:37
+Trained: 11:45:51
+Predicted: 11:45:51
+[[439  29]
+ [ 55  67]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.94      0.91       468
+    relevant       0.70      0.55      0.61       122
+
+    accuracy                           0.86       590
+   macro avg       0.79      0.74      0.76       590
+weighted avg       0.85      0.86      0.85       590
+
+0.8576271186440678
+Start: KNeighborsClassifier 11:45:51
+Trained: 11:45:52
+Predicted: 11:45:55
+[[457  11]
+ [ 67  55]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.87      0.98      0.92       468
+    relevant       0.83      0.45      0.59       122
+
+    accuracy                           0.87       590
+   macro avg       0.85      0.71      0.75       590
+weighted avg       0.86      0.87      0.85       590
+
+0.8677966101694915
+Start: SVC 11:45:55
+Trained: 11:46:01
+Predicted: 11:46:03
+[[460   8]
+ [ 70  52]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.87      0.98      0.92       468
+    relevant       0.87      0.43      0.57       122
+
+    accuracy                           0.87       590
+   macro avg       0.87      0.70      0.75       590
+weighted avg       0.87      0.87      0.85       590
+
+0.8677966101694915
+Start: NuSVC 11:46:03
+NuSVC has failed
+Start: LinearSVC 11:46:03
+Trained: 11:46:03
+Predicted: 11:46:03
+[[427  41]
+ [ 50  72]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.91      0.90       468
+    relevant       0.64      0.59      0.61       122
+
+    accuracy                           0.85       590
+   macro avg       0.77      0.75      0.76       590
+weighted avg       0.84      0.85      0.84       590
+
+0.8457627118644068
+Start: GaussianProcessClassifier 11:46:03
+Trained: 11:46:13
+Predicted: 11:46:14
+[[466   2]
+ [ 97  25]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.83      1.00      0.90       468
+    relevant       0.93      0.20      0.34       122
+
+    accuracy                           0.83       590
+   macro avg       0.88      0.60      0.62       590
+weighted avg       0.85      0.83      0.79       590
+
+0.8322033898305085
+Start: RBF 11:46:14
+RBF has failed
+Start: DecisionTreeClassifier 11:46:14
+Trained: 11:46:16
+Predicted: 11:46:16
+[[433  35]
+ [ 44  78]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.93      0.92       468
+    relevant       0.69      0.64      0.66       122
+
+    accuracy                           0.87       590
+   macro avg       0.80      0.78      0.79       590
+weighted avg       0.86      0.87      0.86       590
+
+0.8661016949152542
+Start: ExtraTreeClassifier 11:46:16
+Trained: 11:46:16
+Predicted: 11:46:16
+[[426  42]
+ [ 61  61]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.87      0.91      0.89       468
+    relevant       0.59      0.50      0.54       122
+
+    accuracy                           0.83       590
+   macro avg       0.73      0.71      0.72       590
+weighted avg       0.82      0.83      0.82       590
+
+0.8254237288135593
+Start: RandomForestClassifier 11:46:16
+Trained: 11:46:18
+Predicted: 11:46:18
+[[463   5]
+ [ 58  64]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.99      0.94       468
+    relevant       0.93      0.52      0.67       122
+
+    accuracy                           0.89       590
+   macro avg       0.91      0.76      0.80       590
+weighted avg       0.90      0.89      0.88       590
+
+0.8932203389830509
+Start: AdaBoostClassifier 11:46:18
+Trained: 11:46:21
+Predicted: 11:46:21
+[[448  20]
+ [ 48  74]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.96      0.93       468
+    relevant       0.79      0.61      0.69       122
+
+    accuracy                           0.88       590
+   macro avg       0.85      0.78      0.81       590
+weighted avg       0.88      0.88      0.88       590
+
+0.8847457627118644
+Start: ExtraTreeClassifier 11:46:21
+Trained: 11:46:21
+Predicted: 11:46:21
+[[430  38]
+ [ 46  76]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.92      0.91       468
+    relevant       0.67      0.62      0.64       122
+
+    accuracy                           0.86       590
+   macro avg       0.79      0.77      0.78       590
+weighted avg       0.85      0.86      0.86       590
+
+0.8576271186440678
+Start: BaggingClassifier 11:46:21
+Trained: 11:46:24
+Predicted: 11:46:24
+[[447  21]
+ [ 44  78]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.96      0.93       468
+    relevant       0.79      0.64      0.71       122
+
+    accuracy                           0.89       590
+   macro avg       0.85      0.80      0.82       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8898305084745762
+Start: GradientBoostingClassifier 11:46:24
+Trained: 11:46:38
+Predicted: 11:46:38
+[[457  11]
+ [ 52  70]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.98      0.94       468
+    relevant       0.86      0.57      0.69       122
+
+    accuracy                           0.89       590
+   macro avg       0.88      0.78      0.81       590
+weighted avg       0.89      0.89      0.88       590
+
+0.8932203389830509
+Start: VotingClassifier 11:46:38
+VotingClassifier has failed
+Start: GaussianNB 11:46:38
+Trained: 11:46:39
+Predicted: 11:46:39
+[[440  28]
+ [109  13]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      0.94      0.87       468
+    relevant       0.32      0.11      0.16       122
+
+    accuracy                           0.77       590
+   macro avg       0.56      0.52      0.51       590
+weighted avg       0.70      0.77      0.72       590
+
+0.7677966101694915
+Start: MultinomialNB 11:46:39
+Trained: 11:46:39
+Predicted: 11:46:39
+[[453  15]
+ [ 47  75]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.97      0.94       468
+    relevant       0.83      0.61      0.71       122
+
+    accuracy                           0.89       590
+   macro avg       0.87      0.79      0.82       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: CategoricalNB 11:46:39
+Trained: 11:46:39
+CategoricalNB has failed
+Start: BernoulliNB 11:46:39
+Trained: 11:46:39
+Predicted: 11:46:40
+[[450  18]
+ [ 42  80]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.96      0.94       468
+    relevant       0.82      0.66      0.73       122
+
+    accuracy                           0.90       590
+   macro avg       0.87      0.81      0.83       590
+weighted avg       0.89      0.90      0.89       590
+
+0.8983050847457628
+Start: ComplementNB 11:46:40
+Trained: 11:46:40
+Predicted: 11:46:40
+[[428  40]
+ [ 29  93]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.91      0.93       468
+    relevant       0.70      0.76      0.73       122
+
+    accuracy                           0.88       590
+   macro avg       0.82      0.84      0.83       590
+weighted avg       0.89      0.88      0.88       590
+
+0.8830508474576271
+Start: QuadraticDiscriminantAnalysis 11:46:40
+Trained: 11:46:42
+Predicted: 11:46:42
+[[426  42]
+ [ 59  63]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.91      0.89       468
+    relevant       0.60      0.52      0.56       122
+
+    accuracy                           0.83       590
+   macro avg       0.74      0.71      0.72       590
+weighted avg       0.82      0.83      0.82       590
+
+0.8288135593220339
+Start: LinearDiscriminantAnalysis 11:46:42
+Trained: 11:46:45
+Predicted: 11:46:46
+[[394  74]
+ [ 53  69]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.84      0.86       468
+    relevant       0.48      0.57      0.52       122
+
+    accuracy                           0.78       590
+   macro avg       0.68      0.70      0.69       590
+weighted avg       0.80      0.78      0.79       590
+
+0.7847457627118644
+Start: SGDClassifier 11:46:46
+Trained: 11:46:46
+Predicted: 11:46:46
+[[438  30]
+ [ 60  62]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.94      0.91       468
+    relevant       0.67      0.51      0.58       122
+
+    accuracy                           0.85       590
+   macro avg       0.78      0.72      0.74       590
+weighted avg       0.84      0.85      0.84       590
+
+0.847457627118644
+Start: RidgeClassifier 11:46:46
+Trained: 11:46:46
+Predicted: 11:46:46
+[[437  31]
+ [ 51  71]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.93      0.91       468
+    relevant       0.70      0.58      0.63       122
+
+    accuracy                           0.86       590
+   macro avg       0.80      0.76      0.77       590
+weighted avg       0.85      0.86      0.86       590
+
+0.8610169491525423
+Start: PassiveAggressiveClassifier 11:46:46
+Trained: 11:46:47
+Predicted: 11:46:47
+[[430  38]
+ [ 57  65]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.92      0.90       468
+    relevant       0.63      0.53      0.58       122
+
+    accuracy                           0.84       590
+   macro avg       0.76      0.73      0.74       590
+weighted avg       0.83      0.84      0.83       590
+
+0.8389830508474576
+RUNNING CONFIG f_stem_tfidf.txt
+Start: MLPClassifier 11:46:47
+Trained: 11:47:33
+Predicted: 11:47:33
+[[445  23]
+ [ 39  83]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.95      0.93       468
+    relevant       0.78      0.68      0.73       122
+
+    accuracy                           0.89       590
+   macro avg       0.85      0.82      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: KNeighborsClassifier 11:47:33
+Trained: 11:47:35
+Predicted: 11:47:54
+[[460   8]
+ [ 48  74]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.98      0.94       468
+    relevant       0.90      0.61      0.73       122
+
+    accuracy                           0.91       590
+   macro avg       0.90      0.79      0.83       590
+weighted avg       0.90      0.91      0.90       590
+
+0.9050847457627119
+Start: SVC 11:47:54
+Trained: 11:48:39
+Predicted: 11:48:48
+[[461   7]
+ [ 52  70]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.99      0.94       468
+    relevant       0.91      0.57      0.70       122
+
+    accuracy                           0.90       590
+   macro avg       0.90      0.78      0.82       590
+weighted avg       0.90      0.90      0.89       590
+
+0.9
+Start: NuSVC 11:48:48
+NuSVC has failed
+Start: LinearSVC 11:48:48
+Trained: 11:48:48
+Predicted: 11:48:48
+[[452  16]
+ [ 40  82]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.97      0.94       468
+    relevant       0.84      0.67      0.75       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.82      0.84       590
+weighted avg       0.90      0.91      0.90       590
+
+0.9050847457627119
+Start: GaussianProcessClassifier 11:48:48
+Trained: 11:49:26
+Predicted: 11:49:35
+[[466   2]
+ [ 75  47]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.86      1.00      0.92       468
+    relevant       0.96      0.39      0.55       122
+
+    accuracy                           0.87       590
+   macro avg       0.91      0.69      0.74       590
+weighted avg       0.88      0.87      0.85       590
+
+0.8694915254237288
+Start: RBF 11:49:35
+RBF has failed
+Start: DecisionTreeClassifier 11:49:35
+Trained: 11:49:41
+Predicted: 11:49:41
+[[434  34]
+ [ 33  89]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.93      0.93       468
+    relevant       0.72      0.73      0.73       122
+
+    accuracy                           0.89       590
+   macro avg       0.83      0.83      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8864406779661017
+Start: ExtraTreeClassifier 11:49:41
+Trained: 11:49:41
+Predicted: 11:49:41
+[[421  47]
+ [ 58  64]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.90      0.89       468
+    relevant       0.58      0.52      0.55       122
+
+    accuracy                           0.82       590
+   macro avg       0.73      0.71      0.72       590
+weighted avg       0.82      0.82      0.82       590
+
+0.8220338983050848
+Start: RandomForestClassifier 11:49:41
+Trained: 11:49:52
+Predicted: 11:49:52
+[[460   8]
+ [ 47  75]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.91      0.98      0.94       468
+    relevant       0.90      0.61      0.73       122
+
+    accuracy                           0.91       590
+   macro avg       0.91      0.80      0.84       590
+weighted avg       0.91      0.91      0.90       590
+
+0.9067796610169492
+Start: AdaBoostClassifier 11:49:52
+Trained: 11:50:10
+Predicted: 11:50:10
+[[444  24]
+ [ 38  84]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.95      0.93       468
+    relevant       0.78      0.69      0.73       122
+
+    accuracy                           0.89       590
+   macro avg       0.85      0.82      0.83       590
+weighted avg       0.89      0.89      0.89       590
+
+0.8949152542372881
+Start: ExtraTreeClassifier 11:50:10
+Trained: 11:50:10
+Predicted: 11:50:10
+[[413  55]
+ [ 56  66]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.88      0.88       468
+    relevant       0.55      0.54      0.54       122
+
+    accuracy                           0.81       590
+   macro avg       0.71      0.71      0.71       590
+weighted avg       0.81      0.81      0.81       590
+
+0.811864406779661
+Start: BaggingClassifier 11:50:10
+Trained: 11:50:17
+Predicted: 11:50:17
+[[446  22]
+ [ 30  92]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.94      0.95      0.94       468
+    relevant       0.81      0.75      0.78       122
+
+    accuracy                           0.91       590
+   macro avg       0.87      0.85      0.86       590
+weighted avg       0.91      0.91      0.91       590
+
+0.911864406779661
+Start: GradientBoostingClassifier 11:50:17
+Trained: 11:51:14
+Predicted: 11:51:14
+[[451  17]
+ [ 38  84]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.96      0.94       468
+    relevant       0.83      0.69      0.75       122
+
+    accuracy                           0.91       590
+   macro avg       0.88      0.83      0.85       590
+weighted avg       0.90      0.91      0.90       590
+
+0.9067796610169492
+Start: VotingClassifier 11:51:14
+VotingClassifier has failed
+Start: GaussianNB 11:51:14
+Trained: 11:51:14
+Predicted: 11:51:14
+[[354 114]
+ [ 42  80]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.89      0.76      0.82       468
+    relevant       0.41      0.66      0.51       122
+
+    accuracy                           0.74       590
+   macro avg       0.65      0.71      0.66       590
+weighted avg       0.79      0.74      0.75       590
+
+0.735593220338983
+Start: MultinomialNB 11:51:14
+Trained: 11:51:15
+Predicted: 11:51:15
+[[468   0]
+ [112  10]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.81      1.00      0.89       468
+    relevant       1.00      0.08      0.15       122
+
+    accuracy                           0.81       590
+   macro avg       0.90      0.54      0.52       590
+weighted avg       0.85      0.81      0.74       590
+
+0.8101694915254237
+Start: CategoricalNB 11:51:15
+Trained: 11:51:15
+Predicted: 11:51:16
+[[468   0]
+ [122   0]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.79      1.00      0.88       468
+    relevant       0.00      0.00      0.00       122
+
+    accuracy                           0.79       590
+   macro avg       0.40      0.50      0.44       590
+weighted avg       0.63      0.79      0.70       590
+
+0.7932203389830509
+Start: BernoulliNB 11:51:16
+Trained: 11:51:16
+Predicted: 11:51:16
+[[465   3]
+ [118   4]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.80      0.99      0.88       468
+    relevant       0.57      0.03      0.06       122
+
+    accuracy                           0.79       590
+   macro avg       0.68      0.51      0.47       590
+weighted avg       0.75      0.79      0.71       590
+
+0.7949152542372881
+Start: ComplementNB 11:51:16
+Trained: 11:51:16
+Predicted: 11:51:16
+[[462   6]
+ [ 61  61]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.88      0.99      0.93       468
+    relevant       0.91      0.50      0.65       122
+
+    accuracy                           0.89       590
+   macro avg       0.90      0.74      0.79       590
+weighted avg       0.89      0.89      0.87       590
+
+0.8864406779661017
+Start: QuadraticDiscriminantAnalysis 11:51:16
+Trained: 11:51:23
+Predicted: 11:51:23
+[[137 331]
+ [ 22 100]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.86      0.29      0.44       468
+    relevant       0.23      0.82      0.36       122
+
+    accuracy                           0.40       590
+   macro avg       0.55      0.56      0.40       590
+weighted avg       0.73      0.40      0.42       590
+
+0.4016949152542373
+Start: LinearDiscriminantAnalysis 11:51:23
+Trained: 11:51:34
+Predicted: 11:51:34
+[[323 145]
+ [ 52  70]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.86      0.69      0.77       468
+    relevant       0.33      0.57      0.42       122
+
+    accuracy                           0.67       590
+   macro avg       0.59      0.63      0.59       590
+weighted avg       0.75      0.67      0.69       590
+
+0.6661016949152543
+Start: SGDClassifier 11:51:34
+Trained: 11:51:35
+Predicted: 11:51:35
+[[446  22]
+ [ 36  86]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.93      0.95      0.94       468
+    relevant       0.80      0.70      0.75       122
+
+    accuracy                           0.90       590
+   macro avg       0.86      0.83      0.84       590
+weighted avg       0.90      0.90      0.90       590
+
+0.9016949152542373
+Start: RidgeClassifier 11:51:35
+Trained: 11:51:36
+Predicted: 11:51:36
+[[457  11]
+ [ 48  74]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.90      0.98      0.94       468
+    relevant       0.87      0.61      0.71       122
+
+    accuracy                           0.90       590
+   macro avg       0.89      0.79      0.83       590
+weighted avg       0.90      0.90      0.89       590
+
+0.9
+Start: PassiveAggressiveClassifier 11:51:36
+Trained: 11:51:37
+Predicted: 11:51:37
+[[445  23]
+ [ 38  84]]
+              precision    recall  f1-score   support
+
+  irrelevant       0.92      0.95      0.94       468
+    relevant       0.79      0.69      0.73       122
+
+    accuracy                           0.90       590
+   macro avg       0.85      0.82      0.83       590
+weighted avg       0.89      0.90      0.89       590
+
+0.8966101694915254
+DONE
+PASSED

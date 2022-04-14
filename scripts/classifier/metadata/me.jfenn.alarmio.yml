@@ -1,0 +1,54 @@
+Categories:
+  - Time
+License: Apache-2.0
+AuthorName: James Fenn
+AuthorEmail: dev@jfenn.me
+WebSite: https://jfenn.me/projects/alarmio/
+SourceCode: https://github.com/fennifith/Alarmio
+IssueTracker: https://github.com/fennifith/Alarmio/issues
+Changelog: https://github.com/fennifith/Alarmio/releases
+Donate: https://paypal.me/fennifith
+LiberapayID: '1566979'
+
+AutoName: Alarmio
+Description: |-
+    Alarmio is a simple alarm clock that implements many useful features
+    while following regular design standards to ensure that it is quick and
+    intuitive to use. It supports snoozing, has themes, and more.
+
+RepoType: git
+Repo: https://github.com/fennifith/Alarmio
+
+Builds:
+  - versionName: 1.0.2
+    versionCode: 18
+    commit: 1.0.2
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: 1.0.3
+    versionCode: 19
+    commit: 1.0.3
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: 1.0.4
+    versionCode: 20
+    commit: 1.0.4
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: 1.0.5
+    versionCode: 21
+    commit: 1.0.5
+    subdir: app
+    gradle:
+      - oss
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.5
+CurrentVersionCode: 21

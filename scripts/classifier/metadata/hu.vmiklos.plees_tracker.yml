@@ -1,0 +1,110 @@
+Categories:
+  - Sports & Health
+  - Time
+License: MIT
+AuthorName: Miklos Vajna
+AuthorEmail: plees-tracker@vmiklos.hu
+SourceCode: https://github.com/vmiklos/plees-tracker
+IssueTracker: https://github.com/vmiklos/plees-tracker/issues
+
+AutoName: Plees Tracker
+
+RepoType: git
+Repo: https://github.com/vmiklos/plees-tracker
+
+Builds:
+  - versionName: '3.0'
+    versionCode: 3
+    commit: v3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.0'
+    versionCode: 4
+    commit: v4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.0'
+    versionCode: 5
+    commit: v5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.0'
+    versionCode: 6
+    commit: v6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.1'
+    versionCode: 7
+    commit: v6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.2'
+    versionCode: 8
+    commit: v6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.3'
+    versionCode: 9
+    commit: v6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.4'
+    versionCode: 10
+    commit: v6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.0
+    versionCode: 11
+    commit: v7.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.1
+    versionCode: 12
+    commit: v7.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.2
+    versionCode: 13
+    commit: v7.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.3
+    versionCode: 14
+    commit: v7.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.4
+    versionCode: 15
+    commit: v7.0.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 7.0.4
+CurrentVersionCode: 15

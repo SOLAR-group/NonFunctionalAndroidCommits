@@ -1,0 +1,178 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: swentel
+AuthorEmail: swentel@realize.be
+WebSite: https://indigenous.realize.be
+SourceCode: https://github.com/swentel/indigenous-android
+IssueTracker: https://github.com/swentel/indigenous-android/issues
+Changelog: https://github.com/swentel/indigenous-android/releases
+
+AutoName: Indigenous
+Description: |-
+    An app with extensions for sharing information using your IndieWeb domain or Fediverse account like Mastodon or Pixelfed. More information on
+    https://indigenous.realize.be and https://indieweb.org/Indigenous
+
+
+    '''General Functionality:'''
+
+    * Login with IndieWeb domains or Fediverse services.
+    * IndieWeb: discover indieauth, micropub, microsub and media endpoints. The micropub and microsub endpoints are optional, but at least one should be available. PKCE support for additional security when authenticating.
+    * Fediverse: Mastodon, Pleroma and Pixelfed.
+    * Share intents: receive text or images from other apps to directly share.
+
+    '''Post functionality:'''
+
+    * post types: article, note, reply, repost, like, bookmark, event, issue and rsvp
+    * add image, tags, toggle syndication targets
+    * send images to media endpoint
+    * share location on note, article and event
+    * Toggle post-status (published vs draft)
+    * Save articles, notes or replies as draft
+    * Query, update and delete: get a list of posts and update basic properties (experimental)
+
+    '''Reader functionality:'''
+
+    * read channels, with pull to refresh
+    * read items per channel, with pull to refresh
+    * reply, like, repost, rsvp or bookmark directly
+    * go to external URL
+    * listen to audio if available
+    * watch videos
+    * view fullscreen images, zoom and pinch
+
+RepoType: git
+Repo: https://github.com/swentel/indigenous-android
+
+Builds:
+  - versionName: '0.31'
+    versionCode: 31
+    commit: '0.31'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.32'
+    versionCode: 32
+    commit: '0.32'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.33'
+    versionCode: 33
+    commit: '0.33'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.34'
+    versionCode: 34
+    commit: '0.34'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.46'
+    versionCode: 46
+    commit: '0.46'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.47'
+    versionCode: 47
+    commit: '0.47'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.48'
+    versionCode: 48
+    commit: '0.48'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.49'
+    versionCode: 49
+    commit: '0.49'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.50'
+    versionCode: 50
+    commit: '0.50'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.52'
+    versionCode: 52
+    commit: '0.52'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.56'
+    versionCode: 56
+    disable: fails to build missing Mapbox key
+    commit: '0.56'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.57'
+    versionCode: 57
+    commit: '0.57'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.58'
+    versionCode: 58
+    commit: '0.58'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.59'
+    versionCode: 59
+    commit: '0.59'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.60'
+    versionCode: 60
+    commit: '0.60'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.62'
+    versionCode: 62
+    commit: '0.62'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.63'
+    versionCode: 63
+    commit: '0.63'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.64'
+    versionCode: 64
+    commit: '0.64'
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '0.64'
+CurrentVersionCode: 64

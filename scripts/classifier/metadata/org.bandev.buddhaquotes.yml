@@ -1,0 +1,62 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-or-later
+AuthorName: BanDev
+AuthorEmail: help@computub.com
+SourceCode: https://gitlab.com/bandev/buddha-quotes
+IssueTracker: https://gitlab.com/bandev/buddha-quotes/issues
+Changelog: https://gitlab.com/bandev/buddha-quotes/-/blob/master/CHANGELOG.md
+
+AutoName: Buddha Quotes
+
+RepoType: git
+Repo: https://gitlab.com/bandev/buddha-quotes.git
+
+Builds:
+  - versionName: v1.3.0
+    versionCode: 1004
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.3.2
+    versionCode: 1006
+    commit: v1.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.4.0
+    versionCode: 1007
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.5.0
+    versionCode: 1008
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.5.1
+    versionCode: 1009
+    commit: v1.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.6.0
+    versionCode: 1010
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.8-rc-1/6.7/' ../gradle/wrapper/gradle-wrapper.properties
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: v1.6.0
+CurrentVersionCode: 1010

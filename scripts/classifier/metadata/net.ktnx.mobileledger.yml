@@ -1,0 +1,138 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+AuthorName: Damyan Ivanov
+AuthorEmail: dam+mole@ktnx.net
+WebSite: https://mole.ktnx.net/
+SourceCode: https://git.ktnx.net/?p=mobile-ledger.git
+Changelog: https://git.ktnx.net/?p=mobile-ledger.git;a=blob;f=CHANGES.md;hb=HEAD
+
+AutoName: MoLe
+
+RepoType: git
+Repo: https://git.ktnx.net/git/mobile-ledger.git
+
+Builds:
+  - versionName: '0.6'
+    versionCode: 16
+    commit: v0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.7'
+    versionCode: 17
+    commit: v0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.8'
+    versionCode: 18
+    commit: v0.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.1
+    versionCode: 19
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.2
+    versionCode: 22
+    commit: v0.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.3
+    versionCode: 23
+    commit: v0.9.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.5
+    versionCode: 25
+    commit: v0.9.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.0
+    versionCode: 26
+    commit: v0.10.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.1
+    versionCode: 27
+    commit: v0.10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.2
+    versionCode: 28
+    commit: v0.10.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.3
+    versionCode: 29
+    commit: v0.10.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.11.0
+    versionCode: 30
+    commit: v0.11.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.0
+    versionCode: 31
+    commit: v0.12.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.13.1
+    versionCode: 33
+    commit: v0.13.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.14.0
+    versionCode: 34
+    commit: v0.14.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.14.1
+    versionCode: 35
+    commit: v0.14.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.15.0
+    versionCode: 36
+    commit: v0.15.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.15.0
+CurrentVersionCode: 36

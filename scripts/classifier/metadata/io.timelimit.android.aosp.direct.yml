@@ -1,0 +1,108 @@
+Categories:
+  - System
+  - Time
+License: GPL-3.0-only
+SourceCode: https://codeberg.org/timelimit/timelimit-android
+IssueTracker: https://codeberg.org/timelimit/timelimit-android/issues
+
+AutoName: TimeLimit
+
+RepoType: git
+Repo: https://codeberg.org/timelimit/timelimit-android.git
+
+Builds:
+  - versionName: 2.7.5
+    versionCode: 87
+    commit: release-2.7.5
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 3.6.0
+    versionCode: 97
+    commit: release-3.6.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 3.7.0
+    versionCode: 98
+    commit: release-3.7.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 3.7.1
+    versionCode: 99
+    commit: release-3.7.1
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 3.8.0
+    versionCode: 100
+    commit: release-3.8.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 3.9.0
+    versionCode: 101
+    commit: release-3.9.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.0.0
+    versionCode: 102
+    commit: release-4.0.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.1.0
+    versionCode: 103
+    commit: release-4.1.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.2.0
+    versionCode: 104
+    commit: release-4.2.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.3.0
+    versionCode: 105
+    commit: release-4.3.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+AutoUpdateMode: Version release-%v
+UpdateCheckMode: Tags
+UpdateCheckName: io.timelimit.android
+CurrentVersion: 4.3.0
+CurrentVersionCode: 105

@@ -1,0 +1,38 @@
+Categories:
+  - System
+License: Apache-2.0
+SourceCode: https://github.com/mueller-ma/Coffee
+IssueTracker: https://github.com/mueller-ma/Coffee/issues
+Changelog: https://github.com/mueller-ma/Coffee/releases
+
+AutoName: Coffee
+
+RepoType: git
+Repo: https://github.com/mueller-ma/Coffee.git
+
+Builds:
+  - versionName: '1.2'
+    versionCode: 3
+    commit: '1.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 4
+    commit: '1.3'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.4'
+    versionCode: 5
+    commit: '1.4'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.4'
+CurrentVersionCode: 5

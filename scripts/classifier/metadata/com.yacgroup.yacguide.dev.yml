@@ -1,0 +1,75 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Sports & Health
+License: GPL-3.0-only
+WebSite: https://github.com/yacgroup/yacguide
+SourceCode: https://github.com/yacgroup/yacguide
+IssueTracker: https://github.com/yacgroup/yacguide/issues
+
+AutoName: YacGuide
+
+RepoType: git
+Repo: https://github.com/yacgroup/yacguide
+
+Builds:
+  - versionName: '20200222'
+    versionCode: 20200222
+    commit: dev-20200222
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20200428'
+    versionCode: 20200428
+    commit: dev-20200428
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20200527'
+    versionCode: 20200527
+    commit: dev-20200527
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20200612'
+    versionCode: 20200612
+    commit: dev-20200612
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20200622'
+    versionCode: 20200622
+    commit: dev-20200622
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20200928'
+    versionCode: 20200928
+    commit: dev-20200928
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20201003'
+    versionCode: 20201003
+    commit: dev-20201003
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20201013'
+    versionCode: 20201013
+    commit: dev-20201013
+    subdir: app
+    gradle:
+      - dev
+
+AutoUpdateMode: Version dev-%c
+UpdateCheckMode: Tags ^dev
+CurrentVersion: '20201013'
+CurrentVersionCode: 20201013
