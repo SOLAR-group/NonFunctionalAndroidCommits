@@ -1,9 +1,25 @@
 # Non-Functional Property Improving Commits
 
-This is the repository containing a set of commits which improve the non-functional properties (NFPS) of android applications. 
+This is the repository containing a set of commits which improve the non-functional properties (NFPS) of Android applications. 
 Please cite the following paper if you make use of this dataset:
 
-**How Do Android Developers Improve Non-Functional Properties of Software?** James Callan, Oliver Krauss, Justyna Petke, and Federica Sarro. Empirical Software Engineering. Accepted for publication.
+**How Do Android Developers Improve Non-Functional Properties of Software?** James Callan, Oliver Krauss, Justyna Petke, and Federica Sarro. Empirical Software Engineering.
+
+BibTeX:
+@article{Callan2022:android,
+  author    = {James Callan and
+               Oliver Krauss and
+               Justyna Petke and
+               Federica Sarro},
+  title     = {How do Android developers improve non-functional properties of software?},
+  journal   = {Empir. Softw. Eng.},
+  volume    = {27},
+  number    = {5},
+  pages     = {113},
+  year      = {2022},
+  url       = {https://doi.org/10.1007/s10664-022-10137-2},
+  doi       = {10.1007/s10664-022-10137-2}
+}
 
 These commits were elicited with keyword selection and manual analysis. Other commits were obtained through the use of an automatic classifier. 
 
